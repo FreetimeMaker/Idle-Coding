@@ -550,7 +550,12 @@ internal fun CombatSessionBanner(
                             )
                             Spacer(Modifier.height(2.dp))
                             for ((key, startQty) in foodAtStart.entries.sortedBy {
-                                if (foodEatOrder == "ascending") foodHealValues[it.key] ?: 0 else -(foodHealValues[it.key] ?: 0)
+                                when (foodEatOrder) {
+                                    "descending" -> -(foodHealValues[it.key] ?: 0)
+                                    "ascending" -> foodHealValues[it.key] ?: 0
+                                    "least_quantity" -> it.value
+                                    else -> 0
+                                }
                             }) {
                                 val remaining = (startQty - (foodConsumedSoFar[key] ?: 0)).coerceAtLeast(0)
                                 val heal      = foodHealValues[key] ?: 0
@@ -569,7 +574,14 @@ internal fun CombatSessionBanner(
                                 Spacer(Modifier.height(2.dp))
                                 Text(
                                     text  = foodConsumedSoFar.entries
-                                        .sortedBy { if (foodEatOrder == "ascending") foodHealValues[it.key] ?: 0 else -(foodHealValues[it.key] ?: 0) }
+                                        .sortedBy {
+                                            when (foodEatOrder) {
+                                                "descending" -> -(foodHealValues[it.key] ?: 0)
+                                                "ascending" -> foodHealValues[it.key] ?: 0
+                                                "least_quantity" -> foodAtStart[it.key] ?: 0
+                                                else -> 0
+                                            }
+                                        }
                                         .joinToString(", ") { (k, v) ->
                                             "$v ${GameStrings.itemName(context, k)}"
                                         }

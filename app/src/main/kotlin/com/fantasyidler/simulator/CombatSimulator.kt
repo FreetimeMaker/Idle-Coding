@@ -85,7 +85,14 @@ object CombatSimulator {
         val foodSupply = equippedFood.toMutableMap()
         val foodOrder: List<String> = foodHealValues.entries
             .filter { (k, _) -> k in foodSupply }
-            .sortedBy { if (foodEatOrder == "ascending") it.value else -it.value }
+            .sortedBy {
+                when (foodEatOrder) {
+                    "descending" -> -it.value
+                    "ascending" -> it.value
+                    "least_quantity" -> equippedFood[it.key] ?: 0
+                    else -> 0
+                }
+            }
             .map { it.key }
         var totalFoodEaten = 0
 
@@ -489,7 +496,14 @@ object CombatSimulator {
         val foodSupply = equippedFood.toMutableMap()
         val foodOrder: List<String> = foodHealValues.entries
             .filter { (k, _) -> k in foodSupply }
-            .sortedBy { if (foodEatOrder == "ascending") it.value else -it.value }
+            .sortedBy {
+                when (foodEatOrder) {
+                    "descending" -> -it.value
+                    "ascending" -> it.value
+                    "least_quantity" -> equippedFood[it.key] ?: 0
+                    else -> 0
+                }
+            }
             .map { it.key }
         var totalFoodEaten = 0
         var bossClock = 0.0

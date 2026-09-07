@@ -655,7 +655,14 @@ private fun CombatGearTab(
     }
     val foodInInventory = remember(inventory, cookedItemKeys, foodHealValues, foodEatOrder) {
         inventory.filterKeys { it in cookedItemKeys }.entries
-            .sortedBy { if (foodEatOrder == "ascending") foodHealValues[it.key] ?: 0 else -(foodHealValues[it.key] ?: 0) }
+            .sortedBy {
+                when (foodEatOrder) {
+                    "descending" -> -(foodHealValues[it.key] ?: 0)
+                    "ascending" -> foodHealValues[it.key] ?: 0
+                    "least_quantity" -> it.value
+                    else -> 0
+                }
+            }
     }
 
     LazyColumn(modifier = Modifier.fillMaxSize()) {
@@ -802,23 +809,8 @@ private fun CombatGearTab(
         }
         item { SlotSectionHeader(stringResource(R.string.profile_food_order)) }
         item {
-            Row(
-                verticalAlignment = Alignment.CenterVertically,
-                modifier          = Modifier.padding(horizontal = 16.dp, vertical = 4.dp),
-            ) {
-                IconButton(onClick = { onFoodOrderChanged("descending") }) {
-                    Icon(Icons.Filled.Remove, contentDescription = null)
-                }
-                Text(
-                    text      = stringResource(if (foodEatOrder == "ascending") R.string.food_order_ascending else R.string.food_order_descending),
-                    style     = MaterialTheme.typography.titleMedium,
-                    fontWeight = FontWeight.Bold,
-                    textAlign = TextAlign.Center,
-                    modifier  = Modifier.width(120.dp),
-                )
-                IconButton(onClick = { onFoodOrderChanged("ascending") }) {
-                    Icon(Icons.Filled.Add, contentDescription = null)
-                }
+            Column(Modifier.padding(horizontal = 16.dp, vertical = 4.dp)) {
+                FoodOrderPicker(foodEatOrder, onFoodOrderChanged)
             }
         }
         item { Spacer(Modifier.height(16.dp)) }

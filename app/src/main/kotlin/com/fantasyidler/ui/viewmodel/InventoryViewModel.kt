@@ -546,7 +546,7 @@ class InventoryViewModel @Inject constructor(
     fun setFoodEatOrder(order: String) {
         viewModelScope.launch {
             val flags = playerRepo.getFlags()
-            playerRepo.updateFlags(flags.copy(foodEatOrder = if (order == "ascending") "ascending" else "descending"))
+            playerRepo.updateFlags(flags.copy(foodEatOrder = order))
         }
     }
 
