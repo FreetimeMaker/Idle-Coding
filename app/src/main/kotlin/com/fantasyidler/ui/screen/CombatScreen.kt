@@ -266,6 +266,7 @@ fun CombatScreen(
                             context        = context,
                             activeWeaponSlot    = state.selectedWeaponSlot,
                             foodEatThresholdPct = invState.foodEatThresholdPct,
+                            foodEatOrder        = invState.foodEatOrder,
                             availableSpells  = viewModel.availableSpells(),
                             magicLevel       = state.skillLevels[Skills.MAGIC] ?: 1,
                             selectedArrowKey = state.selectedArrowKey,
@@ -279,6 +280,7 @@ fun CombatScreen(
                             onArrowSelected = viewModel::selectArrow,
                             onSpellSelected = viewModel::selectSpell,
                             onFoodThresholdChanged = inventoryVm::setFoodEatThresholdPct,
+                            onFoodOrderChanged     = inventoryVm::setFoodEatOrder,
                         )
                         else -> CombatSkillsTab(
                             skillLevels         = state.skillLevels,
@@ -356,6 +358,7 @@ fun CombatScreen(
                             context        = context,
                             activeWeaponSlot    = state.selectedWeaponSlot,
                             foodEatThresholdPct = invState.foodEatThresholdPct,
+                            foodEatOrder        = invState.foodEatOrder,
                             availableSpells  = viewModel.availableSpells(),
                             magicLevel       = state.skillLevels[Skills.MAGIC] ?: 1,
                             selectedArrowKey = state.selectedArrowKey,
@@ -369,6 +372,7 @@ fun CombatScreen(
                             onArrowSelected = viewModel::selectArrow,
                             onSpellSelected = viewModel::selectSpell,
                             onFoodThresholdChanged = inventoryVm::setFoodEatThresholdPct,
+                            onFoodOrderChanged     = inventoryVm::setFoodEatOrder,
                         )
                         else -> CombatSkillsTab(
                             skillLevels         = state.skillLevels,
@@ -629,6 +633,7 @@ private fun CombatGearTab(
     context: Context,
     activeWeaponSlot: String?,
     foodEatThresholdPct: Int,
+    foodEatOrder: String,
     availableSpells: List<SpellData>,
     magicLevel: Int,
     selectedArrowKey: String?,
@@ -642,12 +647,14 @@ private fun CombatGearTab(
     onArrowSelected: (String?) -> Unit,
     onSpellSelected: (SpellData?) -> Unit,
     onFoodThresholdChanged: (Int) -> Unit,
+    onFoodOrderChanged: (String) -> Unit,
 ) {
     val cookedItemKeys = remember(cookingRecipes) {
         cookingRecipes.values.map { it.cookedItem }.toSet()
     }
-    val foodInInventory = remember(inventory, cookedItemKeys) {
-        inventory.filterKeys { it in cookedItemKeys }.entries.toList()
+    val foodInInventory = remember(inventory, cookedItemKeys, foodHealValues, foodEatOrder) {
+        inventory.filterKeys { it in cookedItemKeys }.entries
+            .sortedBy { if (foodEatOrder == "ascending") foodHealValues[it.key] ?: 0 else -(foodHealValues[it.key] ?: 0) }
     }
 
     LazyColumn(modifier = Modifier.fillMaxSize()) {
@@ -790,6 +797,27 @@ private fun CombatGearTab(
                     color    = MaterialTheme.colorScheme.error,
                     modifier = Modifier.padding(horizontal = 16.dp),
                 )
+            }
+        }
+        item { SlotSectionHeader(stringResource(R.string.profile_food_order)) }
+        item {
+            Row(
+                verticalAlignment = Alignment.CenterVertically,
+                modifier          = Modifier.padding(horizontal = 16.dp, vertical = 4.dp),
+            ) {
+                IconButton(onClick = { onFoodOrderChanged("descending") }) {
+                    Icon(Icons.Filled.Remove, contentDescription = null)
+                }
+                Text(
+                    text      = stringResource(if (foodEatOrder == "ascending") R.string.food_order_ascending else R.string.food_order_descending),
+                    style     = MaterialTheme.typography.titleMedium,
+                    fontWeight = FontWeight.Bold,
+                    textAlign = TextAlign.Center,
+                    modifier  = Modifier.width(120.dp),
+                )
+                IconButton(onClick = { onFoodOrderChanged("ascending") }) {
+                    Icon(Icons.Filled.Add, contentDescription = null)
+                }
             }
         }
         item { Spacer(Modifier.height(16.dp)) }
