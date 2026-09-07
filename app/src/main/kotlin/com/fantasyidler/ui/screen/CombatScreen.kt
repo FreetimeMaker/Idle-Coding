@@ -230,6 +230,7 @@ fun CombatScreen(
                             defenseBonus   = state.totalDefenseBonus,
                             equippedFood   = state.equippedFood,
                             foodHealValues = viewModel.foodHealValues,
+                            foodEatOrder   = invState.foodEatOrder,
                             showEndTime    = state.showSessionEndTime,
                             repeatIndex    = if (combatSession.skillName == "boss") state.activeBossRepeatIndex else state.activeDungeonRepeatIndex,
                             repeatTotal    = if (combatSession.skillName == "boss") state.activeBossRepeatTotal else state.activeDungeonRepeatTotal,

@@ -98,6 +98,7 @@ internal fun CombatSessionBanner(
     defenseBonus: Int,
     equippedFood: Map<String, Int>,
     foodHealValues: Map<String, Int>,
+    foodEatOrder: String,
     showEndTime: Boolean = true,
     repeatIndex: Int = 0,
     repeatTotal: Int = 0,
@@ -548,7 +549,9 @@ internal fun CombatSessionBanner(
                                 color = MaterialTheme.colorScheme.onSecondaryContainer.copy(alpha = 0.7f),
                             )
                             Spacer(Modifier.height(2.dp))
-                            for ((key, startQty) in foodAtStart) {
+                            for ((key, startQty) in foodAtStart.entries.sortedBy {
+                                if (foodEatOrder == "ascending") foodHealValues[it.key] ?: 0 else -(foodHealValues[it.key] ?: 0)
+                            }) {
                                 val remaining = (startQty - (foodConsumedSoFar[key] ?: 0)).coerceAtLeast(0)
                                 val heal      = foodHealValues[key] ?: 0
                                 val name      = GameStrings.itemName(context, key)
@@ -566,7 +569,7 @@ internal fun CombatSessionBanner(
                                 Spacer(Modifier.height(2.dp))
                                 Text(
                                     text  = foodConsumedSoFar.entries
-                                        .sortedByDescending { it.value }
+                                        .sortedBy { if (foodEatOrder == "ascending") foodHealValues[it.key] ?: 0 else -(foodHealValues[it.key] ?: 0) }
                                         .joinToString(", ") { (k, v) ->
                                             "$v ${GameStrings.itemName(context, k)}"
                                         }
