@@ -1315,8 +1315,8 @@
     <string name="house_item_wall_art_dark_starry_night_grass">Sternenwiese (Dunkler Rahmen)</string>
     <string name="house_item_wall_art_dark_starry_night_ocean">Sternenklare Meere (Dunkler Rahmen)</string>
     <string name="house_item_helmet_trophy">Helm-Trophäe</string>
-    <string name="house_item_shield_round">Round Shield Display</string> <!-- untranslated -->
-    <string name="house_item_shield_kite">Kite Shield Display</string> <!-- untranslated -->
+    <string name="house_item_shield_round">Rundschild</string>
+    <string name="house_item_shield_kite">Normannenschild</string>
     <string name="house_item_swords_crossed">Gekreuzte Schwerter</string>
     <string name="house_item_lamp">Wandlaterne</string>
     <string name="slayer_title">Trophäenjagd</string>
@@ -1910,16 +1910,16 @@
     <string name="tower_milestone_claimed">Eingefordert</string>
     <!-- Tower milestone reward descriptions; %s placeholders are item display names -->
     <string name="tower_milestone_ring">%1$s (Angriff +6, Stärke +6)</string>
-    <string name="tower_milestone_xp_1pct" formatted="false">+1% tower XP all skills</string> <!-- untranslated -->
+    <string name="tower_milestone_xp_1pct" formatted="false">+1% Turm EP für alle Fertigkeiten</string>
     <string name="tower_milestone_coins_5k">5 000 Münzen</string>
     <string name="tower_milestone_shield">%1$s (Verteidigung +80)</string>
     <string name="tower_milestone_amulet">%1$s (Angriff +15, Stärke +15, Verteidigung +10, alle Kampfstile)</string>
     <string name="tower_milestone_hp_50">+50 max. LP</string>
-    <string name="tower_milestone_xp_2pct" formatted="false">+2% tower XP all skills</string> <!-- untranslated -->
+    <string name="tower_milestone_xp_2pct" formatted="false">+2% Turm EP für alle Fertigkeiten</string>
     <string name="tower_milestone_coins_25k">25 000 Münzen</string>
     <string name="tower_milestone_helm">%1$s (Verteidigung +82, Stärke +8)</string>
-    <string name="tower_milestone_pet" formatted="false">Tower Pet (5% combat XP)</string> <!-- untranslated -->
-    <string name="tower_milestone_coin_drops_1pct" formatted="false">+1% tower coin drops</string> <!-- untranslated -->
+    <string name="tower_milestone_pet" formatted="false">Turm Haustir (5% Kampf EP)</string>
+    <string name="tower_milestone_coin_drops_1pct" formatted="false">"+1% Turm Gold "</string>
     <string name="tower_milestone_plate">%1$s (Verteidigung +132)</string>
     <string name="tower_milestone_coins_100k">100 000 Münzen</string>
     <string name="tower_milestone_legs_set">%1$s (Verteidigung +125) + %2$s (Verteidigung +58) + %3$s (Verteidigung +125)</string>
@@ -1960,8 +1960,8 @@
     <string name="seasonal_tap">Tippen!</string>
     <string name="seasonal_claim">Einlösen</string>
     <string name="seasonal_bounty_cooldown">Neue Aufgabe in %1$dm %2$ds</string>
-    <string name="seasonal_bounty_reroll">Reroll bounty</string> <!-- untranslated -->
-    <string name="seasonal_bounty_reroll_confirm">Swap this bounty for a different one for %1$s coins? Progress on it is lost.</string> <!-- untranslated -->
+    <string name="seasonal_bounty_reroll">Neue Aufgabe</string>
+    <string name="seasonal_bounty_reroll_confirm">Tausche für %1$s Gold diese Aufgabe durch eine andere? Bestehender Fortrschritt geht verloren.</string>
     <string name="seasonal_go">Los</string>
     <string name="seasonal_event_sunspire_solstice_2026_name">Sonnenwende-Sommerturm</string>
     <string name="seasonal_event_sunspire_solstice_2026_banner">Teilgenommen an Sonnenwende-Sommerturm 2026</string>
@@ -2111,11 +2111,11 @@
     <string name="settings_credit_banners_subtitle">Kunst von Wenrexa</string>
     <string name="settings_credit_skill_icons_title">Fertigkeitssymbole</string>
 
-    <string name="settings_credit_characters_title">Character Sprites</string> <!-- untranslated -->
+    <string name="settings_credit_characters_title">Charakter Sprites</string>
     <string name="settings_credit_characters_subtitle">Kunst von Pixylac</string>
     <string name="settings_credit_bosses_title">Boss Sprites</string> <!-- untranslated -->
     <string name="settings_credit_bosses_subtitle">Kunst von Meg</string>
-    <string name="settings_credit_house_title">House Interiors</string> <!-- untranslated -->
+    <string name="settings_credit_house_title">Inneneinrichtung</string>
 
     <string name="title_seasonal_champion_of">Champion von %1$s</string>
     <string name="title_seasonal_requirement">Schließt das Saisonereignis %1$s ab</string>
@@ -2237,23 +2237,23 @@
     <string name="farming_crop_picker_stats">Lv. %1$d  •  %2$s  •  %3$d EP/Pflanze</string>
     <string name="farming_seeds_owned">Samen: %1$d  •  In Besitz: %2$d</string>
     <!-- ============ Prestige overhaul (v1.14.0) ============ -->
-    <string name="prestige_title">Prestige</string> <!-- untranslated -->
+    <string name="prestige_title">Prestige</string>
     <string name="prestige_open_tree">Baum ansehen</string>
     <!-- Translator note: %1$d = unspent prestige points -->
     <string name="prestige_points_available">%1$d Punkte verfügbar</string>
     <!-- Translator note: %1$d = lifetime points earned, %2$d = maximum points for this skill -->
-    <string name="prestige_points_lifetime">%1$d of %2$d lifetime points earned</string> <!-- untranslated -->
+    <string name="prestige_points_lifetime">Insgesamt %1$d von %2$d Prestige Punkte gesammelt</string>
     <!-- Translator note: %1$d = points the reset would award right now -->
-    <string name="prestige_button_with_points">Prestige now for +%1$d points</string> <!-- untranslated -->
+    <string name="prestige_button_with_points">Führe jetzt einen Prestige durch um +%1$d Punkte zu erhalten</string>
     <!-- Translator note: %1$d = current skill level -->
-    <string name="prestige_requires_99">Reach level 99 to prestige (currently %1$d).</string> <!-- untranslated -->
-    <string name="prestige_maxed_cap">Maximum prestige reached. Every point this skill can earn is yours.</string> <!-- untranslated -->
+    <string name="prestige_requires_99">Erreiche Level 99 um einen Prestige durchzuführen (aktuell %1$d).</string>
+    <string name="prestige_maxed_cap">Maximales Prestige Level erreicht. Jeder Punkt, den man in dieser Fähigkeit erlangen kann ist deiner.</string>
     <!-- Translator note: %1$s = skill name, %2$d = points awarded -->
-    <string name="prestige_confirm_message_points">Your %1$s level will reset to 1 and you\'ll earn %2$d prestige points to spend in this skill\'s tree. Equipment that no longer meets its requirements will be swapped out, and unclaimed %1$s daily quest progress resets. You\'ll also gain 2x %1$s XP for 48 hours to speed the climb back up.</string> <!-- untranslated -->
-    <string name="prestige_respec">Reset points</string> <!-- untranslated -->
+    <string name="prestige_confirm_message_points">Dein %1$s Level wird auf 1 zurückgesetzt und du erhältst %2$d Prestige Punkte, welche du in dem Fähigkeiten-Baum ausgeben kannst. Ausrüstung, für die du nicht mehr die Bedingungen erfüllst, wird ausgetauscht, und nicht eingeforderter %1$s Fortschritt täglicher Herausforderungen wird zurückgesetzt. Zusätzlich bekommst du 2x %1$s EP für 48 Stunden, um deinen Fortschritt zu bechleunigen.</string>
+    <string name="prestige_respec">Punkte zurücksetzen</string>
     <!-- Translator note: %1$s = formatted remaining cooldown -->
-    <string name="prestige_respec_available_in">Reset available in %1$s</string> <!-- untranslated -->
-    <string name="prestige_respec_confirm_title">Reset prestige points?</string> <!-- untranslated -->
+    <string name="prestige_respec_available_in">Du kannst deine Punkte erst in %1$s zurücksetzen</string>
+    <string name="prestige_respec_confirm_title">Prestige Punkte zurücksetzen?</string>
     <!-- Translator note: %1$s = skill name -->
     <string name="prestige_respec_confirm_message">All purchased %1$s upgrades will be refunded for their full point cost. You can reset this skill\'s points again in 24 hours.</string> <!-- untranslated -->
     <!-- Translator note: %1$s = skill name -->
