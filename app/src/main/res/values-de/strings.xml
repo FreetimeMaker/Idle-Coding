@@ -1918,8 +1918,8 @@
     <string name="tower_milestone_xp_2pct" formatted="false">+2% Turm EP für alle Fertigkeiten</string>
     <string name="tower_milestone_coins_25k">25 000 Münzen</string>
     <string name="tower_milestone_helm">%1$s (Verteidigung +82, Stärke +8)</string>
-    <string name="tower_milestone_pet" formatted="false">Turm Haustir (5% Kampf EP)</string>
-    <string name="tower_milestone_coin_drops_1pct" formatted="false">"+1% Turm Gold "</string>
+    <string name="tower_milestone_pet" formatted="false">Turm Haustier (5% Kampf EP)</string>
+    <string name="tower_milestone_coin_drops_1pct" formatted="false">+1% Turm Gold</string>
     <string name="tower_milestone_plate">%1$s (Verteidigung +132)</string>
     <string name="tower_milestone_coins_100k">100 000 Münzen</string>
     <string name="tower_milestone_legs_set">%1$s (Verteidigung +125) + %2$s (Verteidigung +58) + %3$s (Verteidigung +125)</string>
@@ -1961,7 +1961,7 @@
     <string name="seasonal_claim">Einlösen</string>
     <string name="seasonal_bounty_cooldown">Neue Aufgabe in %1$dm %2$ds</string>
     <string name="seasonal_bounty_reroll">Neue Aufgabe</string>
-    <string name="seasonal_bounty_reroll_confirm">Tausche für %1$s Gold diese Aufgabe durch eine andere? Bestehender Fortrschritt geht verloren.</string>
+    <string name="seasonal_bounty_reroll_confirm">Tausche für %1$s Gold diese Aufgabe durch eine andere? Bestehender Fortschritt geht verloren.</string>
     <string name="seasonal_go">Los</string>
     <string name="seasonal_event_sunspire_solstice_2026_name">Sonnenwende-Sommerturm</string>
     <string name="seasonal_event_sunspire_solstice_2026_banner">Teilgenommen an Sonnenwende-Sommerturm 2026</string>
@@ -2249,7 +2249,7 @@
     <string name="prestige_requires_99">Erreiche Level 99 um einen Prestige durchzuführen (aktuell %1$d).</string>
     <string name="prestige_maxed_cap">Maximales Prestige Level erreicht. Jeder Punkt, den man in dieser Fähigkeit erlangen kann ist deiner.</string>
     <!-- Translator note: %1$s = skill name, %2$d = points awarded -->
-    <string name="prestige_confirm_message_points">Dein %1$s Level wird auf 1 zurückgesetzt und du erhältst %2$d Prestige Punkte, welche du in dem Fähigkeiten-Baum ausgeben kannst. Ausrüstung, für die du nicht mehr die Bedingungen erfüllst, wird ausgetauscht, und nicht eingeforderter %1$s Fortschritt täglicher Herausforderungen wird zurückgesetzt. Zusätzlich bekommst du 2x %1$s EP für 48 Stunden, um deinen Fortschritt zu bechleunigen.</string>
+    <string name="prestige_confirm_message_points">Dein %1$s Level wird auf 1 zurückgesetzt und du erhältst %2$d Prestige Punkte, welche du in dem Fähigkeiten-Baum ausgeben kannst. Ausrüstung, für die du nicht mehr die Bedingungen erfüllst, wird ausgetauscht, und nicht eingeforderter %1$s Fortschritt täglicher Herausforderungen wird zurückgesetzt. Zusätzlich bekommst du 2x %1$s EP für 48 Stunden, um deinen Fortschritt zu beschleunigen.</string>
     <string name="prestige_respec">Punkte zurücksetzen</string>
     <!-- Translator note: %1$s = formatted remaining cooldown -->
     <string name="prestige_respec_available_in">Du kannst deine Punkte erst in %1$s zurücksetzen</string>
