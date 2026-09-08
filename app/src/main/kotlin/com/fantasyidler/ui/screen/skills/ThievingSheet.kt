@@ -1,4 +1,4 @@
-package com.fantasyidler.ui.screen
+package com.fantasyidler.ui.screen.skills
 
 import android.content.Context
 import androidx.compose.foundation.layout.Column
