@@ -634,6 +634,10 @@
     <string name="profile_food_dungeon">Comida (Masmorra)</string>
     <string name="profile_no_food">Nenhuma comida cozida no inventário</string>
     <string name="profile_food_threshold">Começar a Comer em</string>
+    <string name="profile_food_order">Eating order</string> <!-- untranslated -->
+    <string name="food_order_descending">Highest Heal Value First</string> <!-- untranslated -->
+    <string name="food_order_ascending">Lowest Heal Value First</string> <!-- untranslated -->
+    <string name="food_order_least_quantity">Least Quantity First</string> <!-- untranslated -->
     <string name="profile_combat_style">Estilo de Combate</string>
     <!-- Translator note: %1$d = quantity, %2$d = heal value -->
     <string name="profile_food_desc">×%1$d  •  cura %2$d HP</string>

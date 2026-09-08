@@ -626,6 +626,10 @@
     <string name="profile_food_dungeon">Makanan (Penjara Dungeon)</string>
     <string name="profile_no_food">Tidak ada makanan di Inventaris</string>
     <string name="profile_food_threshold">Mulai Makan Saat</string>
+    <string name="profile_food_order">Eating order</string> <!-- untranslated -->
+    <string name="food_order_descending">Highest Heal Value First</string> <!-- untranslated -->
+    <string name="food_order_ascending">Lowest Heal Value First</string> <!-- untranslated -->
+    <string name="food_order_least_quantity">Least Quantity First</string> <!-- untranslated -->
     <string name="profile_combat_style">Gaya Bertarung</string>
     <!-- Translator note: %1$d = quantity, %2$d = heal value -->
     <string name="profile_food_desc">×%1$d  •  heals %2$d HP</string> <!-- untranslated -->

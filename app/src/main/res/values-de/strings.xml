@@ -634,6 +634,10 @@
     <string name="profile_food_dungeon">Essen (Verlies)</string>
     <string name="profile_no_food">Keine gekochten Lebensmittel im Inventar</string>
     <string name="profile_food_threshold">Beginnt zu essen bei</string>
+    <string name="profile_food_order">Eating order</string> <!-- untranslated -->
+    <string name="food_order_descending">Highest Heal Value First</string> <!-- untranslated -->
+    <string name="food_order_ascending">Lowest Heal Value First</string> <!-- untranslated -->
+    <string name="food_order_least_quantity">Least Quantity First</string> <!-- untranslated -->
     <string name="profile_combat_style">Kampfstil</string>
     <!-- Translator note: %1$d = quantity, %2$d = heal value -->
     <string name="profile_food_desc">×%1$d  •  heilt %2$d LP</string>

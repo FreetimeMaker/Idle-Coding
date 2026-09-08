@@ -634,6 +634,10 @@
     <string name="profile_food_dungeon">食物（地牢）</string>
     <string name="profile_no_food">背包中没有已烹饪的食物</string>
     <string name="profile_food_threshold">低于此值时进食</string>
+    <string name="profile_food_order">Eating order</string> <!-- untranslated -->
+    <string name="food_order_descending">Highest Heal Value First</string> <!-- untranslated -->
+    <string name="food_order_ascending">Lowest Heal Value First</string> <!-- untranslated -->
+    <string name="food_order_least_quantity">Least Quantity First</string> <!-- untranslated -->
     <string name="profile_combat_style">战斗风格</string>
     <!-- Translator note: %1$d = quantity, %2$d = heal value -->
     <string name="profile_food_desc">×%1$d  •  恢复 %2$d 生命</string>

@@ -635,6 +635,10 @@
     <string name="profile_food_dungeon">Nourriture (Donjon)</string>
     <string name="profile_no_food">Aucune nourriture cuite dans l\'inventaire</string>
     <string name="profile_food_threshold">Commencer à manger à</string>
+    <string name="profile_food_order">Eating order</string> <!-- untranslated -->
+    <string name="food_order_descending">Highest Heal Value First</string> <!-- untranslated -->
+    <string name="food_order_ascending">Lowest Heal Value First</string> <!-- untranslated -->
+    <string name="food_order_least_quantity">Least Quantity First</string> <!-- untranslated -->
     <string name="profile_combat_style">Style de combat</string>
     <!-- Translator note: %1$d = quantity, %2$d = heal value -->
     <string name="profile_food_desc">×%1$d  •  soigne %2$d PV</string>
