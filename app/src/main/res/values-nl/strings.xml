@@ -1999,6 +1999,7 @@
     <string name="seasonal_event_gloomharvest_2026_banner">Participated in the Gloomharvest 2026</string> <!-- untranslated -->
     <string name="seasonal_minigame_lantern_lights_name">Lantern Lights</string> <!-- untranslated -->
     <string name="seasonal_minigame_sequence_hint">Kijk naar de lantaarns en herhaal de volgorde. Haal ronde %1$d van %2$d om een token te winnen!</string>
+    <string name="seasonal_minigame_sequence_success">Well remembered! +1 token.</string> <!-- untranslated -->
     <string name="seasonal_minigame_sequence_round">Ronde %1$d / %2$d</string>
     <string name="seasonal_minigame_watch">Kijk goed!</string>
     <string name="seasonal_minigame_your_turn">Jouw beurt!</string>

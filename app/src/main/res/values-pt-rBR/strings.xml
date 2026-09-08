@@ -1999,6 +1999,7 @@
     <string name="seasonal_event_gloomharvest_2026_banner">Participated in the Gloomharvest 2026</string> <!-- untranslated -->
     <string name="seasonal_minigame_lantern_lights_name">Lantern Lights</string> <!-- untranslated -->
     <string name="seasonal_minigame_sequence_hint">Observe as lanternas e repita a ordem. Alcance a rodada %1$d de %2$d para ganhar uma ficha!</string>
+    <string name="seasonal_minigame_sequence_success">Well remembered! +1 token.</string> <!-- untranslated -->
     <string name="seasonal_minigame_sequence_round">Rodada %1$d / %2$d</string>
     <string name="seasonal_minigame_watch">Observe!</string>
     <string name="seasonal_minigame_your_turn">Sua vez!</string>

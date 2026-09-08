@@ -126,6 +126,15 @@ internal fun CombatSessionBanner(
             } else session.activityKey
         }
 
+    // Each GameStrings lookup creates a configuration context, and the log rebuild
+    // resolved a name per kill line every half-tick, stalling kill-heavy sessions
+    // (issue #1727). Resolve each enemy key once per session instead.
+    val enemyNames = remember(session.sessionId) { mutableMapOf<String, String>() }
+    fun enemyDisplayName(key: String): String = enemyNames.getOrPut(key) {
+        bosses.firstOrNull { it.id == key }?.let { GameStrings.bossName(context, it.id) }
+            ?: enemies[key]?.let { GameStrings.enemyName(context, key) } ?: key
+    }
+
     var now by remember { mutableLongStateOf(System.currentTimeMillis()) }
     var showAbandonConfirm by remember { mutableStateOf(false) }
     val endsAt = session.endsAt
@@ -300,8 +309,7 @@ internal fun CombatSessionBanner(
                 // tick they actually happened (issue #935).
                 val combatLog = remember(currentFrameIdx, halfTickInFrame) {
                     buildList<CombatLogEntry> {
-                        fun nameOf(key: String) = bosses.firstOrNull { it.id == key }?.let { GameStrings.bossName(context, it.id) }
-                            ?: enemies[key]?.let { GameStrings.enemyName(context, key) } ?: key
+                        fun nameOf(key: String) = enemyDisplayName(key)
                         fun fullHpOf(key: String) = if (!isBoss) enemies[key]?.hp ?: Int.MAX_VALUE else Int.MAX_VALUE
                         var key = ""
                         var hp = 0
@@ -584,9 +592,7 @@ internal fun CombatSessionBanner(
                             Text(
                                 text  = killsSoFar.entries
                                     .sortedByDescending { it.value }
-                                    .joinToString(", ") { (k, v) ->
-                                        "$v ${bosses.firstOrNull { it.id == k }?.let { GameStrings.bossName(context, it.id) } ?: enemies[k]?.let { GameStrings.enemyName(context, k) } ?: k}"
-                                    }
+                                    .joinToString(", ") { (k, v) -> "$v ${enemyDisplayName(k)}" }
                                     + " $defeatedSoFar",
                                 style = MaterialTheme.typography.bodySmall,
                                 color = MaterialTheme.colorScheme.onSecondaryContainer,

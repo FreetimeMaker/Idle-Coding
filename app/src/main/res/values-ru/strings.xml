@@ -2021,6 +2021,7 @@
     <string name="seasonal_event_gloomharvest_2026_banner">Участие в событии Мрачная жатва 2026</string>
     <string name="seasonal_minigame_lantern_lights_name">Огни фонарей</string>
     <string name="seasonal_minigame_sequence_hint">Запомните порядок фонарей и повторите его. Дойдите до раунда %1$d из %2$d, чтобы получить жетон!</string>
+    <string name="seasonal_minigame_sequence_success">Well remembered! +1 token.</string> <!-- untranslated -->
     <string name="seasonal_minigame_sequence_round">Раунд %1$d / %2$d</string>
     <string name="seasonal_minigame_watch">Смотрите внимательно!</string>
     <string name="seasonal_minigame_your_turn">Ваш ход!</string>

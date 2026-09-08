@@ -1064,6 +1064,18 @@ class SkillsViewModel @Inject constructor(
             if (remaining > 0) fills += QuestFillSuggestion(context.withAppLocale().getString(R.string.quest_fill_guild), remaining)
         }
 
+        // Seasonal Event Bounty Board, mirroring CraftingViewModel.computeQuestFills:
+        // without it the rune and log sheets showed no chip for craft bounties (issue #1732).
+        seasonalEventRepo.activeEvent()?.let { event ->
+            for (bounty in seasonalEventRepo.getActiveBounties(flags)) {
+                val task = bounty.task
+                if (task.type != "craft" || task.target != itemKey) continue
+                val remaining = task.amount - bounty.progress
+                if (remaining > 0)
+                    fills += QuestFillSuggestion(GameStrings.seasonalEventName(context, event.id, event.displayName), remaining)
+            }
+        }
+
         return fills.sortedBy { it.qty }
     }
 

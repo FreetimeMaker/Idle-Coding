@@ -2000,6 +2000,7 @@
     <string name="seasonal_event_gloomharvest_2026_banner">A participé à la Sombre Moisson 2026</string>
     <string name="seasonal_minigame_lantern_lights_name">Lumières des Lanternes</string>
     <string name="seasonal_minigame_sequence_hint">Observez les lanternes puis répétez l\'ordre. Atteignez la manche %1$d sur %2$d pour gagner un jeton !</string>
+    <string name="seasonal_minigame_sequence_success">Well remembered! +1 token.</string> <!-- untranslated -->
     <string name="seasonal_minigame_sequence_round">Manche %1$d / %2$d</string>
     <string name="seasonal_minigame_watch">Observez bien !</string>
     <string name="seasonal_minigame_your_turn">À vous !</string>

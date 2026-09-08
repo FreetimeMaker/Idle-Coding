@@ -121,7 +121,9 @@ fun SkillsScreen(
     AppBannerEffect(craftSnackState.snackbarMessage, craftingViewModel::snackbarConsumed)
 
     // onSkillTapped reads uiState.value synchronously, so deep-linking here must wait for isLoading to show correct skill level.
-    var openedInitialSkill by remember { mutableStateOf(false) }
+    // Saveable, not remember: plain remember resets when navigating away and back, replaying
+    // the openSkill deep link and popping its sheet open again uninvited (issue #1725).
+    var openedInitialSkill by rememberSaveable { mutableStateOf(false) }
     LaunchedEffect(openSkill, state.isLoading) {
         if (openSkill != null && !state.isLoading && !openedInitialSkill) {
             openedInitialSkill = true

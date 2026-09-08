@@ -1999,6 +1999,7 @@
     <string name="seasonal_event_gloomharvest_2026_banner">Hai partecipato all\'evento Raccolto Oscuro 2026</string>
     <string name="seasonal_minigame_lantern_lights_name">Luci delle Lanterne</string>
     <string name="seasonal_minigame_sequence_hint">Osserva le lanterne e ripeti l\'ordine d\'accensione. Raggiungi il round %1$d su %2$d per vincere un gettone!</string>
+    <string name="seasonal_minigame_sequence_success">Well remembered! +1 token.</string> <!-- untranslated -->
     <string name="seasonal_minigame_sequence_round">Round %1$d / %2$d</string>
     <string name="seasonal_minigame_watch">Osserva!</string>
     <string name="seasonal_minigame_your_turn">Tocca a te!</string>

@@ -1999,6 +1999,7 @@
     <string name="seasonal_event_gloomharvest_2026_banner">参与了2026暗潮收割活动</string>
     <string name="seasonal_minigame_lantern_lights_name">灯笼之光</string>
     <string name="seasonal_minigame_sequence_hint">观察灯笼，然后重复顺序。达到第 %1$d / %2$d 轮即可获得代币！</string>
+    <string name="seasonal_minigame_sequence_success">Well remembered! +1 token.</string> <!-- untranslated -->
     <string name="seasonal_minigame_sequence_round">第 %1$d / %2$d 轮</string>
     <string name="seasonal_minigame_watch">仔细看！</string>
     <string name="seasonal_minigame_your_turn">轮到你了！</string>
