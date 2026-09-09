@@ -15,7 +15,7 @@ serialization       = "1.7.1"
 
 # Testing
 junit               = "4.13.2"
-robolectric         = "4.12.2"
+robolectric         = "4.16.1"
 androidxTest        = "1.6.1"
 androidxTestJunit   = "1.2.1"
 
