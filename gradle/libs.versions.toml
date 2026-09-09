@@ -16,7 +16,7 @@ serialization       = "1.7.1"
 # Testing
 junit               = "4.13.2"
 robolectric         = "4.12.2"
-androidxTest        = "1.6.1"
+androidxTest        = "1.7.0"
 androidxTestJunit   = "1.2.1"
 
 [libraries]
