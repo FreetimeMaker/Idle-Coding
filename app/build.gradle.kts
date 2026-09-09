@@ -8,7 +8,7 @@ plugins {
 }
 
 android {
-    namespace = "com.fantasyidler"
+    namespace = "com.idlecoding"
     compileSdk = 35
 
     defaultConfig {

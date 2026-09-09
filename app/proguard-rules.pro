@@ -3,11 +3,11 @@
 -dontnote kotlinx.serialization.AnnotationsKt
 -keepclassmembers class kotlinx.serialization.json.** { *** Companion; }
 -keepclasseswithmembers class kotlinx.serialization.** { kotlinx.serialization.KSerializer serializer(...); }
--keep,includedescriptorclasses class com.fantasyidler.**$$serializer { *; }
--keepclassmembers class com.fantasyidler.** {
+-keep,includedescriptorclasses class com.idlecoding.**$$serializer { *; }
+-keepclassmembers class com.idlecoding.** {
     *** Companion;
 }
--keepclasseswithmembers class com.fantasyidler.** {
+-keepclasseswithmembers class com.idlecoding.** {
     kotlinx.serialization.KSerializer serializer(...);
 }
 

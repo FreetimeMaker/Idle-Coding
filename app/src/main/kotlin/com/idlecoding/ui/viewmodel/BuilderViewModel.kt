@@ -1,0 +1,115 @@
+package com.idlecoding.ui.viewmodel
+
+import com.idlecoding.util.withAppLocale
+
+import android.content.Context
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
+import com.idlecoding.R
+import com.idlecoding.data.model.PlayerFlags
+import com.idlecoding.data.model.Skills
+import com.idlecoding.repository.BoostRepository
+import com.idlecoding.repository.GameDataRepository
+import com.idlecoding.repository.PlayerRepository
+import com.idlecoding.repository.TownRepository
+import com.idlecoding.repository.UpgradeBuildingResult
+import dagger.hilt.android.lifecycle.HiltViewModel
+import dagger.hilt.android.qualifiers.ApplicationContext
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.SharingStarted
+import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.combine
+import kotlinx.coroutines.flow.stateIn
+import kotlinx.coroutines.flow.update
+import kotlinx.coroutines.launch
+import kotlinx.serialization.json.Json
+import javax.inject.Inject
+
+data class BuilderUiState(
+    val isLoading: Boolean = true,
+    val constructionLevel: Int = 1,
+    val extraDiscountPerMille: Int = 0,
+    val coins: Long = 0L,
+    val inventory: Map<String, Int> = emptyMap(),
+    val innTier: Int = 0,
+    val guildHallTier: Int = 0,
+    val churchTier: Int = 0,
+    val fairgroundsTier: Int = 0,
+    val gardenTier: Int = 0,
+    val queueMasterTier: Int = 0,
+    val capeRackTier: Int = 0,
+    val artisansWorkshopTier: Int = 0,
+    val chronosSpireTier: Int = 0,
+    val snackbarMessage: String? = null,
+)
+
+@HiltViewModel
+class BuilderViewModel @Inject constructor(
+    val gameData: GameDataRepository,
+    val townRepo: TownRepository,
+    private val boostRepo: BoostRepository,
+    private val playerRepo: PlayerRepository,
+    @ApplicationContext private val context: Context,
+    private val json: Json,
+) : ViewModel() {
+
+    private val _extra = MutableStateFlow(BuilderUiState())
+
+    val uiState: StateFlow<BuilderUiState> = combine(
+        playerRepo.playerFlow,
+        _extra,
+    ) { player, extra ->
+        if (player == null) return@combine extra.copy(isLoading = true)
+        val flags: PlayerFlags          = json.decodeFromString(player.flags)
+        val levels: Map<String, Int>    = json.decodeFromString(player.skillLevels)
+        val inventory: Map<String, Int> = json.decodeFromString(player.inventory)
+        extra.copy(
+            isLoading         = false,
+            constructionLevel = levels[Skills.CONSTRUCTION] ?: 1,
+            extraDiscountPerMille = boostRepo.builderDiscountPerMille(flags),
+            coins             = player.coins,
+            inventory         = inventory,
+            innTier           = flags.townBuildingTiers["inn"] ?: 0,
+            guildHallTier     = flags.townBuildingTiers["guild_hall"] ?: 0,
+            churchTier        = flags.townBuildingTiers["church"] ?: 0,
+            fairgroundsTier   = flags.townBuildingTiers["fairgrounds"] ?: 0,
+            gardenTier        = flags.townBuildingTiers["garden"] ?: 0,
+            queueMasterTier   = flags.townBuildingTiers["queue_master"] ?: 0,
+            capeRackTier      = flags.townBuildingTiers["cape_rack"] ?: 0,
+            artisansWorkshopTier = flags.townBuildingTiers["artisans_workshop"] ?: 0,
+            chronosSpireTier  = flags.townBuildingTiers["chronos_spire"] ?: 0,
+        )
+    }.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), BuilderUiState())
+
+    fun upgrade(buildingKey: String) {
+        viewModelScope.launch {
+            val currentTier = when (buildingKey) {
+                "inn"               -> uiState.value.innTier
+                "guild_hall"        -> uiState.value.guildHallTier
+                "fairgrounds"       -> uiState.value.fairgroundsTier
+                "garden"            -> uiState.value.gardenTier
+                "queue_master"      -> uiState.value.queueMasterTier
+                "cape_rack"         -> uiState.value.capeRackTier
+                "artisans_workshop" -> uiState.value.artisansWorkshopTier
+                "chronos_spire"     -> uiState.value.chronosSpireTier
+                else                -> uiState.value.churchTier
+            }
+            val def = gameData.townBuildings[buildingKey]
+            when (townRepo.upgradeBuilding(buildingKey)) {
+                UpgradeBuildingResult.Success ->
+                    _extra.update { it.copy(snackbarMessage = context.withAppLocale().getString(R.string.town_upgrade_success)) }
+                UpgradeBuildingResult.InsufficientLevel -> {
+                    val req = def?.tiers?.getOrNull(currentTier)?.constructionLevelRequired ?: 0
+                    _extra.update { it.copy(snackbarMessage = context.withAppLocale().getString(R.string.town_upgrade_fail_level, req)) }
+                }
+                UpgradeBuildingResult.InsufficientCoins ->
+                    _extra.update { it.copy(snackbarMessage = context.withAppLocale().getString(R.string.town_upgrade_fail_coins)) }
+                UpgradeBuildingResult.InsufficientMaterials ->
+                    _extra.update { it.copy(snackbarMessage = context.withAppLocale().getString(R.string.town_upgrade_fail_mats)) }
+                else -> {}
+            }
+        }
+    }
+
+    fun snackbarConsumed() = _extra.update { it.copy(snackbarMessage = null) }
+}

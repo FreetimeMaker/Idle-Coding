@@ -1,0 +1,79 @@
+package com.idlecoding.ui.viewmodel
+
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
+import com.idlecoding.data.model.PlayerFlags
+import com.idlecoding.data.model.Skills
+import com.idlecoding.repository.DailyQuestRepository
+import com.idlecoding.repository.GameDataRepository
+import com.idlecoding.repository.PlayerRepository
+import com.idlecoding.repository.QuestRepository
+import com.idlecoding.repository.WeeklyQuestRepository
+import com.idlecoding.simulator.PrestigeBoosts
+import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.flow.SharingStarted
+import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.combine
+import kotlinx.coroutines.flow.map
+import kotlinx.coroutines.flow.stateIn
+import kotlinx.serialization.json.Json
+import javax.inject.Inject
+
+@HiltViewModel
+class NavBadgeViewModel @Inject constructor(
+    questRepo: QuestRepository,
+    gameData: GameDataRepository,
+    playerRepo: PlayerRepository,
+    dailyQuestRepo: DailyQuestRepository,
+    weeklyQuestRepo: WeeklyQuestRepository,
+    private val json: Json,
+) : ViewModel() {
+
+    val questsClaimableCount: StateFlow<Int> = combine(
+        questRepo.observeProgress(),
+        playerRepo.playerFlow,
+    ) { progressList, player ->
+        val progressMap = progressList.associateBy { it.questId }
+        val regularCount = gameData.quests.count { (id, quest) ->
+            val prog = progressMap[id]
+            if (prog?.completed == true) return@count false
+            val prereq = quest.requiresPrevious
+            val prereqDone = prereq == null || progressMap[prereq]?.completed == true
+            prereqDone && (prog?.progress ?: 0) >= quest.amount
+        }
+        if (player == null) return@combine regularCount
+        val flags: PlayerFlags = json.decodeFromString(player.flags)
+        val dailyCount = dailyQuestRepo.getActiveDailyQuests(flags)
+            .count { it.progress >= it.template.amount && !it.claimed }
+        val weeklyCount = weeklyQuestRepo.getActiveWeeklyQuests(flags)
+            .count { it.progress >= it.template.amount && !it.claimed }
+        regularCount + dailyCount + weeklyCount
+    }.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), 0)
+
+    private val skillsReadyToPrestige: StateFlow<Set<String>> = playerRepo.playerFlow
+        .map { player ->
+            if (player == null) return@map emptySet()
+            val flags: PlayerFlags = json.decodeFromString(player.flags)
+            val levels: Map<String, Int> = json.decodeFromString(player.skillLevels)
+            Skills.ALL.filterTo(mutableSetOf()) { skill ->
+                (levels[skill] ?: 1) >= 99 &&
+                    PrestigeBoosts.prestigeHasReward(gameData.prestigeTrees, flags, skill)
+            }
+        }
+        .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), emptySet())
+
+    val hasCombatPrestige: StateFlow<Boolean> = skillsReadyToPrestige
+        .map { ready -> COMBAT_PRESTIGE_SKILLS.any { it in ready } }
+        .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), false)
+
+    val hasSkillPrestige: StateFlow<Boolean> = skillsReadyToPrestige
+        .map { ready -> ready.any { it !in COMBAT_PRESTIGE_SKILLS } }
+        .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), false)
+
+    private companion object {
+        val COMBAT_PRESTIGE_SKILLS = setOf(
+            Skills.ATTACK, Skills.STRENGTH, Skills.DEFENSE,
+            Skills.RANGED, Skills.MAGIC, Skills.HITPOINTS,
+        )
+    }
+}

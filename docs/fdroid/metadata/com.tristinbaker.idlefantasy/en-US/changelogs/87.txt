@@ -1,8 +1,0 @@
-• Fix agility prestige not reducing session time when starting a new session directly from the Skills screen
-• Fix worker efficiency multiplier incorrectly scaling crafting output (bars, planks, etc.) — efficiency now only applies to gathering
-• Fix bronze pickaxe disappearing from the Armory after selling; starting tools are always marked as found
-• Fix Hide Completed toggle resetting when leaving and returning to a Guild Hall screen
-• Fix gathering tool multipliers rounding incorrectly; iron pickaxe (1.5x) and other fractional-multiplier tools now give the correct ore/log/fish count per session
-• Fix 2H swords auto-unequipping the shield when equipped (and vice versa)
-• Fix dungeon and boss safety ratings ignoring equipped food when the food's heal value exceeds the player's current HP deficit
-• Add Deactivate button to the Church screen to cancel an active blessing early

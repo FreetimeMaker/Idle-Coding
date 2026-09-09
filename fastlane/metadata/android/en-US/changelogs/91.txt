@@ -1,8 +1,0 @@
-• Fix guild daily quest progress resetting mid-day when a new guild was unlocked; other guilds' progress is now preserved
-• Fix slayer weapon picker showing Attack pre-selected regardless of last-used weapon slot
-• Increase dark wizard spawn weight in Undead Crypt so slayer tasks complete more reliably
-• Fix enhanced potions being included in Sell Junk
-• Fix fish cooking quests appearing as crafting suggestions on non-fish cooking screens
-• Fix guild quest crafting suggestions showing locked quests and incorrect amounts when the Guild Hall has been upgraded
-• Fix pick-a-cup cups not shuffling after the reveal; gem now moves to a random position before you guess
-• Add haptic feedback to all carnival game buttons (ring toss, hammer strike, colour sequence, item appraisal, pick-a-cup, higher-or-lower)

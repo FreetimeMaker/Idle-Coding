@@ -1,0 +1,123 @@
+package com.idlecoding.ui.viewmodel
+
+import com.idlecoding.util.withAppLocale
+
+import android.content.Context
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
+import com.idlecoding.R
+import com.idlecoding.data.json.BlessingData
+import com.idlecoding.data.model.PlayerFlags
+import com.idlecoding.data.model.Skills
+import com.idlecoding.repository.BlessingActivateResult
+import com.idlecoding.repository.BoostRepository
+import com.idlecoding.repository.ChurchRepository
+import com.idlecoding.repository.GameDataRepository
+import com.idlecoding.repository.blessingPrayerCapeMult
+import com.idlecoding.repository.PlayerRepository
+import com.idlecoding.repository.TownRepository
+import dagger.hilt.android.lifecycle.HiltViewModel
+import dagger.hilt.android.qualifiers.ApplicationContext
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.SharingStarted
+import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.combine
+import kotlinx.coroutines.flow.stateIn
+import kotlinx.coroutines.flow.update
+import kotlinx.coroutines.launch
+import kotlinx.serialization.json.Json
+import javax.inject.Inject
+
+data class ChurchUiState(
+    val isLoading: Boolean = true,
+    val prayerLevel: Int = 1,
+    val blessingDuration: Long = 0,
+    val allBlessings: List<BlessingData> = emptyList(),
+    val unlockedBlessingKeys: Set<String> = emptySet(),
+    val activeBlessing: BlessingData? = null,
+    val activeBlessingRemainingMs: Long = 0L,
+    val prayerCapeMult: Float = 1f,
+    val totalBoneEquivalent: Int = 0,
+    val totalBoneCount: Int = 0,
+    val showDeactivateConfirm: Boolean = false,
+    val snackbarMessage: String? = null,
+    /** Ironman characters can only use defensive blessings. */
+    val ironman: Boolean = false,
+    /** Bone-cost multiplier from prestige (gnome Trickster's Favor). */
+    val blessingCostMult: Double = 1.0,
+)
+
+@HiltViewModel
+class ChurchViewModel @Inject constructor(
+    private val boostRepo: BoostRepository,
+    val townRepo: TownRepository,
+    private val playerRepo: PlayerRepository,
+    private val gameData: GameDataRepository,
+    private val churchRepo: ChurchRepository,
+    private val json: Json,
+    @ApplicationContext private val context: Context,
+) : ViewModel() {
+
+    private val _extra = MutableStateFlow(ChurchUiState())
+
+    val uiState: StateFlow<ChurchUiState> = combine(
+        playerRepo.playerFlow,
+        _extra,
+    ) { player, extra ->
+        if (player == null) return@combine extra.copy(isLoading = true)
+        val flags: PlayerFlags          = json.decodeFromString(player.flags)
+        val levels: Map<String, Int>    = json.decodeFromString(player.skillLevels)
+        val inventory: Map<String, Int> = json.decodeFromString(player.inventory)
+        val prayerLevel = levels[Skills.PRAYER] ?: 1
+        val prayerCapeMult = blessingPrayerCapeMult(player, flags, gameData)
+        val active      = ChurchRepository.activeBlessing(flags)
+        val remaining   = if (active != null) (flags.activeBlessingExpiresAt - System.currentTimeMillis()).coerceAtLeast(0L) else 0L
+        extra.copy(
+            isLoading                 = false,
+            prayerLevel               = prayerLevel,
+            blessingDuration          = (townRepo.blessingDurationMs(flags) * boostRepo.blessingDurationMultiplier(flags)).toLong(),
+            blessingCostMult          = boostRepo.blessingCostMultiplier(flags),
+            allBlessings              = ChurchRepository.ALL_BLESSINGS,
+            unlockedBlessingKeys      = churchRepo.blessingsForLevel(prayerLevel).map { it.key }.toSet(),
+            activeBlessing            = active,
+            activeBlessingRemainingMs = remaining,
+            prayerCapeMult            = prayerCapeMult,
+            totalBoneEquivalent       = ChurchRepository.totalBoneEquivalent(inventory),
+            totalBoneCount            = ChurchRepository.totalBoneCount(inventory),
+            ironman                   = flags.ironman,
+        )
+    }.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), ChurchUiState())
+
+    fun activateBlessing(key: String) {
+        viewModelScope.launch {
+            when (val result = churchRepo.activateBlessing(key)) {
+                is BlessingActivateResult.Success -> {}
+                is BlessingActivateResult.AlreadyActive ->
+                    _extra.update { it.copy(snackbarMessage = context.withAppLocale().getString(R.string.church_already_active)) }
+                is BlessingActivateResult.NotEnoughBones ->
+                    _extra.update { it.copy(snackbarMessage = context.withAppLocale().getString(R.string.church_not_enough_bones, result.needed)) }
+                is BlessingActivateResult.LevelTooLow ->
+                    _extra.update { it.copy(snackbarMessage = context.withAppLocale().getString(R.string.church_locked_level, result.requiredLevel)) }
+                is BlessingActivateResult.IronmanBlocked ->
+                    _extra.update { it.copy(snackbarMessage = context.withAppLocale().getString(R.string.ironman_blessing_blocked)) }
+            }
+        }
+    }
+
+    fun deactivateBlessing() {
+        _extra.update { it.copy(showDeactivateConfirm = true) }
+    }
+
+    fun confirmDeactivate() {
+        _extra.update { it.copy(showDeactivateConfirm = false) }
+        viewModelScope.launch {
+            churchRepo.deactivateBlessing()
+        }
+    }
+
+    fun dismissDeactivate() {
+        _extra.update { it.copy(showDeactivateConfirm = false) }
+    }
+
+    fun snackbarConsumed() = _extra.update { it.copy(snackbarMessage = null) }
+}
