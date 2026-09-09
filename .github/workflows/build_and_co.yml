@@ -80,7 +80,7 @@ jobs:
         id: sign_apk
         run: |
           UNSIGNED_APK="app/build/outputs/apk/release/app-release-unsigned.apk"
-          SIGNED_APK="SSMPC-v${{ needs.prepare_android_app.outputs.version }}.apk"
+          SIGNED_APK="Idle-Coding-v${{ needs.prepare_android_app.outputs.version }}.apk"
           KEYSTORE_PATH="./keystore/SuperSMP-Companion-KeyStore.jks"
 
           echo "==> Signiere APK: $SIGNED_APK"
@@ -103,8 +103,8 @@ jobs:
       - name: Upload APK as build artifact
         uses: actions/upload-artifact@v7
         with:
-          name: SSMPC-v${{ needs.prepare_android_app.outputs.version }}.apk
-          path: SSMPC-v${{ needs.prepare_android_app.outputs.version }}.apk
+          name: Idle-Coding-v${{ needs.prepare_android_app.outputs.version }}.apk
+          path: Idle-Coding-v${{ needs.prepare_android_app.outputs.version }}.apk
           if-no-files-found: error
           retention-days: 90
 
@@ -114,6 +114,6 @@ jobs:
         with:
           tag_name: v${{ needs.prepare_android_app.outputs.version }}
           files: |
-            SSMPC-v${{ needs.prepare_android_app.outputs.version }}.apk
+            Idle-Coding-v${{ needs.prepare_android_app.outputs.version }}.apk
           draft: false
           generate_release_notes: true
