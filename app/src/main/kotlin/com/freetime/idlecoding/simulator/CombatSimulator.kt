@@ -1,10 +1,10 @@
-package com.idlecoding.simulator
+package com.freetime.idlecoding.simulator
 
-import com.idlecoding.data.json.BossData
-import com.idlecoding.data.json.DungeonData
-import com.idlecoding.data.json.EnemyData
-import com.idlecoding.data.model.SessionFrame
-import com.idlecoding.data.model.Skills
+import com.freetime.idlecoding.data.json.BossData
+import com.freetime.idlecoding.data.json.DungeonData
+import com.freetime.idlecoding.data.json.EnemyData
+import com.freetime.idlecoding.data.model.SessionFrame
+import com.freetime.idlecoding.data.model.Skills
 import kotlin.math.max
 import kotlin.math.roundToInt
 import kotlin.random.Random

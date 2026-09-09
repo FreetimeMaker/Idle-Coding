@@ -1,4 +1,4 @@
-package com.idlecoding.ui.components
+package com.freetime.idlecoding.ui.components
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -29,10 +29,10 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import com.idlecoding.R
-import com.idlecoding.data.model.Skills
-import com.idlecoding.simulator.XpTable
-import com.idlecoding.util.GameStrings
+import com.freetime.idlecoding.R
+import com.freetime.idlecoding.data.model.Skills
+import com.freetime.idlecoding.simulator.XpTable
+import com.freetime.idlecoding.util.GameStrings
 import java.util.Locale
 
 @Composable

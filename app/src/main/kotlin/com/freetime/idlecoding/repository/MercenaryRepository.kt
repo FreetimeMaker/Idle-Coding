@@ -1,9 +1,9 @@
-package com.idlecoding.repository
+package com.freetime.idlecoding.repository
 
-import com.idlecoding.data.json.MercenaryData
-import com.idlecoding.data.model.HiredMercenary
-import com.idlecoding.data.model.PlayerFlags
-import com.idlecoding.simulator.CombatSimulator
+import com.freetime.idlecoding.data.json.MercenaryData
+import com.freetime.idlecoding.data.model.HiredMercenary
+import com.freetime.idlecoding.data.model.PlayerFlags
+import com.freetime.idlecoding.simulator.CombatSimulator
 import java.util.Calendar
 import javax.inject.Inject
 import javax.inject.Singleton

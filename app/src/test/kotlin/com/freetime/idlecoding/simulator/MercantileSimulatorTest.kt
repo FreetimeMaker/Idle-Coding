@@ -1,15 +1,15 @@
 package com.freetime.idlecoding.simulator
 
-import com.idlecoding.data.json.CoinRange
-import com.idlecoding.data.json.TradeRouteData
-import com.idlecoding.data.json.XpRange
-import com.idlecoding.simulator.MercantileSimulator
+import com.freetime.idlecoding.data.json.CoinRange
+import com.freetime.idlecoding.data.json.TradeRouteData
+import com.freetime.idlecoding.data.json.XpRange
+import com.freetime.idlecoding.simulator.MercantileSimulator
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue
 import org.junit.Test
 import kotlin.random.Random
 
-/** Outcome tests for [com.idlecoding.simulator.MercantileSimulator] using the injected `random` seam. */
+/** Outcome tests for [com.freetime.idlecoding.simulator.MercantileSimulator] using the injected `random` seam. */
 class MercantileSimulatorTest {
 
     private fun route(xp: XpRange, coins: CoinRange) = TradeRouteData(

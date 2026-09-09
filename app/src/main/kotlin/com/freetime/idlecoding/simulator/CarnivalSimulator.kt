@@ -1,6 +1,6 @@
-package com.idlecoding.simulator
+package com.freetime.idlecoding.simulator
 
-import com.idlecoding.data.model.SessionFrame
+import com.freetime.idlecoding.data.model.SessionFrame
 import kotlin.random.Random
 
 object CarnivalSimulator {

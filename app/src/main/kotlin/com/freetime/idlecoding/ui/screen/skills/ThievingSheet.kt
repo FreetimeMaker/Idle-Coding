@@ -1,4 +1,4 @@
-package com.idlecoding.ui.screen.skills
+package com.freetime.idlecoding.ui.screen.skills
 
 import android.content.Context
 import androidx.compose.foundation.layout.Column
@@ -12,11 +12,11 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import com.idlecoding.R
-import com.idlecoding.data.json.ThievingNpcData
-import com.idlecoding.data.model.Skills
-import com.idlecoding.util.GameStrings
-import com.idlecoding.ui.viewmodel.QuestIndicator
+import com.freetime.idlecoding.R
+import com.freetime.idlecoding.data.json.ThievingNpcData
+import com.freetime.idlecoding.data.model.Skills
+import com.freetime.idlecoding.util.GameStrings
+import com.freetime.idlecoding.ui.viewmodel.QuestIndicator
 
 
 @Composable

@@ -1,4 +1,4 @@
-package com.idlecoding.data.json
+package com.freetime.idlecoding.data.json
 
 enum class BlessingType { XP, DEFENSE, COINS }
 

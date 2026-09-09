@@ -1,4 +1,4 @@
-package com.idlecoding.repository
+package com.freetime.idlecoding.repository
 
 import android.content.Context
 import android.content.res.Configuration
@@ -6,14 +6,14 @@ import androidx.compose.material3.ColorScheme
 import androidx.compose.material3.darkColorScheme
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.ui.graphics.Color
-import com.idlecoding.data.db.dao.CustomThemeDao
-import com.idlecoding.data.json.ColourSchemeParameter
-import com.idlecoding.data.json.ColourSchemeParameter.*
-import com.idlecoding.data.json.ThemeData
-import com.idlecoding.data.model.CustomTheme
-import com.idlecoding.data.model.ThemeBase
-import com.idlecoding.util.ColorContrast
-import com.idlecoding.util.toTitleCase
+import com.freetime.idlecoding.data.db.dao.CustomThemeDao
+import com.freetime.idlecoding.data.json.ColourSchemeParameter
+import com.freetime.idlecoding.data.json.ColourSchemeParameter.*
+import com.freetime.idlecoding.data.json.ThemeData
+import com.freetime.idlecoding.data.model.CustomTheme
+import com.freetime.idlecoding.data.model.ThemeBase
+import com.freetime.idlecoding.util.ColorContrast
+import com.freetime.idlecoding.util.toTitleCase
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.flow.Flow
 import kotlinx.serialization.encodeToString

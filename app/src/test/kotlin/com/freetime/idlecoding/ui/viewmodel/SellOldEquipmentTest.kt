@@ -1,15 +1,15 @@
 package com.freetime.idlecoding.ui.viewmodel
 
-import com.idlecoding.data.json.EquipmentData
-import com.idlecoding.data.model.EquipSlot
-import com.idlecoding.ui.viewmodel.ShopViewModel
+import com.freetime.idlecoding.data.json.EquipmentData
+import com.freetime.idlecoding.data.model.EquipSlot
+import com.freetime.idlecoding.ui.viewmodel.ShopViewModel
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
 import org.junit.Test
 
 /**
- * Tests for [com.idlecoding.ui.viewmodel.ShopViewModel.Companion.computeOldEquipmentToSell].
+ * Tests for [com.freetime.idlecoding.ui.viewmodel.ShopViewModel.Companion.computeOldEquipmentToSell].
  *
  * Sell Old Gear sells every unequipped equippable: since the keep-one-of-each toggle
  * exists, gear no longer has to be strictly outclassed to be sellable. Protected always:

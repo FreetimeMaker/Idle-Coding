@@ -1,4 +1,4 @@
-package com.idlecoding.ui.screen
+package com.freetime.idlecoding.ui.screen
 
 import android.content.Context
 import android.graphics.BitmapFactory
@@ -52,16 +52,16 @@ import androidx.compose.ui.graphics.ImageBitmap
 import androidx.compose.ui.graphics.asImageBitmap
 import androidx.compose.ui.graphics.drawscope.DrawScope
 import androidx.compose.ui.platform.LocalContext
-import com.idlecoding.util.formatDurationMs
-import com.idlecoding.util.GameStrings
+import com.freetime.idlecoding.util.formatDurationMs
+import com.freetime.idlecoding.util.GameStrings
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.IntSize
 import androidx.compose.ui.unit.dp
-import com.idlecoding.BuildConfig
-import com.idlecoding.R
-import com.idlecoding.ui.theme.ScaledSheetContent
+import com.freetime.idlecoding.BuildConfig
+import com.freetime.idlecoding.R
+import com.freetime.idlecoding.ui.theme.ScaledSheetContent
 
 // ── Face-crop region within each 64×36 sprite frame ─────────────────────────
 private const val FACE_X = 13

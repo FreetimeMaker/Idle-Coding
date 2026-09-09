@@ -1,4 +1,4 @@
-package com.idlecoding.data.model
+package com.freetime.idlecoding.data.model
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
@@ -16,7 +16,7 @@ enum class ThemeBase {
  * Theme entity for management of application themes.
  *
  * Complex fields are stored as JSON strings. Use
- * [com.idlecoding.repository.ThemeRepository] to read and write typed domain objects
+ * [com.freetime.idlecoding.repository.ThemeRepository] to read and write typed domain objects
  * rather than touching these raw columns directly.
  */
 @Entity(tableName = "themes")
@@ -35,7 +35,7 @@ data class CustomTheme(
     @ColumnInfo(name = "colours")
     val colours: String = "{}",
 
-    /** JSON: Map<String, String> — [com.idlecoding.data.json.ColourSchemeParameter] → colour name. */
+    /** JSON: Map<String, String> — [com.freetime.idlecoding.data.json.ColourSchemeParameter] → colour name. */
     @ColumnInfo(name = "scheme")
     val scheme: String = "{}",
 )

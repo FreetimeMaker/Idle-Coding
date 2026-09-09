@@ -1,4 +1,4 @@
-package com.idlecoding.ui.screen
+package com.freetime.idlecoding.ui.screen
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
@@ -53,13 +53,13 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import com.idlecoding.R
-import com.idlecoding.repository.SlotInfo
-import com.idlecoding.ui.viewmodel.SaveSlotsViewModel
-import com.idlecoding.ui.viewmodel.combatLevelFrom
-import com.idlecoding.ui.viewmodel.totalLevelFrom
-import com.idlecoding.util.formatCoins
-import com.idlecoding.util.formatDurationMs
+import com.freetime.idlecoding.R
+import com.freetime.idlecoding.repository.SlotInfo
+import com.freetime.idlecoding.ui.viewmodel.SaveSlotsViewModel
+import com.freetime.idlecoding.ui.viewmodel.combatLevelFrom
+import com.freetime.idlecoding.ui.viewmodel.totalLevelFrom
+import com.freetime.idlecoding.util.formatCoins
+import com.freetime.idlecoding.util.formatDurationMs
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

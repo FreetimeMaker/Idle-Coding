@@ -1,12 +1,12 @@
-package com.idlecoding.repository
+package com.freetime.idlecoding.repository
 
-import com.idlecoding.util.withAppLocale
+import com.freetime.idlecoding.util.withAppLocale
 
 import android.content.Context
-import com.idlecoding.R
-import com.idlecoding.data.db.dao.QuestProgressDao
-import com.idlecoding.data.model.PlayerFlags
-import com.idlecoding.ui.viewmodel.TitleCatalog
+import com.freetime.idlecoding.R
+import com.freetime.idlecoding.data.db.dao.QuestProgressDao
+import com.freetime.idlecoding.data.model.PlayerFlags
+import com.freetime.idlecoding.ui.viewmodel.TitleCatalog
 import javax.inject.Inject
 import javax.inject.Singleton
 

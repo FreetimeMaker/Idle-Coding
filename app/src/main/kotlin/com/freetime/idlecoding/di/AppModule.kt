@@ -1,4 +1,4 @@
-package com.idlecoding.di
+package com.freetime.idlecoding.di
 
 import dagger.Module
 import dagger.Provides

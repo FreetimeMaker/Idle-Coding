@@ -1,4 +1,4 @@
-package com.idlecoding.ui.screen
+package com.freetime.idlecoding.ui.screen
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
@@ -45,16 +45,16 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
-import com.idlecoding.R
-import com.idlecoding.data.json.DungeonData
-import com.idlecoding.data.json.EnemyData
-import com.idlecoding.data.json.EquipmentData
-import com.idlecoding.data.json.SpellData
-import com.idlecoding.data.model.EquipSlot
-import com.idlecoding.ui.viewmodel.CombatViewModel.Companion.MAX_DUNGEON_REPEAT_COUNT
-import com.idlecoding.ui.viewmodel.combatLevelFrom
-import com.idlecoding.util.GameStrings
-import com.idlecoding.util.toTitleCase
+import com.freetime.idlecoding.R
+import com.freetime.idlecoding.data.json.DungeonData
+import com.freetime.idlecoding.data.json.EnemyData
+import com.freetime.idlecoding.data.json.EquipmentData
+import com.freetime.idlecoding.data.json.SpellData
+import com.freetime.idlecoding.data.model.EquipSlot
+import com.freetime.idlecoding.ui.viewmodel.CombatViewModel.Companion.MAX_DUNGEON_REPEAT_COUNT
+import com.freetime.idlecoding.ui.viewmodel.combatLevelFrom
+import com.freetime.idlecoding.util.GameStrings
+import com.freetime.idlecoding.util.toTitleCase
 
 // ---------------------------------------------------------------------------
 // Dungeon info / start sheet

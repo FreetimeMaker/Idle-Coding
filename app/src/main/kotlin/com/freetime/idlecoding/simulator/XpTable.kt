@@ -1,4 +1,4 @@
-package com.idlecoding.simulator
+package com.freetime.idlecoding.simulator
 
 import kotlin.math.floor
 import kotlin.math.pow

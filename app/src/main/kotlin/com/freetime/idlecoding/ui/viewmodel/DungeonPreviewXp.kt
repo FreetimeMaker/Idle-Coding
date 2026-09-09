@@ -1,17 +1,17 @@
-package com.idlecoding.ui.viewmodel
+package com.freetime.idlecoding.ui.viewmodel
 
-import com.idlecoding.data.json.SpellData
-import com.idlecoding.data.model.EquipSlot
-import com.idlecoding.data.model.OwnedPet
-import com.idlecoding.data.model.PlayerFlags
-import com.idlecoding.data.model.Skills
-import com.idlecoding.repository.BoostRepository
-import com.idlecoding.repository.ChurchRepository
-import com.idlecoding.repository.GameDataRepository
-import com.idlecoding.repository.TownRepository
-import com.idlecoding.repository.blessingPrayerCapeMult
-import com.idlecoding.simulator.CombatSimulator
-import com.idlecoding.simulator.HeirloomStats
+import com.freetime.idlecoding.data.json.SpellData
+import com.freetime.idlecoding.data.model.EquipSlot
+import com.freetime.idlecoding.data.model.OwnedPet
+import com.freetime.idlecoding.data.model.PlayerFlags
+import com.freetime.idlecoding.data.model.Skills
+import com.freetime.idlecoding.repository.BoostRepository
+import com.freetime.idlecoding.repository.ChurchRepository
+import com.freetime.idlecoding.repository.GameDataRepository
+import com.freetime.idlecoding.repository.TownRepository
+import com.freetime.idlecoding.repository.blessingPrayerCapeMult
+import com.freetime.idlecoding.simulator.CombatSimulator
+import com.freetime.idlecoding.simulator.HeirloomStats
 import kotlinx.serialization.json.Json
 
 internal val PREVIEW_ARROW_TIERS = listOf(

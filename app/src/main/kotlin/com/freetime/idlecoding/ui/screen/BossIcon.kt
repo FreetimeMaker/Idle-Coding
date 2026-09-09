@@ -1,4 +1,4 @@
-package com.idlecoding.ui.screen
+package com.freetime.idlecoding.ui.screen
 
 import android.content.Context
 import android.graphics.BitmapFactory

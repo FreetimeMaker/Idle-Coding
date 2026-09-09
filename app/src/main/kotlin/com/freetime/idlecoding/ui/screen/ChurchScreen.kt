@@ -1,4 +1,4 @@
-package com.idlecoding.ui.screen
+package com.freetime.idlecoding.ui.screen
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -40,12 +40,12 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.idlecoding.R
-import com.idlecoding.data.json.BlessingData
-import com.idlecoding.data.json.BlessingType
-import com.idlecoding.repository.ChurchRepository
-import com.idlecoding.ui.viewmodel.ChurchViewModel
-import com.idlecoding.util.formatDurationMs
+import com.freetime.idlecoding.R
+import com.freetime.idlecoding.data.json.BlessingData
+import com.freetime.idlecoding.data.json.BlessingType
+import com.freetime.idlecoding.repository.ChurchRepository
+import com.freetime.idlecoding.ui.viewmodel.ChurchViewModel
+import com.freetime.idlecoding.util.formatDurationMs
 import kotlin.math.roundToInt
 
 @OptIn(ExperimentalMaterial3Api::class)

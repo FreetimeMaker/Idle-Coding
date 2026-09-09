@@ -1,8 +1,8 @@
-package com.idlecoding.repository
+package com.freetime.idlecoding.repository
 
-import com.idlecoding.data.db.dao.QuestProgressDao
-import com.idlecoding.data.json.QuestRewards
-import com.idlecoding.data.model.QuestProgress
+import com.freetime.idlecoding.data.db.dao.QuestProgressDao
+import com.freetime.idlecoding.data.json.QuestRewards
+import com.freetime.idlecoding.data.model.QuestProgress
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
 import javax.inject.Singleton

@@ -1,11 +1,11 @@
 package com.freetime.idlecoding.simulator
 
-import com.idlecoding.data.json.EquipmentData
-import com.idlecoding.data.json.HeirloomBase
-import com.idlecoding.data.model.EquipSlot
-import com.idlecoding.data.model.Skills
-import com.idlecoding.simulator.HeirloomStats
-import com.idlecoding.simulator.XpTable
+import com.freetime.idlecoding.data.json.EquipmentData
+import com.freetime.idlecoding.data.json.HeirloomBase
+import com.freetime.idlecoding.data.model.EquipSlot
+import com.freetime.idlecoding.data.model.Skills
+import com.freetime.idlecoding.simulator.HeirloomStats
+import com.freetime.idlecoding.simulator.XpTable
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertNull
 import org.junit.Assert.assertTrue

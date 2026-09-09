@@ -1,19 +1,19 @@
-package com.idlecoding.ui.viewmodel
+package com.freetime.idlecoding.ui.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.idlecoding.data.model.BulkSellReceipt
-import com.idlecoding.data.model.EquipSlot
-import com.idlecoding.data.model.PlayerFlags
-import com.idlecoding.data.model.QueuedAction
-import com.idlecoding.data.model.Skills
-import com.idlecoding.repository.BoostRepository
-import com.idlecoding.repository.GameDataRepository
-import com.idlecoding.repository.PlayerRepository
-import com.idlecoding.repository.WeeklyQuestRepository
-import com.idlecoding.repository.XpBoostPurchaseResult
-import com.idlecoding.repository.resolveCapeMultiplier
-import com.idlecoding.simulator.MercantilePerks
+import com.freetime.idlecoding.data.model.BulkSellReceipt
+import com.freetime.idlecoding.data.model.EquipSlot
+import com.freetime.idlecoding.data.model.PlayerFlags
+import com.freetime.idlecoding.data.model.QueuedAction
+import com.freetime.idlecoding.data.model.Skills
+import com.freetime.idlecoding.repository.BoostRepository
+import com.freetime.idlecoding.repository.GameDataRepository
+import com.freetime.idlecoding.repository.PlayerRepository
+import com.freetime.idlecoding.repository.WeeklyQuestRepository
+import com.freetime.idlecoding.repository.XpBoostPurchaseResult
+import com.freetime.idlecoding.repository.resolveCapeMultiplier
+import com.freetime.idlecoding.simulator.MercantilePerks
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
@@ -25,10 +25,10 @@ import kotlinx.coroutines.launch
 import kotlinx.serialization.json.Json
 import javax.inject.Inject
 import android.content.Context
-import com.idlecoding.R
-import com.idlecoding.data.json.EquipmentData
-import com.idlecoding.util.GameStrings
-import com.idlecoding.util.withAppLocale
+import com.freetime.idlecoding.R
+import com.freetime.idlecoding.data.json.EquipmentData
+import com.freetime.idlecoding.util.GameStrings
+import com.freetime.idlecoding.util.withAppLocale
 import dagger.hilt.android.qualifiers.ApplicationContext
 
 // ---------------------------------------------------------------------------

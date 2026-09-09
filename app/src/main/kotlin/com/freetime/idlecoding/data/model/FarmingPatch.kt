@@ -1,4 +1,4 @@
-package com.idlecoding.data.model
+package com.freetime.idlecoding.data.model
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity

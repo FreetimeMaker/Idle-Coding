@@ -1,4 +1,4 @@
-package com.idlecoding.ui.components
+package com.freetime.idlecoding.ui.components
 
 import android.content.Context
 import androidx.compose.foundation.clickable
@@ -21,12 +21,13 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import com.idlecoding.data.json.BlessingType
-import com.idlecoding.repository.ChurchRepository
-import com.idlecoding.ui.screen.StatInline
-import com.idlecoding.util.GameStrings
-import com.idlecoding.util.formatCoins
-import com.idlecoding.util.formatDurationMs
+import com.freetime.idlecoding.R
+import com.freetime.idlecoding.data.json.BlessingType
+import com.freetime.idlecoding.repository.ChurchRepository
+import com.freetime.idlecoding.ui.screen.StatInline
+import com.freetime.idlecoding.util.GameStrings
+import com.freetime.idlecoding.util.formatCoins
+import com.freetime.idlecoding.util.formatDurationMs
 import kotlin.math.roundToInt
 
 private const val MAX_VISIBLE_BOOST_LINES = 3

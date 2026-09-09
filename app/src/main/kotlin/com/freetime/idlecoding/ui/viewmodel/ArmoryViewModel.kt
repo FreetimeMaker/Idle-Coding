@@ -1,21 +1,21 @@
-package com.idlecoding.ui.viewmodel
+package com.freetime.idlecoding.ui.viewmodel
 
-import com.idlecoding.util.withAppLocale
+import com.freetime.idlecoding.util.withAppLocale
 
 import android.content.Context
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.idlecoding.R
-import com.idlecoding.data.json.EquipmentData
-import com.idlecoding.data.model.PlayerFlags
-import com.idlecoding.data.model.Skills
-import com.idlecoding.repository.CarnivalRepository
-import com.idlecoding.repository.DailyQuestRepository
-import com.idlecoding.repository.GameDataRepository
-import com.idlecoding.repository.PlayerRepository
-import com.idlecoding.repository.WeeklyQuestRepository
-import com.idlecoding.repository.capeKeyForSkill
-import com.idlecoding.util.GameStrings
+import com.freetime.idlecoding.R
+import com.freetime.idlecoding.data.json.EquipmentData
+import com.freetime.idlecoding.data.model.PlayerFlags
+import com.freetime.idlecoding.data.model.Skills
+import com.freetime.idlecoding.repository.CarnivalRepository
+import com.freetime.idlecoding.repository.DailyQuestRepository
+import com.freetime.idlecoding.repository.GameDataRepository
+import com.freetime.idlecoding.repository.PlayerRepository
+import com.freetime.idlecoding.repository.WeeklyQuestRepository
+import com.freetime.idlecoding.repository.capeKeyForSkill
+import com.freetime.idlecoding.util.GameStrings
 import dagger.hilt.android.lifecycle.HiltViewModel
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.flow.MutableStateFlow

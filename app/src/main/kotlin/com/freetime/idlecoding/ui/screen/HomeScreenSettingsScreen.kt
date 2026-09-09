@@ -1,4 +1,4 @@
-package com.idlecoding.ui.screen
+package com.freetime.idlecoding.ui.screen
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -26,8 +26,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.idlecoding.R
-import com.idlecoding.ui.viewmodel.SettingsViewModel
+import com.freetime.idlecoding.R
+import com.freetime.idlecoding.ui.viewmodel.SettingsViewModel
 
 /** Home screen display toggles, split out of the main Settings screen (was too busy on one page). */
 @OptIn(ExperimentalMaterial3Api::class)

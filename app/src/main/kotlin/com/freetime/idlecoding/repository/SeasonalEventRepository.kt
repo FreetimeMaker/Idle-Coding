@@ -1,12 +1,12 @@
-package com.idlecoding.repository
+package com.freetime.idlecoding.repository
 
 import android.content.Context
-import com.idlecoding.data.json.SeasonalBountyTaskData
-import com.idlecoding.data.json.SeasonalEventData
-import com.idlecoding.data.model.PlayerFlags
-import com.idlecoding.data.model.SeasonalBannerEarned
-import com.idlecoding.util.GameStrings
-import com.idlecoding.util.withAppLocale
+import com.freetime.idlecoding.data.json.SeasonalBountyTaskData
+import com.freetime.idlecoding.data.json.SeasonalEventData
+import com.freetime.idlecoding.data.model.PlayerFlags
+import com.freetime.idlecoding.data.model.SeasonalBannerEarned
+import com.freetime.idlecoding.util.GameStrings
+import com.freetime.idlecoding.util.withAppLocale
 import dagger.hilt.android.qualifiers.ApplicationContext
 import javax.inject.Inject
 import javax.inject.Singleton

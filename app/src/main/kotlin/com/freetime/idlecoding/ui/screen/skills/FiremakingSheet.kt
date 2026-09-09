@@ -1,4 +1,4 @@
-package com.idlecoding.ui.screen.skills
+package com.freetime.idlecoding.ui.screen.skills
 
 
 import android.content.Context
@@ -35,9 +35,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
-import com.idlecoding.R
-import com.idlecoding.data.json.LogData
-import com.idlecoding.data.model.Skills
+import com.freetime.idlecoding.R
+import com.freetime.idlecoding.data.json.LogData
+import com.freetime.idlecoding.data.model.Skills
 import androidx.compose.material.icons.filled.Add
 import androidx.compose.material.icons.filled.Remove
 import androidx.compose.material3.Icon
@@ -46,11 +46,11 @@ import androidx.compose.material3.OutlinedTextField
 import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.style.TextAlign
-import com.idlecoding.ui.screen.QtyQuickButtons
-import com.idlecoding.util.GameStrings
-import com.idlecoding.util.formatDurationMs
-import com.idlecoding.ui.viewmodel.QuestFillSuggestion
-import com.idlecoding.ui.viewmodel.QuestIndicator
+import com.freetime.idlecoding.ui.screen.QtyQuickButtons
+import com.freetime.idlecoding.util.GameStrings
+import com.freetime.idlecoding.util.formatDurationMs
+import com.freetime.idlecoding.ui.viewmodel.QuestFillSuggestion
+import com.freetime.idlecoding.ui.viewmodel.QuestIndicator
 
 
 @Composable

@@ -5,12 +5,12 @@ import androidx.sqlite.db.SupportSQLiteOpenHelper
 import androidx.sqlite.db.framework.FrameworkSQLiteOpenHelperFactory
 import androidx.test.core.app.ApplicationProvider
 import androidx.test.ext.junit.runners.AndroidJUnit4
-import com.idlecoding.data.db.MIGRATION_1_2
-import com.idlecoding.data.db.MIGRATION_2_3
-import com.idlecoding.data.db.MIGRATION_3_4
-import com.idlecoding.data.db.MIGRATION_4_5
-import com.idlecoding.data.db.MIGRATION_5_6
-import com.idlecoding.data.db.MIGRATION_6_7
+import com.freetime.idlecoding.data.db.MIGRATION_1_2
+import com.freetime.idlecoding.data.db.MIGRATION_2_3
+import com.freetime.idlecoding.data.db.MIGRATION_3_4
+import com.freetime.idlecoding.data.db.MIGRATION_4_5
+import com.freetime.idlecoding.data.db.MIGRATION_5_6
+import com.freetime.idlecoding.data.db.MIGRATION_6_7
 import org.junit.After
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue
@@ -19,7 +19,7 @@ import org.junit.runner.RunWith
 import org.robolectric.annotation.Config
 
 /**
- * Verifies the hand-written Room migrations ([com.idlecoding.data.db.MIGRATION_1_2], [com.idlecoding.data.db.MIGRATION_2_3])
+ * Verifies the hand-written Room migrations ([com.freetime.idlecoding.data.db.MIGRATION_1_2], [com.freetime.idlecoding.data.db.MIGRATION_2_3])
  * by applying them directly to an in-memory SQLite database seeded with the
  * version-1 `skill_sessions` schema (taken from the exported `app/schemas/1.json`).
  *

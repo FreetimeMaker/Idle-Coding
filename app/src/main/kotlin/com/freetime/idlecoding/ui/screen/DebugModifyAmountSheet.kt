@@ -1,6 +1,6 @@
-package com.idlecoding.ui.screen
+package com.freetime.idlecoding.ui.screen
 import androidx.compose.ui.res.stringResource
-import com.idlecoding.R
+import com.freetime.idlecoding.R
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -32,7 +32,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
-import com.idlecoding.ui.theme.ScaledSheetContent
+import com.freetime.idlecoding.ui.theme.ScaledSheetContent
 
 @OptIn(ExperimentalMaterial3Api::class, ExperimentalLayoutApi::class)
 @Composable

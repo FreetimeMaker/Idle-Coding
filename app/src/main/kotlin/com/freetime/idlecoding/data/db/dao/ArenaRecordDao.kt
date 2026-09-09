@@ -1,7 +1,7 @@
-package com.idlecoding.data.db.dao
+package com.freetime.idlecoding.data.db.dao
 
 import androidx.room.*
-import com.idlecoding.data.model.ArenaRecord
+import com.freetime.idlecoding.data.model.ArenaRecord
 
 @Dao
 interface ArenaRecordDao {

@@ -1,8 +1,8 @@
-package com.idlecoding.ui.screen.skills
+package com.freetime.idlecoding.ui.screen.skills
 
 
 import androidx.compose.foundation.clickable
-import com.idlecoding.ui.screen.AppBannerCenter
+import com.freetime.idlecoding.ui.screen.AppBannerCenter
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -22,16 +22,16 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import com.idlecoding.R
-import com.idlecoding.data.json.FishData
-import com.idlecoding.data.json.OreData
-import com.idlecoding.data.json.TreeData
-import com.idlecoding.data.model.Skills
-import com.idlecoding.simulator.SkillSimulator
-import com.idlecoding.simulator.XpTable
-import com.idlecoding.util.GameStrings
-import com.idlecoding.util.formatXp
-import com.idlecoding.ui.viewmodel.QuestIndicator
+import com.freetime.idlecoding.R
+import com.freetime.idlecoding.data.json.FishData
+import com.freetime.idlecoding.data.json.OreData
+import com.freetime.idlecoding.data.json.TreeData
+import com.freetime.idlecoding.data.model.Skills
+import com.freetime.idlecoding.simulator.SkillSimulator
+import com.freetime.idlecoding.simulator.XpTable
+import com.freetime.idlecoding.util.GameStrings
+import com.freetime.idlecoding.util.formatXp
+import com.freetime.idlecoding.ui.viewmodel.QuestIndicator
 
 
 @Composable

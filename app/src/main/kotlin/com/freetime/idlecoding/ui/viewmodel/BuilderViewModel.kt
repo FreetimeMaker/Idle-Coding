@@ -1,18 +1,18 @@
-package com.idlecoding.ui.viewmodel
+package com.freetime.idlecoding.ui.viewmodel
 
-import com.idlecoding.util.withAppLocale
+import com.freetime.idlecoding.util.withAppLocale
 
 import android.content.Context
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.idlecoding.R
-import com.idlecoding.data.model.PlayerFlags
-import com.idlecoding.data.model.Skills
-import com.idlecoding.repository.BoostRepository
-import com.idlecoding.repository.GameDataRepository
-import com.idlecoding.repository.PlayerRepository
-import com.idlecoding.repository.TownRepository
-import com.idlecoding.repository.UpgradeBuildingResult
+import com.freetime.idlecoding.R
+import com.freetime.idlecoding.data.model.PlayerFlags
+import com.freetime.idlecoding.data.model.Skills
+import com.freetime.idlecoding.repository.BoostRepository
+import com.freetime.idlecoding.repository.GameDataRepository
+import com.freetime.idlecoding.repository.PlayerRepository
+import com.freetime.idlecoding.repository.TownRepository
+import com.freetime.idlecoding.repository.UpgradeBuildingResult
 import dagger.hilt.android.lifecycle.HiltViewModel
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.flow.MutableStateFlow

@@ -1,8 +1,8 @@
-package com.idlecoding.simulator
+package com.freetime.idlecoding.simulator
 
-import com.idlecoding.data.json.PrestigeNodeData
-import com.idlecoding.data.json.PrestigeSkillTreeData
-import com.idlecoding.data.model.PlayerFlags
+import com.freetime.idlecoding.data.json.PrestigeNodeData
+import com.freetime.idlecoding.data.json.PrestigeSkillTreeData
+import com.freetime.idlecoding.data.model.PlayerFlags
 import kotlin.collections.iterator
 
 /**
@@ -19,7 +19,7 @@ import kotlin.collections.iterator
  */
 object PrestigeBoosts {
 
-    /** Effect keys (see [com.idlecoding.data.json.PrestigeNodeData] docs for value semantics). */
+    /** Effect keys (see [com.freetime.idlecoding.data.json.PrestigeNodeData] docs for value semantics). */
     const val XP_PCT = "xp_pct"
     const val YIELD_PCT = "yield_pct"
     const val FLOW_RATE = "flow_rate"
@@ -152,7 +152,7 @@ object PrestigeBoosts {
         return (flags.skillPrestige[skill] ?: 0) < autoTierCount(tree)
     }
 
-    /** Cape-bonus scaling multiplier per skill (1 = unmodified), for [com.idlecoding.repository.resolveCapeMultiplier]. */
+    /** Cape-bonus scaling multiplier per skill (1 = unmodified), for [com.freetime.idlecoding.repository.resolveCapeMultiplier]. */
     fun capeScalingBySkill(
         trees: Map<String, PrestigeSkillTreeData>,
         flags: PlayerFlags,

@@ -1,15 +1,15 @@
-package com.idlecoding.ui.viewmodel
+package com.freetime.idlecoding.ui.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.idlecoding.data.model.PlayerFlags
-import com.idlecoding.data.model.Skills
-import com.idlecoding.repository.DailyQuestRepository
-import com.idlecoding.repository.GameDataRepository
-import com.idlecoding.repository.PlayerRepository
-import com.idlecoding.repository.QuestRepository
-import com.idlecoding.repository.WeeklyQuestRepository
-import com.idlecoding.simulator.PrestigeBoosts
+import com.freetime.idlecoding.data.model.PlayerFlags
+import com.freetime.idlecoding.data.model.Skills
+import com.freetime.idlecoding.repository.DailyQuestRepository
+import com.freetime.idlecoding.repository.GameDataRepository
+import com.freetime.idlecoding.repository.PlayerRepository
+import com.freetime.idlecoding.repository.QuestRepository
+import com.freetime.idlecoding.repository.WeeklyQuestRepository
+import com.freetime.idlecoding.simulator.PrestigeBoosts
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow

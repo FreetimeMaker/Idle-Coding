@@ -4,13 +4,13 @@ import org.junit.After
 import org.junit.Assert.assertEquals
 import org.junit.Before
 import org.junit.Test
-import com.idlecoding.R
-import com.idlecoding.util.clampLevel
-import com.idlecoding.util.formatCoins
-import com.idlecoding.util.formatDurationMs
-import com.idlecoding.util.formatQuantity
-import com.idlecoding.util.formatXp
-import com.idlecoding.util.toSkillAbbrev
+import com.freetime.idlecoding.R
+import com.freetime.idlecoding.util.clampLevel
+import com.freetime.idlecoding.util.formatCoins
+import com.freetime.idlecoding.util.formatDurationMs
+import com.freetime.idlecoding.util.formatQuantity
+import com.freetime.idlecoding.util.formatXp
+import com.freetime.idlecoding.util.toSkillAbbrev
 import java.util.Locale
 
 /**

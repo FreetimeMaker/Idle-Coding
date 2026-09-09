@@ -1,4 +1,4 @@
-package com.idlecoding.util
+package com.freetime.idlecoding.util
 
 import androidx.compose.ui.graphics.Color
 import kotlin.math.max

@@ -1,14 +1,14 @@
-package com.idlecoding.receiver
+package com.freetime.idlecoding.receiver
 
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
-import com.idlecoding.repository.BackupScheduler
-import com.idlecoding.repository.BuffNotificationScheduler
-import com.idlecoding.repository.PlayerRepository
-import com.idlecoding.repository.QueuedSessionStarter
-import com.idlecoding.repository.SessionRepository
-import com.idlecoding.repository.WorkerQueuedSessionStarter
+import com.freetime.idlecoding.repository.BackupScheduler
+import com.freetime.idlecoding.repository.BuffNotificationScheduler
+import com.freetime.idlecoding.repository.PlayerRepository
+import com.freetime.idlecoding.repository.QueuedSessionStarter
+import com.freetime.idlecoding.repository.SessionRepository
+import com.freetime.idlecoding.repository.WorkerQueuedSessionStarter
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers

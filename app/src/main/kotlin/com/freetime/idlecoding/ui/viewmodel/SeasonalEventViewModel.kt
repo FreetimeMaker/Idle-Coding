@@ -1,18 +1,18 @@
-package com.idlecoding.ui.viewmodel
+package com.freetime.idlecoding.ui.viewmodel
 
-import com.idlecoding.util.withAppLocale
+import com.freetime.idlecoding.util.withAppLocale
 
 import android.content.Context
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.idlecoding.R
-import com.idlecoding.data.json.SeasonalEventData
-import com.idlecoding.data.model.PlayerFlags
-import com.idlecoding.repository.GameDataRepository
-import com.idlecoding.repository.PlayerRepository
-import com.idlecoding.repository.SeasonalBountyTaskWithProgress
-import com.idlecoding.repository.SeasonalEventRepository
-import com.idlecoding.repository.SeasonalMinigameResult
+import com.freetime.idlecoding.R
+import com.freetime.idlecoding.data.json.SeasonalEventData
+import com.freetime.idlecoding.data.model.PlayerFlags
+import com.freetime.idlecoding.repository.GameDataRepository
+import com.freetime.idlecoding.repository.PlayerRepository
+import com.freetime.idlecoding.repository.SeasonalBountyTaskWithProgress
+import com.freetime.idlecoding.repository.SeasonalEventRepository
+import com.freetime.idlecoding.repository.SeasonalMinigameResult
 import dagger.hilt.android.lifecycle.HiltViewModel
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.flow.MutableStateFlow

@@ -1,15 +1,15 @@
 package com.freetime.idlecoding.simulator
 
-import com.idlecoding.data.json.SkillDropEntry
-import com.idlecoding.data.json.SkillingDungeonData
-import com.idlecoding.data.json.XpRange
-import com.idlecoding.simulator.SkillingDungeonSimulator
+import com.freetime.idlecoding.data.json.SkillDropEntry
+import com.freetime.idlecoding.data.json.SkillingDungeonData
+import com.freetime.idlecoding.data.json.XpRange
+import com.freetime.idlecoding.simulator.SkillingDungeonSimulator
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue
 import org.junit.Test
 import kotlin.random.Random
 
-/** Outcome tests for [com.idlecoding.simulator.SkillingDungeonSimulator] using the injected `random` seam. */
+/** Outcome tests for [com.freetime.idlecoding.simulator.SkillingDungeonSimulator] using the injected `random` seam. */
 class SkillingDungeonSimulatorTest {
 
     private fun dungeon(

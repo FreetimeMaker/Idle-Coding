@@ -1,4 +1,4 @@
-package com.idlecoding.ui.screen
+package com.freetime.idlecoding.ui.screen
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -59,14 +59,14 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import android.content.Context
-import com.idlecoding.BuildConfig
-import com.idlecoding.R
-import com.idlecoding.repository.PrestigeActionResult
-import com.idlecoding.ui.viewmodel.PrestigeDetailViewModel
-import com.idlecoding.ui.viewmodel.PrestigeNodeUi
-import com.idlecoding.ui.viewmodel.PrestigePathUi
-import com.idlecoding.util.GameStrings
-import com.idlecoding.util.formatDurationMs
+import com.freetime.idlecoding.BuildConfig
+import com.freetime.idlecoding.R
+import com.freetime.idlecoding.repository.PrestigeActionResult
+import com.freetime.idlecoding.ui.viewmodel.PrestigeDetailViewModel
+import com.freetime.idlecoding.ui.viewmodel.PrestigeNodeUi
+import com.freetime.idlecoding.ui.viewmodel.PrestigePathUi
+import com.freetime.idlecoding.util.GameStrings
+import com.freetime.idlecoding.util.formatDurationMs
 
 private val TIER_NUMERALS = listOf("I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X")
 

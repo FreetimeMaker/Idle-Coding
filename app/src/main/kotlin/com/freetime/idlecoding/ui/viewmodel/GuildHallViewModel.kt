@@ -1,11 +1,11 @@
-package com.idlecoding.ui.viewmodel
+package com.freetime.idlecoding.ui.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.idlecoding.data.model.PlayerFlags
-import com.idlecoding.repository.GameDataRepository
-import com.idlecoding.repository.GuildRepository
-import com.idlecoding.repository.PlayerRepository
+import com.freetime.idlecoding.data.model.PlayerFlags
+import com.freetime.idlecoding.repository.GameDataRepository
+import com.freetime.idlecoding.repository.GuildRepository
+import com.freetime.idlecoding.repository.PlayerRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.flow.SharingStarted

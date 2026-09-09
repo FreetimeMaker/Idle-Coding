@@ -1,4 +1,4 @@
-package com.idlecoding.ui.screen
+package com.freetime.idlecoding.ui.screen
 
 import android.content.Context
 import androidx.compose.foundation.background
@@ -43,17 +43,17 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.idlecoding.R
-import com.idlecoding.data.json.BossData
-import com.idlecoding.data.json.EnemyData
-import com.idlecoding.ui.viewmodel.BestiaryEntry
-import com.idlecoding.ui.viewmodel.BestiarySort
-import com.idlecoding.ui.viewmodel.BestiaryViewModel
-import com.idlecoding.ui.theme.ScaledSheetContent
-import com.idlecoding.util.GameStrings
-import com.idlecoding.repository.PlayerRepository
-import com.idlecoding.ui.components.CompletionProgressBar
-import com.idlecoding.util.formatCoinsBrief
+import com.freetime.idlecoding.R
+import com.freetime.idlecoding.data.json.BossData
+import com.freetime.idlecoding.data.json.EnemyData
+import com.freetime.idlecoding.ui.viewmodel.BestiaryEntry
+import com.freetime.idlecoding.ui.viewmodel.BestiarySort
+import com.freetime.idlecoding.ui.viewmodel.BestiaryViewModel
+import com.freetime.idlecoding.ui.theme.ScaledSheetContent
+import com.freetime.idlecoding.util.GameStrings
+import com.freetime.idlecoding.repository.PlayerRepository
+import com.freetime.idlecoding.ui.components.CompletionProgressBar
+import com.freetime.idlecoding.util.formatCoinsBrief
 import java.text.Collator
 
 @OptIn(ExperimentalMaterial3Api::class)

@@ -1,8 +1,8 @@
-package com.idlecoding.repository
+package com.freetime.idlecoding.repository
 
-import com.idlecoding.data.db.dao.GlobalStateDao
-import com.idlecoding.data.model.GlobalState
-import com.idlecoding.data.model.GlobalStateKey
+import com.freetime.idlecoding.data.db.dao.GlobalStateDao
+import com.freetime.idlecoding.data.model.GlobalState
+import com.freetime.idlecoding.data.model.GlobalStateKey
 import javax.inject.Inject
 import javax.inject.Singleton
 

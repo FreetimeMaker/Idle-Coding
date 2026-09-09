@@ -1,4 +1,4 @@
-package com.idlecoding.ui.screen
+package com.freetime.idlecoding.ui.screen
 
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
@@ -33,9 +33,9 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.idlecoding.R
-import com.idlecoding.ui.viewmodel.SettingsViewModel
-import com.idlecoding.util.GameStrings
+import com.freetime.idlecoding.R
+import com.freetime.idlecoding.ui.viewmodel.SettingsViewModel
+import com.freetime.idlecoding.util.GameStrings
 
 /** Theme selection, editing, and import/export, split out of the main Settings screen. */
 @OptIn(ExperimentalMaterial3Api::class, ExperimentalLayoutApi::class)

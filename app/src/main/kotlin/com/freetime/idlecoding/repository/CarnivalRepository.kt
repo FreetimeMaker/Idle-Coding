@@ -1,6 +1,6 @@
-package com.idlecoding.repository
+package com.freetime.idlecoding.repository
 
-import com.idlecoding.data.json.CarnivalPrize
+import com.freetime.idlecoding.data.json.CarnivalPrize
 import kotlinx.serialization.json.Json
 import javax.inject.Inject
 import javax.inject.Singleton

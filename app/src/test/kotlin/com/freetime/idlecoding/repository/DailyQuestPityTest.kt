@@ -1,11 +1,11 @@
 package com.freetime.idlecoding.repository
 
-import com.idlecoding.repository.DailyQuestRepository
+import com.freetime.idlecoding.repository.DailyQuestRepository
 import org.junit.Assert.assertEquals
 import org.junit.Test
 
 /**
- * Unit tests for the Dwarven gear pity math in [com.idlecoding.repository.DailyQuestRepository]'s companion. Every claimed
+ * Unit tests for the Dwarven gear pity math in [com.freetime.idlecoding.repository.DailyQuestRepository]'s companion. Every claimed
  * daily without a drop narrows the 1-in-N odds by 2, from 1/100 down to a guaranteed 1/1.
  */
 class DailyQuestPityTest {

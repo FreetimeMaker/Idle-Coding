@@ -1,9 +1,9 @@
-package com.idlecoding.ui.viewmodel
+package com.freetime.idlecoding.ui.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.idlecoding.repository.SaveSlotRepository
-import com.idlecoding.repository.SlotInfo
+import com.freetime.idlecoding.repository.SaveSlotRepository
+import com.freetime.idlecoding.repository.SlotInfo
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow

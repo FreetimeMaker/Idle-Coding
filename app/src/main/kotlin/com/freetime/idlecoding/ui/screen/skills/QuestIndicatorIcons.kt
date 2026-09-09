@@ -1,11 +1,11 @@
-package com.idlecoding.ui.screen.skills
+package com.freetime.idlecoding.ui.screen.skills
 
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.alpha
-import com.idlecoding.ui.viewmodel.QuestIndicator
+import com.freetime.idlecoding.ui.viewmodel.QuestIndicator
 
 private const val SUPERSCRIPTS = "⁰¹²³⁴⁵⁶⁷⁸⁹"
 

@@ -1,4 +1,4 @@
-package com.idlecoding.ui.screen
+package com.freetime.idlecoding.ui.screen
 
 import androidx.compose.animation.core.tween
 import androidx.compose.foundation.background
@@ -65,15 +65,15 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.idlecoding.R
-import com.idlecoding.data.json.CarnivalPrize
-import com.idlecoding.data.model.Skills
-import com.idlecoding.ui.components.LampSkillDialog
-import com.idlecoding.ui.viewmodel.ActiveGameState
-import com.idlecoding.ui.viewmodel.AppraisalQuad
-import com.idlecoding.ui.viewmodel.CarnivalViewModel
-import com.idlecoding.ui.viewmodel.Difficulty
-import com.idlecoding.util.GameStrings
+import com.freetime.idlecoding.R
+import com.freetime.idlecoding.data.json.CarnivalPrize
+import com.freetime.idlecoding.data.model.Skills
+import com.freetime.idlecoding.ui.components.LampSkillDialog
+import com.freetime.idlecoding.ui.viewmodel.ActiveGameState
+import com.freetime.idlecoding.ui.viewmodel.AppraisalQuad
+import com.freetime.idlecoding.ui.viewmodel.CarnivalViewModel
+import com.freetime.idlecoding.ui.viewmodel.Difficulty
+import com.freetime.idlecoding.util.GameStrings
 import androidx.compose.animation.core.Animatable
 import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.WindowInsetsSides
@@ -86,10 +86,10 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.withContext
 import kotlinx.coroutines.launch
 import androidx.compose.runtime.rememberCoroutineScope
-import com.idlecoding.data.json.EquipmentData
-import com.idlecoding.simulator.CarnivalSimulator
-import com.idlecoding.ui.viewmodel.AppraisalPair
-import com.idlecoding.ui.viewmodel.CarnivalUiState
+import com.freetime.idlecoding.data.json.EquipmentData
+import com.freetime.idlecoding.simulator.CarnivalSimulator
+import com.freetime.idlecoding.ui.viewmodel.AppraisalPair
+import com.freetime.idlecoding.ui.viewmodel.CarnivalUiState
 import kotlin.time.Duration.Companion.milliseconds
 
 private val COMBAT_CAPE_SKILLS = setOf(

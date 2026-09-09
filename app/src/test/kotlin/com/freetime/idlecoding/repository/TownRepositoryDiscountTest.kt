@@ -1,11 +1,11 @@
 package com.freetime.idlecoding.repository
 
-import com.idlecoding.repository.TownRepository
+import com.freetime.idlecoding.repository.TownRepository
 import org.junit.Assert.assertEquals
 import org.junit.Test
 
 /**
- * Unit tests for the pure Builder's Workshop discount helpers in [com.idlecoding.repository.TownRepository]'s companion.
+ * Unit tests for the pure Builder's Workshop discount helpers in [com.freetime.idlecoding.repository.TownRepository]'s companion.
  * These back both the upgrade transaction and the Builder card display, so the two must agree.
  */
 class TownRepositoryDiscountTest {

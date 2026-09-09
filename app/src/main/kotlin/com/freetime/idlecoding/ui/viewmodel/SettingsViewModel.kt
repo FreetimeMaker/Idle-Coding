@@ -1,4 +1,4 @@
-package com.idlecoding.ui.viewmodel
+package com.freetime.idlecoding.ui.viewmodel
 
 import android.content.Context
 import android.content.Intent
@@ -7,16 +7,16 @@ import androidx.compose.material3.ColorScheme
 import androidx.compose.material3.darkColorScheme
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.idlecoding.data.json.ThemeData
-import com.idlecoding.data.model.CustomTheme
-import com.idlecoding.data.model.PlayerFlags
-import com.idlecoding.repository.BackupScheduler
-import com.idlecoding.repository.FarmingRepository
-import com.idlecoding.repository.PlayerRepository
-import com.idlecoding.repository.QuestRepository
-import com.idlecoding.repository.SaveSlotRepository
-import com.idlecoding.repository.SessionRepository
-import com.idlecoding.repository.ThemeRepository
+import com.freetime.idlecoding.data.json.ThemeData
+import com.freetime.idlecoding.data.model.CustomTheme
+import com.freetime.idlecoding.data.model.PlayerFlags
+import com.freetime.idlecoding.repository.BackupScheduler
+import com.freetime.idlecoding.repository.FarmingRepository
+import com.freetime.idlecoding.repository.PlayerRepository
+import com.freetime.idlecoding.repository.QuestRepository
+import com.freetime.idlecoding.repository.SaveSlotRepository
+import com.freetime.idlecoding.repository.SessionRepository
+import com.freetime.idlecoding.repository.ThemeRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.flow.MutableStateFlow

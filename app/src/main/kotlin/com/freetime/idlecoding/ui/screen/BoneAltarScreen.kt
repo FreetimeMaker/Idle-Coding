@@ -1,4 +1,4 @@
-package com.idlecoding.ui.screen
+package com.freetime.idlecoding.ui.screen
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
@@ -42,11 +42,11 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.idlecoding.R
-import com.idlecoding.ui.viewmodel.BoneAltarUiState
-import com.idlecoding.ui.viewmodel.BoneAltarViewModel
-import com.idlecoding.util.GameStrings
-import com.idlecoding.util.formatXp
+import com.freetime.idlecoding.R
+import com.freetime.idlecoding.ui.viewmodel.BoneAltarUiState
+import com.freetime.idlecoding.ui.viewmodel.BoneAltarViewModel
+import com.freetime.idlecoding.util.GameStrings
+import com.freetime.idlecoding.util.formatXp
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

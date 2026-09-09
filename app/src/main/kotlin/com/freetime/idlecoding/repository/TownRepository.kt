@@ -1,6 +1,6 @@
-package com.idlecoding.repository
+package com.freetime.idlecoding.repository
 
-import com.idlecoding.data.model.PlayerFlags
+import com.freetime.idlecoding.data.model.PlayerFlags
 import javax.inject.Inject
 import javax.inject.Singleton
 import kotlinx.serialization.json.Json

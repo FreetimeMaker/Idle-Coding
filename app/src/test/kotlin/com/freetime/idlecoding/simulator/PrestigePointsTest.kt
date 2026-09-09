@@ -1,7 +1,7 @@
 package com.freetime.idlecoding.simulator
 
-import com.idlecoding.simulator.PrestigePoints
-import com.idlecoding.simulator.XpTable
+import com.freetime.idlecoding.simulator.PrestigePoints
+import com.freetime.idlecoding.simulator.XpTable
 import org.junit.Assert.assertEquals
 import org.junit.Test
 

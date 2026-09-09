@@ -1,9 +1,9 @@
-package com.idlecoding.util
+package com.freetime.idlecoding.util
 
-import com.idlecoding.data.model.EquipSlot
-import com.idlecoding.data.model.Skills
-import com.idlecoding.repository.GameDataRepository
-import com.idlecoding.simulator.HeirloomStats
+import com.freetime.idlecoding.data.model.EquipSlot
+import com.freetime.idlecoding.data.model.Skills
+import com.freetime.idlecoding.repository.GameDataRepository
+import com.freetime.idlecoding.simulator.HeirloomStats
 
 private val TOOL_TIERS = listOf(1, 15, 30, 55, 70, 85)
 

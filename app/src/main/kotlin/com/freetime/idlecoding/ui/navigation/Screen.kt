@@ -1,4 +1,4 @@
-package com.idlecoding.ui.navigation
+package com.freetime.idlecoding.ui.navigation
 
 import androidx.annotation.StringRes
 import androidx.compose.material.icons.Icons
@@ -20,8 +20,8 @@ import androidx.compose.material.icons.outlined.Home
 import androidx.compose.material.icons.outlined.Settings
 import androidx.compose.material.icons.outlined.Shield
 import androidx.compose.ui.graphics.vector.ImageVector
-import com.idlecoding.R
-import com.idlecoding.ui.screen.CombatTabName
+import com.freetime.idlecoding.R
+import com.freetime.idlecoding.ui.screen.CombatTabName
 
 sealed class Screen(
     val route: String,

@@ -1,4 +1,4 @@
-package com.idlecoding.notification
+package com.freetime.idlecoding.notification
 
 import android.Manifest
 import android.app.Notification
@@ -10,9 +10,9 @@ import androidx.core.app.ActivityCompat
 import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
 import androidx.core.app.NotificationChannelCompat
-import com.idlecoding.MainActivity
-import com.idlecoding.R
-import com.idlecoding.util.withAppLocale
+import com.freetime.idlecoding.R
+import com.freetime.idlecoding.MainActivity
+import com.freetime.idlecoding.util.withAppLocale
 import dagger.hilt.android.qualifiers.ApplicationContext
 import javax.inject.Inject
 import javax.inject.Singleton

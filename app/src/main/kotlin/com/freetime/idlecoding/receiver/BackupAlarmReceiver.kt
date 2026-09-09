@@ -1,10 +1,10 @@
-package com.idlecoding.receiver
+package com.freetime.idlecoding.receiver
 
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
-import com.idlecoding.repository.BackupScheduler
-import com.idlecoding.repository.PlayerRepository
+import com.freetime.idlecoding.repository.BackupScheduler
+import com.freetime.idlecoding.repository.PlayerRepository
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers

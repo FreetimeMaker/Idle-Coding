@@ -1,4 +1,4 @@
-package com.idlecoding.ui.screen
+package com.freetime.idlecoding.ui.screen
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -36,10 +36,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
-import com.idlecoding.R
+import com.freetime.idlecoding.R
 import androidx.compose.ui.platform.LocalContext
-import com.idlecoding.util.GameStrings
-import com.idlecoding.ui.theme.ScaledSheetContent
+import com.freetime.idlecoding.util.GameStrings
+import com.freetime.idlecoding.ui.theme.ScaledSheetContent
 
 internal val CHARACTER_GENDERS = listOf("Male", "Female", "Other")
 internal val CHARACTER_RACES   = listOf("Human", "Elf", "Dwarf", "Orc", "Halfling", "Gnome")

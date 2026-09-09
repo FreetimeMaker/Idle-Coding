@@ -1,4 +1,4 @@
-package com.idlecoding.ui.screen
+package com.freetime.idlecoding.ui.screen
 
 import android.R as AndroidR
 import android.content.Context
@@ -74,29 +74,29 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.idlecoding.R
-import com.idlecoding.repository.MercenaryRepository
-import com.idlecoding.simulator.CombatSimulator
-import com.idlecoding.data.json.BossData
-import com.idlecoding.data.json.CookingRecipe
-import com.idlecoding.data.json.DungeonData
-import com.idlecoding.data.json.EquipmentData
-import com.idlecoding.data.json.SpellData
+import com.freetime.idlecoding.R
+import com.freetime.idlecoding.repository.MercenaryRepository
+import com.freetime.idlecoding.simulator.CombatSimulator
+import com.freetime.idlecoding.data.json.BossData
+import com.freetime.idlecoding.data.json.CookingRecipe
+import com.freetime.idlecoding.data.json.DungeonData
+import com.freetime.idlecoding.data.json.EquipmentData
+import com.freetime.idlecoding.data.json.SpellData
 import androidx.compose.foundation.layout.ExperimentalLayoutApi
 import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.WindowInsetsSides
 import androidx.compose.foundation.layout.only
 import androidx.compose.foundation.layout.safeDrawing
-import com.idlecoding.data.model.DungeonRunStats
-import com.idlecoding.data.model.EquipSlot
-import com.idlecoding.data.model.Skills
-import com.idlecoding.ui.theme.ScaledSheetContent
-import com.idlecoding.ui.viewmodel.CombatViewModel
-import com.idlecoding.ui.viewmodel.InventoryViewModel
-import com.idlecoding.ui.viewmodel.combatLevelFrom
-import com.idlecoding.ui.viewmodel.xpProgressFraction
-import com.idlecoding.util.GameStrings
-import com.idlecoding.util.formatXp
+import com.freetime.idlecoding.data.model.DungeonRunStats
+import com.freetime.idlecoding.data.model.EquipSlot
+import com.freetime.idlecoding.data.model.Skills
+import com.freetime.idlecoding.ui.theme.ScaledSheetContent
+import com.freetime.idlecoding.ui.viewmodel.CombatViewModel
+import com.freetime.idlecoding.ui.viewmodel.InventoryViewModel
+import com.freetime.idlecoding.ui.viewmodel.combatLevelFrom
+import com.freetime.idlecoding.ui.viewmodel.xpProgressFraction
+import com.freetime.idlecoding.util.GameStrings
+import com.freetime.idlecoding.util.formatXp
 
 
 enum class CombatTabName {

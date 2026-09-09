@@ -3,7 +3,7 @@ package com.freetime.idlecoding.ui.screen
 import androidx.compose.foundation.lazy.LazyListState
 import androidx.compose.runtime.saveable.Saver
 import androidx.compose.runtime.saveable.SaverScope
-import com.idlecoding.data.model.Skills
+import com.freetime.idlecoding.data.model.Skills
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertNotEquals
 import org.junit.Assert.assertNotNull

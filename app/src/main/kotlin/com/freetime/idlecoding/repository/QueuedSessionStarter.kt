@@ -1,30 +1,30 @@
-package com.idlecoding.repository
+package com.freetime.idlecoding.repository
 
-import com.idlecoding.util.withAppLocale
+import com.freetime.idlecoding.util.withAppLocale
 
 import android.content.Context
-import com.idlecoding.R
-import com.idlecoding.data.json.CookingRecipe
-import com.idlecoding.data.json.DungeonData
-import com.idlecoding.data.json.EnemyData
-import com.idlecoding.data.model.EquipSlot
-import com.idlecoding.data.model.OwnedPet
-import com.idlecoding.data.model.PlayerFlags
-import com.idlecoding.data.model.QueuedAction
-import com.idlecoding.data.model.SessionFrame
-import com.idlecoding.data.model.Skills
-import com.idlecoding.simulator.HeirloomStats
-import com.idlecoding.simulator.CarnivalSimulator
-import com.idlecoding.simulator.CombatSimulator
-import com.idlecoding.simulator.MercantileSimulator
-import com.idlecoding.simulator.SkillingDungeonSimulator
-import com.idlecoding.simulator.SkillSimulator
-import com.idlecoding.simulator.ThievingSimulator
-import com.idlecoding.simulator.TowerScaling
-import com.idlecoding.simulator.XpTable
-import com.idlecoding.ui.screen.UNLOCK_TOLERANCE
-import com.idlecoding.ui.viewmodel.combatLevelFrom
-import com.idlecoding.util.toolEfficiency
+import com.freetime.idlecoding.R
+import com.freetime.idlecoding.data.json.CookingRecipe
+import com.freetime.idlecoding.data.json.DungeonData
+import com.freetime.idlecoding.data.json.EnemyData
+import com.freetime.idlecoding.data.model.EquipSlot
+import com.freetime.idlecoding.data.model.OwnedPet
+import com.freetime.idlecoding.data.model.PlayerFlags
+import com.freetime.idlecoding.data.model.QueuedAction
+import com.freetime.idlecoding.data.model.SessionFrame
+import com.freetime.idlecoding.data.model.Skills
+import com.freetime.idlecoding.simulator.HeirloomStats
+import com.freetime.idlecoding.simulator.CarnivalSimulator
+import com.freetime.idlecoding.simulator.CombatSimulator
+import com.freetime.idlecoding.simulator.MercantileSimulator
+import com.freetime.idlecoding.simulator.SkillingDungeonSimulator
+import com.freetime.idlecoding.simulator.SkillSimulator
+import com.freetime.idlecoding.simulator.ThievingSimulator
+import com.freetime.idlecoding.simulator.TowerScaling
+import com.freetime.idlecoding.simulator.XpTable
+import com.freetime.idlecoding.ui.screen.UNLOCK_TOLERANCE
+import com.freetime.idlecoding.ui.viewmodel.combatLevelFrom
+import com.freetime.idlecoding.util.toolEfficiency
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
@@ -72,7 +72,7 @@ internal fun queuedActionRequiredLevel(action: QueuedAction, gameData: GameDataR
 
 /**
  * Starts the next queued session using current player state.
- * Shared between ViewModels (on collect) and [com.idlecoding.receiver.SessionAlarmReceiver]
+ * Shared between ViewModels (on collect) and [com.freetime.idlecoding.receiver.SessionAlarmReceiver]
  * (background auto-advance).
  */
 @Singleton

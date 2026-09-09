@@ -1,15 +1,15 @@
 package com.freetime.idlecoding.ui.theme
 
 import androidx.compose.ui.graphics.Color
-import com.idlecoding.data.json.ColourSchemeParameter
-import com.idlecoding.data.json.ColourSchemeParameter.BACKGROUND
-import com.idlecoding.data.json.ColourSchemeParameter.ON_BACKGROUND
-import com.idlecoding.data.json.ColourSchemeParameter.ON_SURFACE
-import com.idlecoding.data.json.ColourSchemeParameter.ON_SURFACE_VARIANT
-import com.idlecoding.data.json.ColourSchemeParameter.SURFACE
-import com.idlecoding.data.json.ColourSchemeParameter.SURFACE_VARIANT
-import com.idlecoding.data.json.ThemeData
-import com.idlecoding.util.ColorContrast
+import com.freetime.idlecoding.data.json.ColourSchemeParameter
+import com.freetime.idlecoding.data.json.ColourSchemeParameter.BACKGROUND
+import com.freetime.idlecoding.data.json.ColourSchemeParameter.ON_BACKGROUND
+import com.freetime.idlecoding.data.json.ColourSchemeParameter.ON_SURFACE
+import com.freetime.idlecoding.data.json.ColourSchemeParameter.ON_SURFACE_VARIANT
+import com.freetime.idlecoding.data.json.ColourSchemeParameter.SURFACE
+import com.freetime.idlecoding.data.json.ColourSchemeParameter.SURFACE_VARIANT
+import com.freetime.idlecoding.data.json.ThemeData
+import com.freetime.idlecoding.util.ColorContrast
 import kotlinx.serialization.json.Json
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertNotEquals
@@ -21,7 +21,7 @@ import kotlin.collections.iterator
 /**
  * Contrast checks against the official theme definitions in
  * `assets/data/official_themes.json`, so palette regressions are caught in the
- * data that actually drives [com.idlecoding.repository.ThemeRepository].
+ * data that actually drives [com.freetime.idlecoding.repository.ThemeRepository].
  */
 class ThemeContrastTest {
 

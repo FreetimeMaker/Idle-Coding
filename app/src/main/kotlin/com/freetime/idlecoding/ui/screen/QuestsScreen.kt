@@ -1,4 +1,4 @@
-package com.idlecoding.ui.screen
+package com.freetime.idlecoding.ui.screen
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -28,7 +28,7 @@ import androidx.compose.material3.ScrollableTabRow
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.material3.TopAppBar
-import com.idlecoding.BuildConfig
+import com.freetime.idlecoding.BuildConfig
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
@@ -52,17 +52,17 @@ import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.WindowInsetsSides
 import androidx.compose.foundation.layout.only
 import androidx.compose.foundation.layout.safeDrawing
-import com.idlecoding.R
-import com.idlecoding.data.json.DailyQuestTemplate
-import com.idlecoding.data.json.QuestData
-import com.idlecoding.repository.DailyQuestWithProgress
-import com.idlecoding.ui.viewmodel.QuestWithProgress
-import com.idlecoding.ui.viewmodel.QuestsViewModel
-import com.idlecoding.repository.WeeklyQuestWithProgress
-import com.idlecoding.util.GameStrings
-import com.idlecoding.util.formatCoins
-import com.idlecoding.util.formatXp
-import com.idlecoding.util.toClockTime
+import com.freetime.idlecoding.R
+import com.freetime.idlecoding.data.json.DailyQuestTemplate
+import com.freetime.idlecoding.data.json.QuestData
+import com.freetime.idlecoding.repository.DailyQuestWithProgress
+import com.freetime.idlecoding.ui.viewmodel.QuestWithProgress
+import com.freetime.idlecoding.ui.viewmodel.QuestsViewModel
+import com.freetime.idlecoding.repository.WeeklyQuestWithProgress
+import com.freetime.idlecoding.util.GameStrings
+import com.freetime.idlecoding.util.formatCoins
+import com.freetime.idlecoding.util.formatXp
+import com.freetime.idlecoding.util.toClockTime
 
 private val TAB_GROUPS = listOf("Daily", "Weekly", "Gathering", "Crafting", "Combat", "Special")
 

@@ -1,4 +1,4 @@
-package com.idlecoding.ui.screen
+package com.freetime.idlecoding.ui.screen
 
 import android.content.Intent
 import android.net.Uri
@@ -26,7 +26,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import com.idlecoding.R
+import com.freetime.idlecoding.R
 
 /** One attribution row: [url] is null for artists credited by name only. */
 private data class ArtCredit(

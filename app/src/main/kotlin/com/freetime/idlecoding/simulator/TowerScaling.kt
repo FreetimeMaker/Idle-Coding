@@ -1,7 +1,7 @@
-package com.idlecoding.simulator
+package com.freetime.idlecoding.simulator
 
-import com.idlecoding.data.json.EnemyData
-import com.idlecoding.data.json.EnemySpawn
+import com.freetime.idlecoding.data.json.EnemyData
+import com.freetime.idlecoding.data.json.EnemySpawn
 
 /**
  * Single source of truth for Infinite Tower enemy tiers and floor scaling, shared by the

@@ -1,4 +1,4 @@
-package com.idlecoding.ui.screen
+package com.freetime.idlecoding.ui.screen
 
 import android.content.Intent
 import android.net.Uri
@@ -63,10 +63,10 @@ import androidx.compose.ui.unit.dp
 import androidx.core.app.NotificationManagerCompat
 import androidx.core.os.LocaleListCompat
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.idlecoding.BuildConfig
-import com.idlecoding.R
-import com.idlecoding.ui.viewmodel.SettingsViewModel
-import com.idlecoding.util.dailyResetClockTime
+import com.freetime.idlecoding.BuildConfig
+import com.freetime.idlecoding.R
+import com.freetime.idlecoding.ui.viewmodel.SettingsViewModel
+import com.freetime.idlecoding.util.dailyResetClockTime
 import java.text.DateFormat
 import java.util.Date
 

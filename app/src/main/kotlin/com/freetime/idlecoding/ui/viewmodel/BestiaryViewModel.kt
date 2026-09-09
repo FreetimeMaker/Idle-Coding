@@ -1,14 +1,14 @@
-package com.idlecoding.ui.viewmodel
+package com.freetime.idlecoding.ui.viewmodel
 
 import android.content.Context
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.idlecoding.data.json.BossData
-import com.idlecoding.data.json.EnemyData
-import com.idlecoding.data.model.PlayerFlags
-import com.idlecoding.repository.GameDataRepository
-import com.idlecoding.repository.PlayerRepository
-import com.idlecoding.util.GameStrings
+import com.freetime.idlecoding.data.json.BossData
+import com.freetime.idlecoding.data.json.EnemyData
+import com.freetime.idlecoding.data.model.PlayerFlags
+import com.freetime.idlecoding.repository.GameDataRepository
+import com.freetime.idlecoding.repository.PlayerRepository
+import com.freetime.idlecoding.util.GameStrings
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted

@@ -1,9 +1,9 @@
-package com.idlecoding.simulator
+package com.freetime.idlecoding.simulator
 
-import com.idlecoding.data.json.EquipmentData
-import com.idlecoding.data.json.HeirloomBase
-import com.idlecoding.data.model.EquipSlot
-import com.idlecoding.data.model.Skills
+import com.freetime.idlecoding.data.json.EquipmentData
+import com.freetime.idlecoding.data.json.HeirloomBase
+import com.freetime.idlecoding.data.model.EquipSlot
+import com.freetime.idlecoding.data.model.Skills
 import kotlin.math.min
 import kotlin.math.roundToInt
 

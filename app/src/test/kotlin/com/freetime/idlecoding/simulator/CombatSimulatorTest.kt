@@ -1,13 +1,13 @@
 package com.freetime.idlecoding.simulator
 
-import com.idlecoding.data.json.BossData
-import com.idlecoding.data.json.DungeonData
-import com.idlecoding.data.json.EnemyCombatStats
-import com.idlecoding.data.json.EnemyData
-import com.idlecoding.data.json.EnemyDefensiveStats
-import com.idlecoding.data.json.EnemySpawn
-import com.idlecoding.simulator.CombatSimulator
-import com.idlecoding.simulator.SkillSimulator
+import com.freetime.idlecoding.data.json.BossData
+import com.freetime.idlecoding.data.json.DungeonData
+import com.freetime.idlecoding.data.json.EnemyCombatStats
+import com.freetime.idlecoding.data.json.EnemyData
+import com.freetime.idlecoding.data.json.EnemyDefensiveStats
+import com.freetime.idlecoding.data.json.EnemySpawn
+import com.freetime.idlecoding.simulator.CombatSimulator
+import com.freetime.idlecoding.simulator.SkillSimulator
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
@@ -17,7 +17,7 @@ import java.io.File
 import kotlinx.serialization.json.Json
 
 /**
- * Tests for the most complex simulator, [com.idlecoding.simulator.CombatSimulator.simulateDungeon], made
+ * Tests for the most complex simulator, [com.freetime.idlecoding.simulator.CombatSimulator.simulateDungeon], made
  * deterministic through the injected `random` seam. Combat has too many moving
  * parts to assert exact per-tick damage, so this pins structural invariants
  * (frame count, non-negative HP, XP accrual) plus seeded reproducibility.

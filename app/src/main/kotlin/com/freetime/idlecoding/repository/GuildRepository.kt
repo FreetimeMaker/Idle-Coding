@@ -1,12 +1,12 @@
-package com.idlecoding.repository
+package com.freetime.idlecoding.repository
 
-import com.idlecoding.data.db.dao.QuestProgressDao
-import com.idlecoding.data.json.GuildDailyTemplate
-import com.idlecoding.data.json.GuildQuestData
-import com.idlecoding.data.json.GuildQuestRewards
-import com.idlecoding.data.model.CombatGuilds
-import com.idlecoding.data.model.PlayerFlags
-import com.idlecoding.data.model.QuestProgress
+import com.freetime.idlecoding.data.db.dao.QuestProgressDao
+import com.freetime.idlecoding.data.json.GuildDailyTemplate
+import com.freetime.idlecoding.data.json.GuildQuestData
+import com.freetime.idlecoding.data.json.GuildQuestRewards
+import com.freetime.idlecoding.data.model.CombatGuilds
+import com.freetime.idlecoding.data.model.PlayerFlags
+import com.freetime.idlecoding.data.model.QuestProgress
 import java.util.Calendar
 import javax.inject.Inject
 import javax.inject.Provider

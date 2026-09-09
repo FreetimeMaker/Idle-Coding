@@ -1,4 +1,4 @@
-package com.idlecoding.simulator
+package com.freetime.idlecoding.simulator
 
 /**
  * Mercantile shop-trading ladder. The buy discount and sell bonus climb together,

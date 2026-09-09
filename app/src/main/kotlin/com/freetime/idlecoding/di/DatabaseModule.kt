@@ -1,15 +1,15 @@
-package com.idlecoding.di
+package com.freetime.idlecoding.di
 
 import android.content.Context
 import androidx.room.Room
-import com.idlecoding.data.db.AppDatabase
-import com.idlecoding.data.db.MIGRATION_1_2
-import com.idlecoding.data.db.MIGRATION_2_3
-import com.idlecoding.data.db.MIGRATION_3_4
-import com.idlecoding.data.db.MIGRATION_4_5
-import com.idlecoding.data.db.MIGRATION_5_6
-import com.idlecoding.data.db.MIGRATION_6_7
-import com.idlecoding.data.db.dao.*
+import com.freetime.idlecoding.data.db.AppDatabase
+import com.freetime.idlecoding.data.db.MIGRATION_1_2
+import com.freetime.idlecoding.data.db.MIGRATION_2_3
+import com.freetime.idlecoding.data.db.MIGRATION_3_4
+import com.freetime.idlecoding.data.db.MIGRATION_4_5
+import com.freetime.idlecoding.data.db.MIGRATION_5_6
+import com.freetime.idlecoding.data.db.MIGRATION_6_7
+import com.freetime.idlecoding.data.db.dao.*
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

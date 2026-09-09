@@ -1,8 +1,8 @@
 package com.freetime.idlecoding.data.json
 
-import com.idlecoding.data.json.ColourSchemeParameter
-import com.idlecoding.data.json.ThemeData
-import com.idlecoding.data.model.ThemeBase
+import com.freetime.idlecoding.data.json.ColourSchemeParameter
+import com.freetime.idlecoding.data.json.ThemeData
+import com.freetime.idlecoding.data.model.ThemeBase
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.serializer
 import org.junit.Assert.assertEquals
@@ -10,7 +10,7 @@ import org.junit.Test
 
 /**
  * The theme editor's export must survive a round trip through the importer's
- * JSON shape (`Map` of theme key to [com.idlecoding.data.json.ThemeData]) without losing anything.
+ * JSON shape (`Map` of theme key to [com.freetime.idlecoding.data.json.ThemeData]) without losing anything.
  */
 class ThemeDataRoundTripTest {
 

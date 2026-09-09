@@ -1,4 +1,4 @@
-package com.idlecoding.ui.screen
+package com.freetime.idlecoding.ui.screen
 
 import android.content.Context
 import androidx.compose.foundation.background
@@ -39,17 +39,17 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.idlecoding.R
-import com.idlecoding.data.json.EquipmentData
-import com.idlecoding.ui.viewmodel.ArmoryEntry
-import com.idlecoding.ui.viewmodel.ArmoryFilter
-import com.idlecoding.ui.viewmodel.ArmorySort
-import com.idlecoding.ui.viewmodel.ArmoryViewModel
-import com.idlecoding.ui.theme.ScaledSheetContent
-import com.idlecoding.simulator.HeirloomStats
-import com.idlecoding.simulator.XpTable
-import com.idlecoding.ui.components.CompletionProgressBar
-import com.idlecoding.util.GameStrings
+import com.freetime.idlecoding.R
+import com.freetime.idlecoding.data.json.EquipmentData
+import com.freetime.idlecoding.ui.viewmodel.ArmoryEntry
+import com.freetime.idlecoding.ui.viewmodel.ArmoryFilter
+import com.freetime.idlecoding.ui.viewmodel.ArmorySort
+import com.freetime.idlecoding.ui.viewmodel.ArmoryViewModel
+import com.freetime.idlecoding.ui.theme.ScaledSheetContent
+import com.freetime.idlecoding.simulator.HeirloomStats
+import com.freetime.idlecoding.simulator.XpTable
+import com.freetime.idlecoding.ui.components.CompletionProgressBar
+import com.freetime.idlecoding.util.GameStrings
 
 private val COMBAT_CAPE_SKILLS = setOf(
     "attack", "strength", "defense", "ranged", "magic", "hp",

@@ -1,4 +1,4 @@
-package com.idlecoding.ui.screen
+package com.freetime.idlecoding.ui.screen
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.interaction.MutableInteractionSource
@@ -50,14 +50,14 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.idlecoding.BuildConfig
-import com.idlecoding.R
-import com.idlecoding.data.json.EquipmentData
-import com.idlecoding.data.json.SpellData
-import com.idlecoding.data.model.EquipSlot
-import com.idlecoding.ui.viewmodel.TowerMilestone
-import com.idlecoding.ui.viewmodel.TowerViewModel
-import com.idlecoding.util.GameStrings
+import com.freetime.idlecoding.BuildConfig
+import com.freetime.idlecoding.R
+import com.freetime.idlecoding.data.json.EquipmentData
+import com.freetime.idlecoding.data.json.SpellData
+import com.freetime.idlecoding.data.model.EquipSlot
+import com.freetime.idlecoding.ui.viewmodel.TowerMilestone
+import com.freetime.idlecoding.ui.viewmodel.TowerViewModel
+import com.freetime.idlecoding.util.GameStrings
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

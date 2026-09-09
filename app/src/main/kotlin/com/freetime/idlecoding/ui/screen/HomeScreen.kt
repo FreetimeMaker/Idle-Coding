@@ -1,4 +1,4 @@
-package com.idlecoding.ui.screen
+package com.freetime.idlecoding.ui.screen
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.Image
@@ -81,16 +81,16 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.dropUnlessResumed
-import com.idlecoding.BuildConfig
-import com.idlecoding.R
-import com.idlecoding.ui.components.PlayerStatsBar
-import com.idlecoding.ui.theme.ScaledSheetContent
-import com.idlecoding.ui.viewmodel.HomeViewModel
-import com.idlecoding.ui.viewmodel.combatLevelFrom
-import com.idlecoding.ui.viewmodel.totalLevelFrom
-import com.idlecoding.util.GameStrings
-import com.idlecoding.util.drawableByName
-import com.idlecoding.util.formatCoins
+import com.freetime.idlecoding.BuildConfig
+import com.freetime.idlecoding.R
+import com.freetime.idlecoding.ui.components.PlayerStatsBar
+import com.freetime.idlecoding.ui.theme.ScaledSheetContent
+import com.freetime.idlecoding.ui.viewmodel.HomeViewModel
+import com.freetime.idlecoding.ui.viewmodel.combatLevelFrom
+import com.freetime.idlecoding.ui.viewmodel.totalLevelFrom
+import com.freetime.idlecoding.util.GameStrings
+import com.freetime.idlecoding.util.drawableByName
+import com.freetime.idlecoding.util.formatCoins
 import kotlinx.coroutines.delay
 
 @OptIn(ExperimentalMaterial3Api::class, ExperimentalLayoutApi::class)

@@ -1,4 +1,4 @@
-package com.idlecoding.ui.screen
+package com.freetime.idlecoding.ui.screen
 
 import android.content.Context
 import android.text.format.DateUtils
@@ -75,16 +75,16 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.idlecoding.R
-import com.idlecoding.data.model.BulkSellReceipt
-import com.idlecoding.ui.theme.ScaledSheetContent
-import com.idlecoding.ui.viewmodel.BulkSellPreview
-import com.idlecoding.ui.viewmodel.ShopEntry
-import com.idlecoding.ui.viewmodel.ShopTransaction
-import com.idlecoding.ui.viewmodel.ShopViewModel
-import com.idlecoding.util.GameStrings
-import com.idlecoding.util.formatCoins
-import com.idlecoding.util.formatQuantity
+import com.freetime.idlecoding.R
+import com.freetime.idlecoding.data.model.BulkSellReceipt
+import com.freetime.idlecoding.ui.theme.ScaledSheetContent
+import com.freetime.idlecoding.ui.viewmodel.BulkSellPreview
+import com.freetime.idlecoding.ui.viewmodel.ShopEntry
+import com.freetime.idlecoding.ui.viewmodel.ShopTransaction
+import com.freetime.idlecoding.ui.viewmodel.ShopViewModel
+import com.freetime.idlecoding.util.GameStrings
+import com.freetime.idlecoding.util.formatCoins
+import com.freetime.idlecoding.util.formatQuantity
 import kotlinx.coroutines.launch
 
 private fun localizedCategory(context: Context, raw: String): String {

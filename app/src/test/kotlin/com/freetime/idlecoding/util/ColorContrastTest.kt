@@ -1,8 +1,8 @@
 package com.freetime.idlecoding.util
 
 import androidx.compose.ui.graphics.Color
-import com.idlecoding.repository.ThemeRepository
-import com.idlecoding.util.ColorContrast
+import com.freetime.idlecoding.repository.ThemeRepository
+import com.freetime.idlecoding.util.ColorContrast
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue
 import org.junit.Test

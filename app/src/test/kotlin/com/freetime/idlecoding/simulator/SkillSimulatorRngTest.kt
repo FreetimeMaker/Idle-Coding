@@ -1,21 +1,21 @@
 package com.freetime.idlecoding.simulator
 
-import com.idlecoding.data.json.AgilityCourseData
-import com.idlecoding.data.json.FishData
-import com.idlecoding.data.json.GatheringSkillData
-import com.idlecoding.data.json.GemData
-import com.idlecoding.data.json.OreData
-import com.idlecoding.data.json.SkillDropEntry
-import com.idlecoding.data.json.TreeData
-import com.idlecoding.data.json.XpRange
-import com.idlecoding.simulator.SkillSimulator
+import com.freetime.idlecoding.data.json.AgilityCourseData
+import com.freetime.idlecoding.data.json.FishData
+import com.freetime.idlecoding.data.json.GatheringSkillData
+import com.freetime.idlecoding.data.json.GemData
+import com.freetime.idlecoding.data.json.OreData
+import com.freetime.idlecoding.data.json.SkillDropEntry
+import com.freetime.idlecoding.data.json.TreeData
+import com.freetime.idlecoding.data.json.XpRange
+import com.freetime.idlecoding.simulator.SkillSimulator
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue
 import org.junit.Test
 import kotlin.random.Random
 
 /**
- * Outcome tests for the RNG-driven [com.idlecoding.simulator.SkillSimulator] functions, made deterministic
+ * Outcome tests for the RNG-driven [com.freetime.idlecoding.simulator.SkillSimulator] functions, made deterministic
  * via the injected `random` seam.
  *
  * Strategy: where a value has no randomness (fixed per-action XP) or the

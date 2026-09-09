@@ -1,9 +1,9 @@
-package com.idlecoding.repository
+package com.freetime.idlecoding.repository
 
-import com.idlecoding.data.json.PrestigeSkillTreeData
-import com.idlecoding.data.model.PlayerFlags
-import com.idlecoding.data.model.Skills
-import com.idlecoding.simulator.PrestigeBoosts
+import com.freetime.idlecoding.data.json.PrestigeSkillTreeData
+import com.freetime.idlecoding.data.model.PlayerFlags
+import com.freetime.idlecoding.data.model.Skills
+import com.freetime.idlecoding.simulator.PrestigeBoosts
 import javax.inject.Inject
 import javax.inject.Singleton
 import kotlin.math.roundToInt

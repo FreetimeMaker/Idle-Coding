@@ -1,4 +1,4 @@
-package com.idlecoding.data.json
+package com.freetime.idlecoding.data.json
 
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable

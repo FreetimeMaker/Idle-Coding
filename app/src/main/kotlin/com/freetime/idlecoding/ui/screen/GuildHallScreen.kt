@@ -1,4 +1,4 @@
-package com.idlecoding.ui.screen
+package com.freetime.idlecoding.ui.screen
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -56,11 +56,11 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.idlecoding.BuildConfig
-import com.idlecoding.R
-import com.idlecoding.ui.viewmodel.GuildHallViewModel
-import com.idlecoding.ui.viewmodel.GuildSummary
-import com.idlecoding.util.GameStrings
+import com.freetime.idlecoding.BuildConfig
+import com.freetime.idlecoding.R
+import com.freetime.idlecoding.ui.viewmodel.GuildHallViewModel
+import com.freetime.idlecoding.ui.viewmodel.GuildSummary
+import com.freetime.idlecoding.util.GameStrings
 
 private data class GuildGroup(val headerRes: Int, val keys: List<String>)
 

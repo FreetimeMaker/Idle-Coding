@@ -1,20 +1,20 @@
-package com.idlecoding.ui.viewmodel
+package com.freetime.idlecoding.ui.viewmodel
 
-import com.idlecoding.util.withAppLocale
+import com.freetime.idlecoding.util.withAppLocale
 
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.idlecoding.data.model.PlayerFlags
-import com.idlecoding.repository.GameDataRepository
-import com.idlecoding.repository.GuildDailyWithProgress
-import com.idlecoding.repository.GuildQuestClaimResult
-import com.idlecoding.repository.GuildQuestWithProgress
-import com.idlecoding.repository.GuildRepository
-import com.idlecoding.repository.PlayerRepository
-import com.idlecoding.util.formatCoins
-import com.idlecoding.util.formatXp
-import com.idlecoding.util.xpMultiplierBreakdown
+import com.freetime.idlecoding.data.model.PlayerFlags
+import com.freetime.idlecoding.repository.GameDataRepository
+import com.freetime.idlecoding.repository.GuildDailyWithProgress
+import com.freetime.idlecoding.repository.GuildQuestClaimResult
+import com.freetime.idlecoding.repository.GuildQuestWithProgress
+import com.freetime.idlecoding.repository.GuildRepository
+import com.freetime.idlecoding.repository.PlayerRepository
+import com.freetime.idlecoding.util.formatCoins
+import com.freetime.idlecoding.util.formatXp
+import com.freetime.idlecoding.util.xpMultiplierBreakdown
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
@@ -26,8 +26,8 @@ import kotlinx.coroutines.launch
 import kotlinx.serialization.json.Json
 import javax.inject.Inject
 import android.content.Context
-import com.idlecoding.R
-import com.idlecoding.util.GameStrings
+import com.freetime.idlecoding.R
+import com.freetime.idlecoding.util.GameStrings
 import dagger.hilt.android.qualifiers.ApplicationContext
 
 data class GuildDetailUiState(

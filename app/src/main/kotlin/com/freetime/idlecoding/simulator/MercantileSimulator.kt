@@ -1,9 +1,9 @@
-package com.idlecoding.simulator
+package com.freetime.idlecoding.simulator
 
-import com.idlecoding.data.json.CoinRange
-import com.idlecoding.data.json.TradeRouteData
-import com.idlecoding.data.json.XpRange
-import com.idlecoding.data.model.SessionFrame
+import com.freetime.idlecoding.data.json.CoinRange
+import com.freetime.idlecoding.data.json.TradeRouteData
+import com.freetime.idlecoding.data.json.XpRange
+import com.freetime.idlecoding.data.model.SessionFrame
 import kotlin.random.Random
 
 object MercantileSimulator {

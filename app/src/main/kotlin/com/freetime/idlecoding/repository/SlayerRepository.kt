@@ -1,9 +1,9 @@
-package com.idlecoding.repository
+package com.freetime.idlecoding.repository
 
-import com.idlecoding.data.model.EquipSlot
-import com.idlecoding.data.model.PlayerFlags
-import com.idlecoding.data.model.Skills
-import com.idlecoding.data.model.SlayerTask
+import com.freetime.idlecoding.data.model.EquipSlot
+import com.freetime.idlecoding.data.model.PlayerFlags
+import com.freetime.idlecoding.data.model.Skills
+import com.freetime.idlecoding.data.model.SlayerTask
 import javax.inject.Inject
 import javax.inject.Singleton
 import kotlin.random.Random

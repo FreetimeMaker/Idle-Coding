@@ -1,14 +1,14 @@
-package com.idlecoding.repository
+package com.freetime.idlecoding.repository
 
-import com.idlecoding.data.json.HouseCostTier
-import com.idlecoding.data.json.HouseTileDef
-import com.idlecoding.data.model.HouseBlueprint
-import com.idlecoding.data.model.HouseData
-import com.idlecoding.data.model.HouseDraft
-import com.idlecoding.data.model.HousePlacement
-import com.idlecoding.data.model.HouseRoom
-import com.idlecoding.data.model.PlayerFlags
-import com.idlecoding.data.model.Skills
+import com.freetime.idlecoding.data.json.HouseCostTier
+import com.freetime.idlecoding.data.json.HouseTileDef
+import com.freetime.idlecoding.data.model.HouseBlueprint
+import com.freetime.idlecoding.data.model.HouseData
+import com.freetime.idlecoding.data.model.HouseDraft
+import com.freetime.idlecoding.data.model.HousePlacement
+import com.freetime.idlecoding.data.model.HouseRoom
+import com.freetime.idlecoding.data.model.PlayerFlags
+import com.freetime.idlecoding.data.model.Skills
 import javax.inject.Inject
 import javax.inject.Singleton
 

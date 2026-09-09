@@ -1,4 +1,4 @@
-package com.idlecoding
+package com.freetime.idlecoding
 
 import android.Manifest
 import android.content.Intent
@@ -20,14 +20,14 @@ import androidx.core.content.ContextCompat
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.lifecycleScope
-import com.idlecoding.notification.SessionNotificationManager
-import com.idlecoding.repository.BackupScheduler
-import com.idlecoding.repository.GlobalStateRepository
-import com.idlecoding.repository.PlayerRepository
-import com.idlecoding.ui.navigation.AppNavigation
-import com.idlecoding.ui.theme.FantasyIdlerTheme
-import com.idlecoding.ui.theme.LocalAppFontScale
-import com.idlecoding.ui.viewmodel.SettingsViewModel
+import com.freetime.idlecoding.notification.SessionNotificationManager
+import com.freetime.idlecoding.repository.BackupScheduler
+import com.freetime.idlecoding.repository.GlobalStateRepository
+import com.freetime.idlecoding.repository.PlayerRepository
+import com.freetime.idlecoding.ui.navigation.AppNavigation
+import com.freetime.idlecoding.ui.theme.FantasyIdlerTheme
+import com.freetime.idlecoding.ui.theme.LocalAppFontScale
+import com.freetime.idlecoding.ui.viewmodel.SettingsViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers

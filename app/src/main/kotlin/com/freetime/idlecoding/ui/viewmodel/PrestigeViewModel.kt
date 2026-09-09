@@ -1,17 +1,17 @@
-package com.idlecoding.ui.viewmodel
+package com.freetime.idlecoding.ui.viewmodel
 
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.idlecoding.data.json.PrestigeSkillTreeData
-import com.idlecoding.data.model.PlayerFlags
-import com.idlecoding.repository.BoostRepository
-import com.idlecoding.repository.GameDataRepository
-import com.idlecoding.repository.PlayerRepository
-import com.idlecoding.repository.PrestigeActionResult
-import com.idlecoding.simulator.PrestigeBoosts
-import com.idlecoding.simulator.PrestigePoints
-import com.idlecoding.simulator.XpTable
+import com.freetime.idlecoding.data.json.PrestigeSkillTreeData
+import com.freetime.idlecoding.data.model.PlayerFlags
+import com.freetime.idlecoding.repository.BoostRepository
+import com.freetime.idlecoding.repository.GameDataRepository
+import com.freetime.idlecoding.repository.PlayerRepository
+import com.freetime.idlecoding.repository.PrestigeActionResult
+import com.freetime.idlecoding.simulator.PrestigeBoosts
+import com.freetime.idlecoding.simulator.PrestigePoints
+import com.freetime.idlecoding.simulator.XpTable
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted

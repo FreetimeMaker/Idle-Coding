@@ -1,11 +1,11 @@
-package com.idlecoding.data.db
+package com.freetime.idlecoding.data.db
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
 import androidx.room.migration.Migration
 import androidx.sqlite.db.SupportSQLiteDatabase
-import com.idlecoding.data.db.dao.*
-import com.idlecoding.data.model.*
+import com.freetime.idlecoding.data.db.dao.*
+import com.freetime.idlecoding.data.model.*
 
 val MIGRATION_1_2 = object : Migration(1, 2) {
     override fun migrate(db: SupportSQLiteDatabase) {

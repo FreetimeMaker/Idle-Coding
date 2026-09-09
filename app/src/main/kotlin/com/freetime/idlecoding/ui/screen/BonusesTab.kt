@@ -1,4 +1,4 @@
-package com.idlecoding.ui.screen
+package com.freetime.idlecoding.ui.screen
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -22,22 +22,22 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
-import com.idlecoding.R
-import com.idlecoding.data.json.EquipmentData
-import com.idlecoding.data.json.PetData
-import com.idlecoding.data.model.EquipSlot
-import com.idlecoding.data.model.Skills
-import com.idlecoding.simulator.SkillSimulator
-import com.idlecoding.ui.viewmodel.InventoryViewModel
-import com.idlecoding.repository.TownRepository
-import com.idlecoding.simulator.PrestigeBoosts
-import com.idlecoding.repository.resolveCapeMultiplier
-import com.idlecoding.repository.isGuildCapeForSkill
-import com.idlecoding.repository.resolveOwnedCapeKeysForSkill
-import com.idlecoding.util.GameStrings
-import com.idlecoding.util.formatDurationMs
-import com.idlecoding.util.stringByName
-import com.idlecoding.util.toTitleCase
+import com.freetime.idlecoding.R
+import com.freetime.idlecoding.data.json.EquipmentData
+import com.freetime.idlecoding.data.json.PetData
+import com.freetime.idlecoding.data.model.EquipSlot
+import com.freetime.idlecoding.data.model.Skills
+import com.freetime.idlecoding.simulator.SkillSimulator
+import com.freetime.idlecoding.ui.viewmodel.InventoryViewModel
+import com.freetime.idlecoding.repository.TownRepository
+import com.freetime.idlecoding.simulator.PrestigeBoosts
+import com.freetime.idlecoding.repository.resolveCapeMultiplier
+import com.freetime.idlecoding.repository.isGuildCapeForSkill
+import com.freetime.idlecoding.repository.resolveOwnedCapeKeysForSkill
+import com.freetime.idlecoding.util.GameStrings
+import com.freetime.idlecoding.util.formatDurationMs
+import com.freetime.idlecoding.util.stringByName
+import com.freetime.idlecoding.util.toTitleCase
 
 private val COMBAT_CAPE_SKILLS = setOf(
     "attack", "strength", "defense", "ranged", "magic", "hp",

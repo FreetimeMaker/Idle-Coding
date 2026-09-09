@@ -1,23 +1,23 @@
-package com.idlecoding.ui.viewmodel
+package com.freetime.idlecoding.ui.viewmodel
 
-import com.idlecoding.util.withAppLocale
+import com.freetime.idlecoding.util.withAppLocale
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.idlecoding.data.model.EquipSlot
-import com.idlecoding.data.model.HiredWorker
-import com.idlecoding.data.model.PlayerFlags
-import com.idlecoding.data.model.QueuedAction
-import com.idlecoding.data.model.SkillSession
-import com.idlecoding.data.model.Skills
-import com.idlecoding.repository.BoostRepository
-import com.idlecoding.repository.GameDataRepository
-import com.idlecoding.repository.PlayerRepository
-import com.idlecoding.repository.SessionRepository
-import com.idlecoding.repository.WorkerQueuedSessionStarter
-import com.idlecoding.simulator.SkillSimulator
-import com.idlecoding.util.singleBatchItems
-import com.idlecoding.util.toolEfficiency
+import com.freetime.idlecoding.data.model.EquipSlot
+import com.freetime.idlecoding.data.model.HiredWorker
+import com.freetime.idlecoding.data.model.PlayerFlags
+import com.freetime.idlecoding.data.model.QueuedAction
+import com.freetime.idlecoding.data.model.SkillSession
+import com.freetime.idlecoding.data.model.Skills
+import com.freetime.idlecoding.repository.BoostRepository
+import com.freetime.idlecoding.repository.GameDataRepository
+import com.freetime.idlecoding.repository.PlayerRepository
+import com.freetime.idlecoding.repository.SessionRepository
+import com.freetime.idlecoding.repository.WorkerQueuedSessionStarter
+import com.freetime.idlecoding.simulator.SkillSimulator
+import com.freetime.idlecoding.util.singleBatchItems
+import com.freetime.idlecoding.util.toolEfficiency
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
@@ -29,7 +29,7 @@ import kotlinx.coroutines.launch
 import kotlinx.serialization.json.Json
 import javax.inject.Inject
 import android.content.Context
-import com.idlecoding.R
+import com.freetime.idlecoding.R
 import dagger.hilt.android.qualifiers.ApplicationContext
 
 data class WorkerSkillsUiState(

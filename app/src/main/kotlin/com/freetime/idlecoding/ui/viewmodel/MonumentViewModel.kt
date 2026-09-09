@@ -1,16 +1,16 @@
-package com.idlecoding.ui.viewmodel
+package com.freetime.idlecoding.ui.viewmodel
 
-import com.idlecoding.util.withAppLocale
+import com.freetime.idlecoding.util.withAppLocale
 
 import android.content.Context
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.idlecoding.R
-import com.idlecoding.data.model.PlayerFlags
-import com.idlecoding.repository.MonumentRepository
-import com.idlecoding.repository.MonumentTouchResult
-import com.idlecoding.repository.PlayerRepository
-import com.idlecoding.util.GameStrings
+import com.freetime.idlecoding.R
+import com.freetime.idlecoding.data.model.PlayerFlags
+import com.freetime.idlecoding.repository.MonumentRepository
+import com.freetime.idlecoding.repository.MonumentTouchResult
+import com.freetime.idlecoding.repository.PlayerRepository
+import com.freetime.idlecoding.util.GameStrings
 import dagger.hilt.android.lifecycle.HiltViewModel
 import dagger.hilt.android.qualifiers.ApplicationContext
 import javax.inject.Inject

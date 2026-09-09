@@ -1,4 +1,4 @@
-package com.idlecoding.ui.screen
+package com.freetime.idlecoding.ui.screen
 
 import android.content.Context
 import androidx.compose.foundation.layout.Arrangement
@@ -24,10 +24,10 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.foundation.layout.Column
-import com.idlecoding.R
-import com.idlecoding.data.json.EquipmentData
-import com.idlecoding.data.json.SpellData
-import com.idlecoding.util.GameStrings
+import com.freetime.idlecoding.R
+import com.freetime.idlecoding.data.json.EquipmentData
+import com.freetime.idlecoding.data.json.SpellData
+import com.freetime.idlecoding.util.GameStrings
 
 // ---------------------------------------------------------------------------
 // Arrow/spell pickers for the active combat style, shown inline in the Combat

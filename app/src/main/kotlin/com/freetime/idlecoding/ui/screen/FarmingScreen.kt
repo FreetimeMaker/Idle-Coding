@@ -1,4 +1,4 @@
-package com.idlecoding.ui.screen
+package com.freetime.idlecoding.ui.screen
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -58,21 +58,21 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.idlecoding.BuildConfig
-import com.idlecoding.R
-import com.idlecoding.data.json.CropData
-import com.idlecoding.data.model.FarmingPatch
-import com.idlecoding.repository.FarmingRepository
-import com.idlecoding.simulator.XpTable
-import com.idlecoding.ui.screen.skills.QuestIndicatorIcons
-import com.idlecoding.ui.theme.ScaledSheetContent
-import com.idlecoding.ui.viewmodel.FarmingUiState
-import com.idlecoding.ui.viewmodel.FarmingViewModel
-import com.idlecoding.ui.viewmodel.QuestIndicator
-import com.idlecoding.ui.viewmodel.remainingMs
-import com.idlecoding.util.GameStrings
-import com.idlecoding.util.formatDurationMs
-import com.idlecoding.util.formatXp
+import com.freetime.idlecoding.BuildConfig
+import com.freetime.idlecoding.R
+import com.freetime.idlecoding.data.json.CropData
+import com.freetime.idlecoding.data.model.FarmingPatch
+import com.freetime.idlecoding.repository.FarmingRepository
+import com.freetime.idlecoding.simulator.XpTable
+import com.freetime.idlecoding.ui.screen.skills.QuestIndicatorIcons
+import com.freetime.idlecoding.ui.theme.ScaledSheetContent
+import com.freetime.idlecoding.ui.viewmodel.FarmingUiState
+import com.freetime.idlecoding.ui.viewmodel.FarmingViewModel
+import com.freetime.idlecoding.ui.viewmodel.QuestIndicator
+import com.freetime.idlecoding.ui.viewmodel.remainingMs
+import com.freetime.idlecoding.util.GameStrings
+import com.freetime.idlecoding.util.formatDurationMs
+import com.freetime.idlecoding.util.formatXp
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

@@ -1,9 +1,9 @@
 package com.freetime.idlecoding.ui.viewmodel
 
-import com.idlecoding.ui.viewmodel.CraftableRecipe
-import com.idlecoding.ui.viewmodel.CraftingUiState
-import com.idlecoding.ui.viewmodel.QuestCategory
-import com.idlecoding.ui.viewmodel.QuestIndicator
+import com.freetime.idlecoding.ui.viewmodel.CraftableRecipe
+import com.freetime.idlecoding.ui.viewmodel.CraftingUiState
+import com.freetime.idlecoding.ui.viewmodel.QuestCategory
+import com.freetime.idlecoding.ui.viewmodel.QuestIndicator
 import org.junit.Assert.assertEquals
 import org.junit.Test
 

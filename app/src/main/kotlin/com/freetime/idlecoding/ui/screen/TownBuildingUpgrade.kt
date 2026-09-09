@@ -1,4 +1,4 @@
-package com.idlecoding.ui.screen
+package com.freetime.idlecoding.ui.screen
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
@@ -18,11 +18,11 @@ import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
-import com.idlecoding.R
-import com.idlecoding.data.json.TownBuildingData
-import com.idlecoding.repository.TownRepository
-import com.idlecoding.util.GameStrings
-import com.idlecoding.util.formatCoins
+import com.freetime.idlecoding.R
+import com.freetime.idlecoding.data.json.TownBuildingData
+import com.freetime.idlecoding.repository.TownRepository
+import com.freetime.idlecoding.util.GameStrings
+import com.freetime.idlecoding.util.formatCoins
 import kotlin.math.roundToInt
 
 @Composable

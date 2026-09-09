@@ -1,18 +1,18 @@
-package com.idlecoding.repository
+package com.freetime.idlecoding.repository
 
 import android.app.AlarmManager
 import android.app.PendingIntent
 import android.content.Context
 import android.content.Intent
 import androidx.room.withTransaction
-import com.idlecoding.data.db.AppDatabase
-import com.idlecoding.data.db.dao.FarmingPatchDao
-import com.idlecoding.data.json.CropData
-import com.idlecoding.data.model.EquipSlot
-import com.idlecoding.util.toolEfficiency
-import com.idlecoding.data.model.FarmingPatch
-import com.idlecoding.data.model.Skills
-import com.idlecoding.receiver.FarmPatchAlarmReceiver
+import com.freetime.idlecoding.data.db.AppDatabase
+import com.freetime.idlecoding.data.db.dao.FarmingPatchDao
+import com.freetime.idlecoding.data.json.CropData
+import com.freetime.idlecoding.data.model.EquipSlot
+import com.freetime.idlecoding.util.toolEfficiency
+import com.freetime.idlecoding.data.model.FarmingPatch
+import com.freetime.idlecoding.data.model.Skills
+import com.freetime.idlecoding.receiver.FarmPatchAlarmReceiver
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.flow.Flow
 import kotlinx.serialization.json.Json

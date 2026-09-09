@@ -4,14 +4,14 @@ import android.content.Context
 import androidx.room.Room
 import androidx.test.core.app.ApplicationProvider
 import androidx.test.ext.junit.runners.AndroidJUnit4
-import com.idlecoding.data.db.AppDatabase
-import com.idlecoding.data.model.OwnedPet
-import com.idlecoding.repository.BoostRepository
-import com.idlecoding.repository.BuffNotificationScheduler
-import com.idlecoding.repository.DailyQuestRepository
-import com.idlecoding.repository.GameDataRepository
-import com.idlecoding.repository.PlayerRepository
-import com.idlecoding.repository.WeeklyQuestRepository
+import com.freetime.idlecoding.data.db.AppDatabase
+import com.freetime.idlecoding.data.model.OwnedPet
+import com.freetime.idlecoding.repository.BoostRepository
+import com.freetime.idlecoding.repository.BuffNotificationScheduler
+import com.freetime.idlecoding.repository.DailyQuestRepository
+import com.freetime.idlecoding.repository.GameDataRepository
+import com.freetime.idlecoding.repository.PlayerRepository
+import com.freetime.idlecoding.repository.WeeklyQuestRepository
 import kotlinx.coroutines.CompletableDeferred
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
@@ -29,7 +29,7 @@ import org.robolectric.annotation.Config
 
 /**
  * Every whole-row PlayerEntity mutator must serialize on
- * [com.idlecoding.repository.PlayerRepository.playerMutex], and none may re-enter that mutex internally --
+ * [com.freetime.idlecoding.repository.PlayerRepository.playerMutex], and none may re-enter that mutex internally --
  * kotlinx Mutex is non-reentrant, so nested acquisition hangs forever.
  */
 @RunWith(AndroidJUnit4::class)

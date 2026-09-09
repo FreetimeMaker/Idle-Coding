@@ -1,4 +1,4 @@
-package com.idlecoding.ui.screen.skills
+package com.freetime.idlecoding.ui.screen.skills
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.interaction.MutableInteractionSource
@@ -30,18 +30,18 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.idlecoding.R
-import com.idlecoding.data.json.TradeRouteData
-import com.idlecoding.data.model.Skills
-import com.idlecoding.simulator.MercantilePerks
-import com.idlecoding.ui.screen.AppBannerCenter
-import com.idlecoding.ui.screen.AppBannerEffect
-import com.idlecoding.ui.viewmodel.MercantileUiState
-import com.idlecoding.ui.viewmodel.MercantileViewModel
-import com.idlecoding.ui.viewmodel.QuestIndicator
-import com.idlecoding.util.GameStrings
-import com.idlecoding.util.formatCoins
-import com.idlecoding.util.formatXp
+import com.freetime.idlecoding.R
+import com.freetime.idlecoding.data.json.TradeRouteData
+import com.freetime.idlecoding.data.model.Skills
+import com.freetime.idlecoding.simulator.MercantilePerks
+import com.freetime.idlecoding.ui.screen.AppBannerCenter
+import com.freetime.idlecoding.ui.screen.AppBannerEffect
+import com.freetime.idlecoding.ui.viewmodel.MercantileUiState
+import com.freetime.idlecoding.ui.viewmodel.MercantileViewModel
+import com.freetime.idlecoding.ui.viewmodel.QuestIndicator
+import com.freetime.idlecoding.util.GameStrings
+import com.freetime.idlecoding.util.formatCoins
+import com.freetime.idlecoding.util.formatXp
 
 // ---------------------------------------------------------------------------
 // Sheet-mode entry point (used when shown inside a ModalBottomSheet)

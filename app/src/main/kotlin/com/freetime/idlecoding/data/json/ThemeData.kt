@@ -1,6 +1,6 @@
-package com.idlecoding.data.json
+package com.freetime.idlecoding.data.json
 
-import com.idlecoding.data.model.ThemeBase
+import com.freetime.idlecoding.data.model.ThemeBase
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 

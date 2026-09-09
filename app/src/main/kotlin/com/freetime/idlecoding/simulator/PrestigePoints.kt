@@ -1,4 +1,4 @@
-package com.idlecoding.simulator
+package com.freetime.idlecoding.simulator
 
 /**
  * Pure prestige-point economy math (v1.14.0 prestige overhaul).

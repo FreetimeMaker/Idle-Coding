@@ -1,10 +1,10 @@
-package com.idlecoding.util
+package com.freetime.idlecoding.util
 
 import android.content.Context
 import android.text.format.DateFormat
-import com.idlecoding.R
-import com.idlecoding.data.model.SessionFrame
-import com.idlecoding.data.model.SkillSession
+import com.freetime.idlecoding.R
+import com.freetime.idlecoding.data.model.SessionFrame
+import com.freetime.idlecoding.data.model.SkillSession
 import kotlinx.serialization.json.Json
 import java.util.Calendar
 import java.util.Date

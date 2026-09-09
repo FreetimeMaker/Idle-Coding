@@ -1,12 +1,12 @@
 package com.freetime.idlecoding.simulator
 
-import com.idlecoding.simulator.SkillSimulator
+import com.freetime.idlecoding.simulator.SkillSimulator
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue
 import org.junit.Test
 
 /**
- * Unit tests for the deterministic (RNG-free) preview helpers of [com.idlecoding.simulator.SkillSimulator]:
+ * Unit tests for the deterministic (RNG-free) preview helpers of [com.freetime.idlecoding.simulator.SkillSimulator]:
  * `estimateGatheringXp`, `estimateAgilityXp`, and `sessionDurationMs`. The
  * RNG-driven `simulate*` functions are covered separately once a seedable
  * Random seam is introduced.

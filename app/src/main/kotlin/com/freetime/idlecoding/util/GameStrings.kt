@@ -1,10 +1,10 @@
-package com.idlecoding.util
+package com.freetime.idlecoding.util
 
 import android.content.Context
 import android.content.res.Configuration
 import androidx.appcompat.app.AppCompatDelegate
-import com.idlecoding.R
-import com.idlecoding.simulator.PrestigeBoosts
+import com.freetime.idlecoding.R
+import com.freetime.idlecoding.simulator.PrestigeBoosts
 
 /**
  * Central resolver for game-content display strings.

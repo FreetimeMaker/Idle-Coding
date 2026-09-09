@@ -1,14 +1,14 @@
 package com.freetime.idlecoding.simulator
 
-import com.idlecoding.simulator.XpTable
+import com.freetime.idlecoding.simulator.XpTable
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue
 import org.junit.Test
 
 /**
- * Unit tests for [com.idlecoding.simulator.XpTable] — the level 1–99 XP progression table.
+ * Unit tests for [com.freetime.idlecoding.simulator.XpTable] — the level 1–99 XP progression table.
  *
- * Anchors are taken from the formula documented on [com.idlecoding.simulator.XpTable] and cross-checked
+ * Anchors are taken from the formula documented on [com.freetime.idlecoding.simulator.XpTable] and cross-checked
  * against the classic idle-RPG table (verified against IdleApes xp_table.json).
  */
 class XpTableTest {

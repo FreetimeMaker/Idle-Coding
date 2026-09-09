@@ -1,4 +1,4 @@
-package com.idlecoding.data.model
+package com.freetime.idlecoding.data.model
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
@@ -8,7 +8,7 @@ import androidx.room.PrimaryKey
  * Room entity for the single player profile.
  *
  * Complex fields are stored as JSON strings — identical to the IdleApes Python/SQLite schema.
- * Use [com.idlecoding.repository.PlayerRepository] to read and write typed domain objects
+ * Use [com.freetime.idlecoding.repository.PlayerRepository] to read and write typed domain objects
  * rather than touching these raw columns directly.
  */
 @Entity(tableName = "players")

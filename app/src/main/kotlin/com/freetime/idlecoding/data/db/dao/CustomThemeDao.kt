@@ -1,10 +1,10 @@
-package com.idlecoding.data.db.dao
+package com.freetime.idlecoding.data.db.dao
 
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
-import com.idlecoding.data.model.CustomTheme
+import com.freetime.idlecoding.data.model.CustomTheme
 import kotlinx.coroutines.flow.Flow
 
 @Dao

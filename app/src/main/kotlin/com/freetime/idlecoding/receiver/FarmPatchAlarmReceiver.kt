@@ -1,10 +1,10 @@
-package com.idlecoding.receiver
+package com.freetime.idlecoding.receiver
 
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
-import com.idlecoding.notification.SessionNotificationManager
-import com.idlecoding.util.GameStrings
+import com.freetime.idlecoding.notification.SessionNotificationManager
+import com.freetime.idlecoding.util.GameStrings
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 

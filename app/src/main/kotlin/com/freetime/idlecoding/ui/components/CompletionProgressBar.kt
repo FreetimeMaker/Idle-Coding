@@ -1,4 +1,4 @@
-package com.idlecoding.ui.components
+package com.freetime.idlecoding.ui.components
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -16,7 +16,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
-import com.idlecoding.R
+import com.freetime.idlecoding.R
 
 @Composable
 fun CompletionProgressBar(completed: Int, total: Int, label: String) {

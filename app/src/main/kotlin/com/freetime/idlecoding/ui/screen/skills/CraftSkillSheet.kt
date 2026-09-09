@@ -1,4 +1,4 @@
-package com.idlecoding.ui.screen.skills
+package com.freetime.idlecoding.ui.screen.skills
 
 
 import android.content.Context
@@ -54,15 +54,15 @@ import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
-import com.idlecoding.R
-import com.idlecoding.data.model.Skills
-import com.idlecoding.ui.screen.QtyQuickButtons
-import com.idlecoding.ui.viewmodel.CraftableRecipe
-import com.idlecoding.ui.viewmodel.CraftingUiState
-import com.idlecoding.ui.viewmodel.CraftingViewModel
-import com.idlecoding.ui.viewmodel.QuestFillSuggestion
-import com.idlecoding.util.GameStrings
-import com.idlecoding.util.formatDurationMs
+import com.freetime.idlecoding.R
+import com.freetime.idlecoding.data.model.Skills
+import com.freetime.idlecoding.ui.screen.QtyQuickButtons
+import com.freetime.idlecoding.ui.viewmodel.CraftableRecipe
+import com.freetime.idlecoding.ui.viewmodel.CraftingUiState
+import com.freetime.idlecoding.ui.viewmodel.CraftingViewModel
+import com.freetime.idlecoding.ui.viewmodel.QuestFillSuggestion
+import com.freetime.idlecoding.util.GameStrings
+import com.freetime.idlecoding.util.formatDurationMs
 import kotlin.collections.forEach
 
 

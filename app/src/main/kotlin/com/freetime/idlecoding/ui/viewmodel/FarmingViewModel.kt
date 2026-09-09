@@ -1,21 +1,21 @@
-package com.idlecoding.ui.viewmodel
+package com.freetime.idlecoding.ui.viewmodel
 
 import android.content.Context
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.idlecoding.R
-import com.idlecoding.data.json.CropData
-import com.idlecoding.data.model.FarmingPatch
-import com.idlecoding.data.model.PlayerFlags
-import com.idlecoding.data.model.QuestProgress
-import com.idlecoding.data.model.Skills
-import com.idlecoding.repository.FarmingRepository
-import com.idlecoding.repository.GameDataRepository
-import com.idlecoding.repository.GuildRepository
-import com.idlecoding.repository.PlayerRepository
-import com.idlecoding.repository.QuestRepository
-import com.idlecoding.repository.SeasonalEventRepository
-import com.idlecoding.repository.TownRepository
+import com.freetime.idlecoding.R
+import com.freetime.idlecoding.data.json.CropData
+import com.freetime.idlecoding.data.model.FarmingPatch
+import com.freetime.idlecoding.data.model.PlayerFlags
+import com.freetime.idlecoding.data.model.QuestProgress
+import com.freetime.idlecoding.data.model.Skills
+import com.freetime.idlecoding.repository.FarmingRepository
+import com.freetime.idlecoding.repository.GameDataRepository
+import com.freetime.idlecoding.repository.GuildRepository
+import com.freetime.idlecoding.repository.PlayerRepository
+import com.freetime.idlecoding.repository.QuestRepository
+import com.freetime.idlecoding.repository.SeasonalEventRepository
+import com.freetime.idlecoding.repository.TownRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.Dispatchers
@@ -30,8 +30,8 @@ import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 import kotlinx.serialization.json.Json
-import com.idlecoding.util.GameStrings
-import com.idlecoding.util.withAppLocale
+import com.freetime.idlecoding.util.GameStrings
+import com.freetime.idlecoding.util.withAppLocale
 import javax.inject.Inject
 
 // ---------------------------------------------------------------------------

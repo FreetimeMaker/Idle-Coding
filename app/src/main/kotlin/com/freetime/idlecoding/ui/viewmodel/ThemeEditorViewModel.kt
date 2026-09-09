@@ -1,16 +1,16 @@
-package com.idlecoding.ui.viewmodel
+package com.freetime.idlecoding.ui.viewmodel
 
 import androidx.compose.material3.ColorScheme
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.toArgb
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.idlecoding.data.json.ColourSchemeParameter
-import com.idlecoding.data.json.ThemeData
-import com.idlecoding.data.model.ThemeBase
-import com.idlecoding.repository.PlayerRepository
-import com.idlecoding.repository.ThemeRepository
-import com.idlecoding.util.ColorContrast
+import com.freetime.idlecoding.data.json.ColourSchemeParameter
+import com.freetime.idlecoding.data.json.ThemeData
+import com.freetime.idlecoding.data.model.ThemeBase
+import com.freetime.idlecoding.repository.PlayerRepository
+import com.freetime.idlecoding.repository.ThemeRepository
+import com.freetime.idlecoding.util.ColorContrast
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted

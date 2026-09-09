@@ -1,12 +1,12 @@
-package com.idlecoding.repository
+package com.freetime.idlecoding.repository
 
 import android.content.Context
 import android.os.SystemClock
-import com.idlecoding.data.model.PlayerExport
-import com.idlecoding.data.model.PlayerFlags
-import com.idlecoding.data.model.SkillSessionExport
-import com.idlecoding.data.model.toExport
-import com.idlecoding.data.model.toSkillSession
+import com.freetime.idlecoding.data.model.PlayerExport
+import com.freetime.idlecoding.data.model.PlayerFlags
+import com.freetime.idlecoding.data.model.SkillSessionExport
+import com.freetime.idlecoding.data.model.toExport
+import com.freetime.idlecoding.data.model.toSkillSession
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableSharedFlow

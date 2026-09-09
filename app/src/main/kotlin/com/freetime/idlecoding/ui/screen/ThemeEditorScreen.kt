@@ -1,4 +1,4 @@
-package com.idlecoding.ui.screen
+package com.freetime.idlecoding.ui.screen
 
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
@@ -79,14 +79,14 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.AnnotatedString
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.idlecoding.R
-import com.idlecoding.data.model.ThemeBase
-import com.idlecoding.ui.theme.ScaledSheetContent
-import com.idlecoding.ui.theme.WarningAmber
-import com.idlecoding.ui.viewmodel.ThemeEditorViewModel
-import com.idlecoding.ui.viewmodel.ThemeEditorViewModel.Companion.toHex
-import com.idlecoding.util.ColorContrast
-import com.idlecoding.util.toTitleCase
+import com.freetime.idlecoding.R
+import com.freetime.idlecoding.data.model.ThemeBase
+import com.freetime.idlecoding.ui.theme.ScaledSheetContent
+import com.freetime.idlecoding.ui.theme.WarningAmber
+import com.freetime.idlecoding.ui.viewmodel.ThemeEditorViewModel
+import com.freetime.idlecoding.ui.viewmodel.ThemeEditorViewModel.Companion.toHex
+import com.freetime.idlecoding.util.ColorContrast
+import com.freetime.idlecoding.util.toTitleCase
 
 @OptIn(ExperimentalMaterial3Api::class, ExperimentalLayoutApi::class)
 @Composable

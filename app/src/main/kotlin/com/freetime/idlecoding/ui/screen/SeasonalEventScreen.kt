@@ -1,4 +1,4 @@
-package com.idlecoding.ui.screen
+package com.freetime.idlecoding.ui.screen
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -62,19 +62,19 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.idlecoding.BuildConfig
-import com.idlecoding.R
-import com.idlecoding.data.json.NightMarketOfferData
-import com.idlecoding.data.json.SeasonalMinigameConfig
-import com.idlecoding.data.json.SeasonalRewardTierData
-import com.idlecoding.repository.SeasonalBountyTaskWithProgress
-import com.idlecoding.repository.SeasonalEventRepository
-import com.idlecoding.ui.viewmodel.CraftingViewModel
-import com.idlecoding.ui.viewmodel.SeasonalEventViewModel
-import com.idlecoding.ui.viewmodel.SkillsViewModel
-import com.idlecoding.util.GameStrings
-import com.idlecoding.util.formatCoins
-import com.idlecoding.util.formatDurationMs
+import com.freetime.idlecoding.BuildConfig
+import com.freetime.idlecoding.R
+import com.freetime.idlecoding.data.json.NightMarketOfferData
+import com.freetime.idlecoding.data.json.SeasonalMinigameConfig
+import com.freetime.idlecoding.data.json.SeasonalRewardTierData
+import com.freetime.idlecoding.repository.SeasonalBountyTaskWithProgress
+import com.freetime.idlecoding.repository.SeasonalEventRepository
+import com.freetime.idlecoding.ui.viewmodel.CraftingViewModel
+import com.freetime.idlecoding.ui.viewmodel.SeasonalEventViewModel
+import com.freetime.idlecoding.ui.viewmodel.SkillsViewModel
+import com.freetime.idlecoding.util.GameStrings
+import com.freetime.idlecoding.util.formatCoins
+import com.freetime.idlecoding.util.formatDurationMs
 import kotlin.random.Random
 import kotlinx.coroutines.delay
 

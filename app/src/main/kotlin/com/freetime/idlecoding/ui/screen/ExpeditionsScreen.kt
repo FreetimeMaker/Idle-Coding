@@ -1,4 +1,4 @@
-package com.idlecoding.ui.screen
+package com.freetime.idlecoding.ui.screen
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.interaction.MutableInteractionSource
@@ -35,10 +35,10 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.compose.ui.platform.LocalContext
-import com.idlecoding.R
-import com.idlecoding.ui.viewmodel.ExpeditionsViewModel
-import com.idlecoding.ui.viewmodel.SkillingDungeonUiItem
-import com.idlecoding.util.GameStrings
+import com.freetime.idlecoding.R
+import com.freetime.idlecoding.ui.viewmodel.ExpeditionsViewModel
+import com.freetime.idlecoding.ui.viewmodel.SkillingDungeonUiItem
+import com.freetime.idlecoding.util.GameStrings
 
 @Composable
 fun ExpeditionsScreen(

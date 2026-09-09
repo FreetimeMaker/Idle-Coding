@@ -1,10 +1,10 @@
-package com.idlecoding.repository
+package com.freetime.idlecoding.repository
 
 import android.app.AlarmManager
 import android.app.PendingIntent
 import android.content.Context
 import android.content.Intent
-import com.idlecoding.receiver.BuffAlarmReceiver
+import com.freetime.idlecoding.receiver.BuffAlarmReceiver
 import dagger.hilt.android.qualifiers.ApplicationContext
 import javax.inject.Inject
 import javax.inject.Singleton

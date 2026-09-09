@@ -1,9 +1,9 @@
-package com.idlecoding.repository
+package com.freetime.idlecoding.repository
 
-import com.idlecoding.data.json.BlessingData
-import com.idlecoding.data.json.BlessingType
-import com.idlecoding.data.model.PlayerFlags
-import com.idlecoding.data.model.Skills
+import com.freetime.idlecoding.data.json.BlessingData
+import com.freetime.idlecoding.data.json.BlessingType
+import com.freetime.idlecoding.data.model.PlayerFlags
+import com.freetime.idlecoding.data.model.Skills
 import javax.inject.Inject
 import javax.inject.Singleton
 import javax.inject.Provider

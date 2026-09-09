@@ -1,12 +1,12 @@
-package com.idlecoding.simulator
+package com.freetime.idlecoding.simulator
 
-import com.idlecoding.data.json.AgilityCourseData
-import com.idlecoding.data.json.FishData
-import com.idlecoding.data.json.GatheringSkillData
-import com.idlecoding.data.json.GemData
-import com.idlecoding.data.json.OreData
-import com.idlecoding.data.json.TreeData
-import com.idlecoding.data.model.SessionFrame
+import com.freetime.idlecoding.data.json.AgilityCourseData
+import com.freetime.idlecoding.data.json.FishData
+import com.freetime.idlecoding.data.json.GatheringSkillData
+import com.freetime.idlecoding.data.json.GemData
+import com.freetime.idlecoding.data.json.OreData
+import com.freetime.idlecoding.data.json.TreeData
+import com.freetime.idlecoding.data.model.SessionFrame
 import kotlin.math.max
 import kotlin.math.roundToInt
 import kotlin.math.roundToLong

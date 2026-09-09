@@ -1,7 +1,7 @@
-package com.idlecoding.simulator
+package com.freetime.idlecoding.simulator
 
-import com.idlecoding.data.json.ThievingNpcData
-import com.idlecoding.data.model.SessionFrame
+import com.freetime.idlecoding.data.json.ThievingNpcData
+import com.freetime.idlecoding.data.model.SessionFrame
 import kotlin.random.Random
 
 /**

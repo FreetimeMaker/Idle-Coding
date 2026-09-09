@@ -1,4 +1,4 @@
-package com.idlecoding.repository
+package com.freetime.idlecoding.repository
 
 import android.app.AlarmManager
 import android.app.PendingIntent
@@ -6,13 +6,13 @@ import android.content.Context
 import android.content.Intent
 import android.os.SystemClock
 import android.provider.Settings
-import com.idlecoding.data.db.dao.PlayerDao
-import com.idlecoding.data.db.dao.SkillSessionDao
-import com.idlecoding.data.model.PlayerFlags
-import com.idlecoding.data.model.SessionFrame
-import com.idlecoding.data.model.SkillSession
-import com.idlecoding.receiver.SessionAlarmReceiver
-import com.idlecoding.simulator.CombatSimulator
+import com.freetime.idlecoding.data.db.dao.PlayerDao
+import com.freetime.idlecoding.data.db.dao.SkillSessionDao
+import com.freetime.idlecoding.data.model.PlayerFlags
+import com.freetime.idlecoding.data.model.SessionFrame
+import com.freetime.idlecoding.data.model.SkillSession
+import com.freetime.idlecoding.receiver.SessionAlarmReceiver
+import com.freetime.idlecoding.simulator.CombatSimulator
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.sync.Mutex

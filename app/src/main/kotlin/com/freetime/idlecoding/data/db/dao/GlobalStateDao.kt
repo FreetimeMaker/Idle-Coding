@@ -1,7 +1,7 @@
-package com.idlecoding.data.db.dao
+package com.freetime.idlecoding.data.db.dao
 
 import androidx.room.*
-import com.idlecoding.data.model.GlobalState
+import com.freetime.idlecoding.data.model.GlobalState
 
 @Dao
 interface GlobalStateDao {

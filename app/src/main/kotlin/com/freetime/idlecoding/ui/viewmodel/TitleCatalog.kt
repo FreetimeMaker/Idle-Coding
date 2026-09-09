@@ -1,6 +1,6 @@
-package com.idlecoding.ui.viewmodel
+package com.freetime.idlecoding.ui.viewmodel
 
-import com.idlecoding.R
+import com.freetime.idlecoding.R
 
 data class TitleDefinition(
     val id: String,
