@@ -7,7 +7,7 @@ plugins {
 }
 
 android {
-    namespace = "com.freetime.idlecoding"
+    namespace = "com.idlecoding"
     compileSdk = 37
 
     defaultConfig {
