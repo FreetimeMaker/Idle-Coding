@@ -9,7 +9,7 @@ activityCompose     = "1.13.0"
 navigationCompose   = "2.8.0"
 hilt                = "2.51.1"
 hiltExt             = "1.2.0"
-room                = "2.6.1"
+room                = "2.8.4"
 appcompat           = "1.8.0"
 serialization       = "1.7.1"
 
