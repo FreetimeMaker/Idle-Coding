@@ -1,7 +1,7 @@
 {
   "name": "drowned_temple",
-  "display_name": "Drowned Temple",
-  "description": "A sunken temple beneath the sea grotto, its halls filled with brine and ancient sorrow. Drowned cultists drift through the corridors alongside sea spirits and cursed fishermen.",
+  "display_name": "@string/dungeon_drowned_temple_name",
+  "description": "@string/data_dungeons_drowned_temple_description",
   "recommended_level": 20,
   "encounter_rate": 0.28,
   "lore_unlock_only": true,

@@ -1,5 +1,5 @@
 {
-  "description": "XP table for level progression",
+  "description": "@string/data_xp_table_description",
   "levels": {
     "1": 0,
     "2": 83,

@@ -1,7 +1,7 @@
 {
   "potato": {
     "id": "potato",
-    "display_name": "Potato",
+    "display_name": "@string/crop_potato_name",
     "emoji": "\ud83e\udd54",
     "seed_name": "potato_seed",
     "growth_time_hours": 2,
@@ -14,7 +14,7 @@
   },
   "onion": {
     "id": "onion",
-    "display_name": "Onion",
+    "display_name": "@string/crop_onion_name",
     "emoji": "\ud83e\uddc5",
     "seed_name": "onion_seed",
     "growth_time_hours": 3,
@@ -27,7 +27,7 @@
   },
   "cabbage": {
     "id": "cabbage",
-    "display_name": "Cabbage",
+    "display_name": "@string/crop_cabbage_name",
     "emoji": "\ud83e\udd6c",
     "seed_name": "cabbage_seed",
     "growth_time_hours": 4,
@@ -40,7 +40,7 @@
   },
   "carrot": {
     "id": "carrot",
-    "display_name": "Carrot",
+    "display_name": "@string/crop_carrot_name",
     "emoji": "\ud83e\udd55",
     "seed_name": "carrot_seed",
     "growth_time_hours": 5,
@@ -53,7 +53,7 @@
   },
   "tomato": {
     "id": "tomato",
-    "display_name": "Tomato",
+    "display_name": "@string/crop_tomato_name",
     "emoji": "\ud83c\udf45",
     "seed_name": "tomato_seed",
     "growth_time_hours": 6,
@@ -66,7 +66,7 @@
   },
   "corn": {
     "id": "corn",
-    "display_name": "Corn",
+    "display_name": "@string/crop_corn_name",
     "emoji": "\ud83c\udf3d",
     "seed_name": "corn_seed",
     "growth_time_hours": 7,
@@ -79,7 +79,7 @@
   },
   "pumpkin": {
     "id": "pumpkin",
-    "display_name": "Pumpkin",
+    "display_name": "@string/crop_pumpkin_name",
     "emoji": "\ud83c\udf83",
     "seed_name": "pumpkin_seed",
     "growth_time_hours": 9,
@@ -92,7 +92,7 @@
   },
   "watermelon": {
     "id": "watermelon",
-    "display_name": "Watermelon",
+    "display_name": "@string/crop_watermelon_name",
     "emoji": "\ud83c\udf49",
     "seed_name": "watermelon_seed",
     "growth_time_hours": 10,
@@ -105,7 +105,7 @@
   },
   "strawberry": {
     "id": "strawberry",
-    "display_name": "Strawberry",
+    "display_name": "@string/crop_strawberry_name",
     "emoji": "\ud83c\udf53",
     "seed_name": "strawberry_seed",
     "growth_time_hours": 11,
@@ -118,7 +118,7 @@
   },
   "magic_herb": {
     "id": "magic_herb",
-    "display_name": "Magic Herb",
+    "display_name": "@string/crop_magic_herb_name",
     "emoji": "\ud83c\udf3f",
     "seed_name": "magic_herb_seed",
     "growth_time_hours": 13,
@@ -131,7 +131,7 @@
   },
   "dragon_fruit": {
     "id": "dragon_fruit",
-    "display_name": "Dragon Fruit",
+    "display_name": "@string/crop_dragon_fruit_name",
     "emoji": "\ud83c\udf3a",
     "seed_name": "dragon_fruit_seed",
     "growth_time_hours": 14,
@@ -144,7 +144,7 @@
   },
   "golden_wheat": {
     "id": "golden_wheat",
-    "display_name": "Golden Wheat",
+    "display_name": "@string/crop_golden_wheat_name",
     "emoji": "\ud83c\udf3e",
     "seed_name": "golden_wheat_seed",
     "growth_time_hours": 16,
@@ -157,7 +157,7 @@
   },
   "spirit_herb": {
     "id": "spirit_herb",
-    "display_name": "Spirit Herb",
+    "display_name": "@string/item_spirit_herb_name",
     "emoji": "\ud83c\udf43",
     "seed_name": "spirit_seed",
     "growth_time_hours": 19,
@@ -170,7 +170,7 @@
   },
   "celestial_bloom": {
     "id": "celestial_bloom",
-    "display_name": "Celestial Bloom",
+    "display_name": "@string/item_celestial_bloom_name",
     "emoji": "\ud83c\udf38",
     "seed_name": "celestial_bloom_seed",
     "growth_time_hours": 21,
@@ -183,7 +183,7 @@
   },
   "starfruit": {
     "id": "starfruit",
-    "display_name": "Starfruit",
+    "display_name": "@string/crop_starfruit_name",
     "emoji": "\ud83c\udf1f",
     "seed_name": "starfruit_seed",
     "growth_time_hours": 23,
@@ -196,7 +196,7 @@
   },
   "void_lotus": {
     "id": "void_lotus",
-    "display_name": "Void Lotus",
+    "display_name": "@string/item_void_lotus_name",
     "emoji": "\ud83e\udeb7",
     "seed_name": "void_lotus_seed",
     "growth_time_hours": 24,
@@ -209,7 +209,7 @@
   },
   "magic_bean": {
     "id": "magic_bean",
-    "display_name": "Magic Bean",
+    "display_name": "@string/crop_magic_bean_name",
     "emoji": "\ud83e\uded8",
     "seed_name": "magic_bean",
     "growth_time_hours": 336,

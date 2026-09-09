@@ -1,7 +1,7 @@
 {
   "name": "crafting",
-  "display_name": "Crafting",
-  "description": "Create jewelry and other crafted items",
+  "display_name": "@string/skill_crafting_name",
+  "description": "@string/skill_crafting_desc",
   "max_level": 99,
   "xp_ranges": {
     "1": {"min": 5, "max": 10},

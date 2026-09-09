@@ -1,7 +1,7 @@
 {
   "name": "shattered_spire",
-  "display_name": "Shattered Spire",
-  "description": "The remains of a wizard's tower reduced to a field of rubble and warped stone. Magical energy still crackles through the debris. Only the most agile can navigate the unstable wreckage without being buried.",
+  "display_name": "@string/skilling_dungeon_shattered_spire_name",
+  "description": "@string/data_skilling_dungeons_shattered_spire_description",
   "skill": "agility",
   "level_required": 40,
   "requires_previous_unlock": "shadow_den",
@@ -56,5 +56,5 @@
     "The passage descends into intact chambers beneath the rubble. The Arcane Ruins still function, after a fashion."
   ],
   "unlock_dungeon": "arcane_ruins",
-  "unlock_message": "The Arcane Ruins lie intact beneath the rubble — enter and face the constructs within."
+  "unlock_message": "@string/data_skilling_dungeons_shattered_spire_unlock_message"
 }

@@ -1,7 +1,7 @@
 {
   "id": "eastern_caravan",
-  "display_name": "Eastern Caravan",
-  "description": "Join a merchant caravan heading east. The long journey pays well when the deal goes through.",
+  "display_name": "@string/trade_route_eastern_caravan_name",
+  "description": "@string/trade_route_eastern_caravan_desc",
   "level_required": 40,
   "coin_cost": 40000,
   "xp_ranges": {

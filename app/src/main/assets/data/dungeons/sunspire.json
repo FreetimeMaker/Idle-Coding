@@ -1,7 +1,7 @@
 {
   "name": "sunspire",
-  "display_name": "The Sunspire",
-  "description": "A sun-tower ruin cracked open by the solstice, spilling heat spirits into the region. Part of the Sunspire Solstice event.",
+  "display_name": "@string/dungeon_sunspire_name",
+  "description": "@string/dungeon_sunspire_desc",
   "recommended_level": 40,
   "encounter_rate": 0.38,
   "enemy_spawns": [

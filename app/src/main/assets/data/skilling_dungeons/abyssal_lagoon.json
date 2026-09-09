@@ -1,7 +1,7 @@
 {
   "name": "abyssal_lagoon",
-  "display_name": "Abyssal Lagoon",
-  "description": "A still black lagoon with no visible bottom. The fish here glow faintly and dissolve within minutes of being caught. Experienced anglers speak of this place in whispers.",
+  "display_name": "@string/skilling_dungeon_abyssal_lagoon_name",
+  "description": "@string/data_skilling_dungeons_abyssal_lagoon_description",
   "skill": "fishing",
   "level_required": 40,
   "requires_previous_unlock": "drowned_temple",
@@ -58,5 +58,5 @@
     "The dark water parts. The Abyssal Ruins loom below — vast, alien, and ancient beyond reckoning."
   ],
   "unlock_dungeon": "abyssal_ruins",
-  "unlock_message": "The Abyssal Ruins have surfaced — dive in and confront what dwells in the deep."
+  "unlock_message": "@string/data_skilling_dungeons_abyssal_lagoon_unlock_message"
 }

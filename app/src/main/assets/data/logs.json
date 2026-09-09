@@ -1,42 +1,42 @@
 {
   "log": {
-    "display_name": "Log",
+    "display_name": "@string/data_logs_display_name",
     "level_required": 1,
     "xp_per_log": 40,
     "time_per_log": 1
   },
   "oak_log": {
-    "display_name": "Oak Log",
+    "display_name": "@string/data_logs_display_name_2",
     "level_required": 15,
     "xp_per_log": 60,
     "time_per_log": 1
   },
   "willow_log": {
-    "display_name": "Willow Log",
+    "display_name": "@string/data_logs_display_name_3",
     "level_required": 30,
     "xp_per_log": 90,
     "time_per_log": 1
   },
   "maple_log": {
-    "display_name": "Maple Log",
+    "display_name": "@string/data_logs_display_name_4",
     "level_required": 45,
     "xp_per_log": 135,
     "time_per_log": 1
   },
   "yew_log": {
-    "display_name": "Yew Log",
+    "display_name": "@string/data_logs_display_name_5",
     "level_required": 60,
     "xp_per_log": 203,
     "time_per_log": 1
   },
   "magic_log": {
-    "display_name": "Magic Log",
+    "display_name": "@string/data_logs_display_name_6",
     "level_required": 75,
     "xp_per_log": 303,
     "time_per_log": 1
   },
   "redwood_log": {
-    "display_name": "Redwood Log",
+    "display_name": "@string/data_logs_display_name_7",
     "level_required": 90,
     "xp_per_log": 455,
     "time_per_log": 1

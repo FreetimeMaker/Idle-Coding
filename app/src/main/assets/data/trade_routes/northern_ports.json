@@ -1,7 +1,7 @@
 {
   "id": "northern_ports",
-  "display_name": "Northern Ports",
-  "description": "Sail precious cargo to the northern port cities. High risk, high variance.",
+  "display_name": "@string/trade_route_northern_ports_name",
+  "description": "@string/data_trade_routes_northern_ports_description",
   "level_required": 60,
   "coin_cost": 150000,
   "xp_ranges": {

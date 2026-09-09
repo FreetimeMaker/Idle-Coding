@@ -1,31 +1,31 @@
 {
   "xp_lamp_small": {
     "key": "xp_lamp_small",
-    "display_name": "Small XP Lamp",
-    "description": "Grants 10,000 XP to a chosen skill.",
+    "display_name": "@string/carnival_prize_xp_lamp_small_name",
+    "description": "@string/carnival_prize_xp_lamp_small_desc",
     "ticket_cost": 200,
     "type": "xp_lamp",
     "xp_amount": 10000
   },
   "xp_lamp_large": {
     "key": "xp_lamp_large",
-    "display_name": "Large XP Lamp",
-    "description": "Grants 50,000 XP to a chosen skill.",
+    "display_name": "@string/carnival_prize_xp_lamp_large_name",
+    "description": "@string/carnival_prize_xp_lamp_large_desc",
     "ticket_cost": 800,
     "type": "xp_lamp",
     "xp_amount": 50000
   },
   "tricksters_amulet": {
     "key": "tricksters_amulet",
-    "display_name": "Trickster's Amulet",
-    "description": "A lucky charm worn by carnival performers. Grants a small combat edge.",
+    "display_name": "@string/item_tricksters_amulet_name",
+    "description": "@string/item_tricksters_amulet_desc",
     "ticket_cost": 1000,
     "type": "equipment"
   },
   "strongmans_sigil": {
     "key": "strongmans_sigil",
-    "display_name": "Strongman's Sigil",
-    "description": "A heavy iron ring etched with the mark of the strongman champion. Boosts Strength.",
+    "display_name": "@string/item_strongmans_sigil_name",
+    "description": "@string/item_strongmans_sigil_desc",
     "ticket_cost": 1600,
     "type": "equipment",
     "requirements": {
@@ -34,15 +34,15 @@
   },
   "carnival_cape": {
     "key": "carnival_cape",
-    "display_name": "Carnival Cape",
-    "description": "A vibrant cape worn by carnival champions. Grants 5% more tickets from Carnival sessions.",
+    "display_name": "@string/item_carnival_cape_name",
+    "description": "@string/item_carnival_cape_desc",
     "ticket_cost": 2000,
     "type": "equipment"
   },
   "juggling_imp": {
     "key": "juggling_imp",
-    "display_name": "Juggling Imp",
-    "description": "A mischievous imp that juggles your worries away. Boosts all skill XP by 3%.",
+    "display_name": "@string/pet_juggling_imp_name",
+    "description": "@string/pet_juggling_imp_desc",
     "ticket_cost": 4000,
     "type": "pet"
   }

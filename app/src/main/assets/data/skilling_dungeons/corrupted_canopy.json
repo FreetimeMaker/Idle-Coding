@@ -1,7 +1,7 @@
 {
   "name": "corrupted_canopy",
-  "display_name": "Corrupted Canopy",
-  "description": "A forest where shadow has replaced sunlight. The trees bleed darkness where cut, and the wood writhes in your hands. Only the most experienced woodcutters dare work here.",
+  "display_name": "@string/skilling_dungeon_corrupted_canopy_name",
+  "description": "@string/data_skilling_dungeons_corrupted_canopy_description",
   "skill": "woodcutting",
   "level_required": 40,
   "requires_previous_unlock": "ancient_forest_ruins",
@@ -58,5 +58,5 @@
     "The canopy parts. The Corrupted Sanctum rises from the shadow-wood — its doors open, waiting."
   ],
   "unlock_dungeon": "corrupted_sanctum",
-  "unlock_message": "The Corrupted Sanctum has been revealed — enter and purge the shadow within."
+  "unlock_message": "@string/data_skilling_dungeons_corrupted_canopy_unlock_message"
 }

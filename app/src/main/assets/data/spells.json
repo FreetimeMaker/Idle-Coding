@@ -1,258 +1,258 @@
 {
   "wind_strike": {
-    "display_name": "Wind Strike",
+    "display_name": "@string/item_wind_strike_name",
     "rune_type": "air_rune",
     "magic_level_required": 1,
     "max_hit": 3,
     "rune_cost": 1,
-    "description": "A basic air spell that strikes your foe."
+    "description": "@string/item_wind_strike_desc"
   },
   "wind_bolt": {
-    "display_name": "Wind Bolt",
+    "display_name": "@string/item_wind_bolt_name",
     "rune_type": "air_rune",
     "magic_level_required": 10,
     "max_hit": 6,
     "rune_cost": 2,
-    "description": "A moderate air spell that bolts your foe."
+    "description": "@string/item_wind_bolt_desc"
   },
   "wind_blast": {
-    "display_name": "Wind Blast",
+    "display_name": "@string/item_wind_blast_name",
     "rune_type": "air_rune",
     "magic_level_required": 20,
     "max_hit": 10,
     "rune_cost": 3,
-    "description": "A powerful air spell that blasts your foe."
+    "description": "@string/item_wind_blast_desc"
   },
   "wind_wave": {
-    "display_name": "Wind Wave",
+    "display_name": "@string/item_wind_wave_name",
     "rune_type": "air_rune",
     "magic_level_required": 30,
     "max_hit": 16,
     "rune_cost": 4,
-    "description": "A devastating air spell that waves across your foe."
+    "description": "@string/item_wind_wave_desc"
   },
   "water_strike": {
-    "display_name": "Water Strike",
+    "display_name": "@string/item_water_strike_name",
     "rune_type": "water_rune",
     "magic_level_required": 5,
     "max_hit": 4,
     "rune_cost": 1,
-    "description": "A basic water spell that strikes your foe."
+    "description": "@string/item_water_strike_desc"
   },
   "water_bolt": {
-    "display_name": "Water Bolt",
+    "display_name": "@string/item_water_bolt_name",
     "rune_type": "water_rune",
     "magic_level_required": 15,
     "max_hit": 7,
     "rune_cost": 2,
-    "description": "A moderate water spell that bolts your foe."
+    "description": "@string/item_water_bolt_desc"
   },
   "water_blast": {
-    "display_name": "Water Blast",
+    "display_name": "@string/item_water_blast_name",
     "rune_type": "water_rune",
     "magic_level_required": 25,
     "max_hit": 11,
     "rune_cost": 3,
-    "description": "A powerful water spell that blasts your foe."
+    "description": "@string/item_water_blast_desc"
   },
   "water_wave": {
-    "display_name": "Water Wave",
+    "display_name": "@string/item_water_wave_name",
     "rune_type": "water_rune",
     "magic_level_required": 35,
     "max_hit": 17,
     "rune_cost": 4,
-    "description": "A devastating water spell that waves across your foe."
+    "description": "@string/item_water_wave_desc"
   },
   "earth_strike": {
-    "display_name": "Earth Strike",
+    "display_name": "@string/item_earth_strike_name",
     "rune_type": "earth_rune",
     "magic_level_required": 10,
     "max_hit": 4,
     "rune_cost": 1,
-    "description": "A basic earth spell that strikes your foe."
+    "description": "@string/item_earth_strike_desc"
   },
   "earth_bolt": {
-    "display_name": "Earth Bolt",
+    "display_name": "@string/item_earth_bolt_name",
     "rune_type": "earth_rune",
     "magic_level_required": 20,
     "max_hit": 8,
     "rune_cost": 2,
-    "description": "A moderate earth spell that bolts your foe."
+    "description": "@string/item_earth_bolt_desc"
   },
   "earth_blast": {
-    "display_name": "Earth Blast",
+    "display_name": "@string/item_earth_blast_name",
     "rune_type": "earth_rune",
     "magic_level_required": 30,
     "max_hit": 13,
     "rune_cost": 3,
-    "description": "A powerful earth spell that blasts your foe."
+    "description": "@string/item_earth_blast_desc"
   },
   "earth_wave": {
-    "display_name": "Earth Wave",
+    "display_name": "@string/item_earth_wave_name",
     "rune_type": "earth_rune",
     "magic_level_required": 40,
     "max_hit": 20,
     "rune_cost": 4,
-    "description": "A devastating earth spell that waves across your foe."
+    "description": "@string/item_earth_wave_desc"
   },
   "fire_strike": {
-    "display_name": "Fire Strike",
+    "display_name": "@string/item_fire_strike_name",
     "rune_type": "fire_rune",
     "magic_level_required": 15,
     "max_hit": 5,
     "rune_cost": 1,
-    "description": "A basic fire spell that strikes your foe."
+    "description": "@string/item_fire_strike_desc"
   },
   "fire_bolt": {
-    "display_name": "Fire Bolt",
+    "display_name": "@string/item_fire_bolt_name",
     "rune_type": "fire_rune",
     "magic_level_required": 25,
     "max_hit": 9,
     "rune_cost": 2,
-    "description": "A moderate fire spell that bolts your foe."
+    "description": "@string/item_fire_bolt_desc"
   },
   "fire_blast": {
-    "display_name": "Fire Blast",
+    "display_name": "@string/item_fire_blast_name",
     "rune_type": "fire_rune",
     "magic_level_required": 35,
     "max_hit": 15,
     "rune_cost": 3,
-    "description": "A powerful fire spell that blasts your foe."
+    "description": "@string/item_fire_blast_desc"
   },
   "fire_wave": {
-    "display_name": "Fire Wave",
+    "display_name": "@string/item_fire_wave_name",
     "rune_type": "fire_rune",
     "magic_level_required": 45,
     "max_hit": 23,
     "rune_cost": 4,
-    "description": "A devastating fire spell that waves across your foe."
+    "description": "@string/item_fire_wave_desc"
   },
   "mind_strike": {
-    "display_name": "Mind Strike",
+    "display_name": "@string/item_mind_strike_name",
     "rune_type": "mind_rune",
     "magic_level_required": 25,
     "max_hit": 6,
     "rune_cost": 1,
-    "description": "A basic mind spell that strikes your foe."
+    "description": "@string/item_mind_strike_desc"
   },
   "mind_bolt": {
-    "display_name": "Mind Bolt",
+    "display_name": "@string/item_mind_bolt_name",
     "rune_type": "mind_rune",
     "magic_level_required": 35,
     "max_hit": 11,
     "rune_cost": 2,
-    "description": "A moderate mind spell that bolts your foe."
+    "description": "@string/item_mind_bolt_desc"
   },
   "mind_blast": {
-    "display_name": "Mind Blast",
+    "display_name": "@string/item_mind_blast_name",
     "rune_type": "mind_rune",
     "magic_level_required": 45,
     "max_hit": 18,
     "rune_cost": 3,
-    "description": "A powerful mind spell that blasts your foe."
+    "description": "@string/item_mind_blast_desc"
   },
   "mind_wave": {
-    "display_name": "Mind Wave",
+    "display_name": "@string/item_mind_wave_name",
     "rune_type": "mind_rune",
     "magic_level_required": 55,
     "max_hit": 27,
     "rune_cost": 4,
-    "description": "A devastating mind spell that waves across your foe."
+    "description": "@string/item_mind_wave_desc"
   },
   "chaos_strike": {
-    "display_name": "Chaos Strike",
+    "display_name": "@string/item_chaos_strike_name",
     "rune_type": "chaos_rune",
     "magic_level_required": 35,
     "max_hit": 7,
     "rune_cost": 1,
-    "description": "A basic chaos spell that strikes your foe."
+    "description": "@string/item_chaos_strike_desc"
   },
   "chaos_bolt": {
-    "display_name": "Chaos Bolt",
+    "display_name": "@string/item_chaos_bolt_name",
     "rune_type": "chaos_rune",
     "magic_level_required": 45,
     "max_hit": 13,
     "rune_cost": 2,
-    "description": "A moderate chaos spell that bolts your foe."
+    "description": "@string/item_chaos_bolt_desc"
   },
   "chaos_blast": {
-    "display_name": "Chaos Blast",
+    "display_name": "@string/item_chaos_blast_name",
     "rune_type": "chaos_rune",
     "magic_level_required": 55,
     "max_hit": 21,
     "rune_cost": 3,
-    "description": "A powerful chaos spell that blasts your foe."
+    "description": "@string/item_chaos_blast_desc"
   },
   "chaos_wave": {
-    "display_name": "Chaos Wave",
+    "display_name": "@string/item_chaos_wave_name",
     "rune_type": "chaos_rune",
     "magic_level_required": 65,
     "max_hit": 32,
     "rune_cost": 4,
-    "description": "A devastating chaos spell that waves across your foe."
+    "description": "@string/item_chaos_wave_desc"
   },
   "death_strike": {
-    "display_name": "Death Strike",
+    "display_name": "@string/item_death_strike_name",
     "rune_type": "death_rune",
     "magic_level_required": 50,
     "max_hit": 8,
     "rune_cost": 1,
-    "description": "A basic death spell that strikes your foe."
+    "description": "@string/item_death_strike_desc"
   },
   "death_bolt": {
-    "display_name": "Death Bolt",
+    "display_name": "@string/item_death_bolt_name",
     "rune_type": "death_rune",
     "magic_level_required": 60,
     "max_hit": 15,
     "rune_cost": 2,
-    "description": "A moderate death spell that bolts your foe."
+    "description": "@string/item_death_bolt_desc"
   },
   "death_blast": {
-    "display_name": "Death Blast",
+    "display_name": "@string/item_death_blast_name",
     "rune_type": "death_rune",
     "magic_level_required": 70,
     "max_hit": 25,
     "rune_cost": 3,
-    "description": "A powerful death spell that blasts your foe."
+    "description": "@string/item_death_blast_desc"
   },
   "death_wave": {
-    "display_name": "Death Wave",
+    "display_name": "@string/item_death_wave_name",
     "rune_type": "death_rune",
     "magic_level_required": 80,
     "max_hit": 38,
     "rune_cost": 4,
-    "description": "A devastating death spell that waves across your foe."
+    "description": "@string/item_death_wave_desc"
   },
   "blood_strike": {
-    "display_name": "Blood Strike",
+    "display_name": "@string/item_blood_strike_name",
     "rune_type": "blood_rune",
     "magic_level_required": 65,
     "max_hit": 9,
     "rune_cost": 1,
-    "description": "A basic blood spell that strikes your foe."
+    "description": "@string/item_blood_strike_desc"
   },
   "blood_bolt": {
-    "display_name": "Blood Bolt",
+    "display_name": "@string/item_blood_bolt_name",
     "rune_type": "blood_rune",
     "magic_level_required": 75,
     "max_hit": 17,
     "rune_cost": 2,
-    "description": "A moderate blood spell that bolts your foe."
+    "description": "@string/item_blood_bolt_desc"
   },
   "blood_blast": {
-    "display_name": "Blood Blast",
+    "display_name": "@string/item_blood_blast_name",
     "rune_type": "blood_rune",
     "magic_level_required": 85,
     "max_hit": 28,
     "rune_cost": 3,
-    "description": "A powerful blood spell that blasts your foe."
+    "description": "@string/item_blood_blast_desc"
   },
   "blood_wave": {
-    "display_name": "Blood Wave",
+    "display_name": "@string/item_blood_wave_name",
     "rune_type": "blood_rune",
     "magic_level_required": 95,
     "max_hit": 44,
     "rune_cost": 4,
-    "description": "A devastating blood spell that waves across your foe."
+    "description": "@string/item_blood_wave_desc"
   }
 }

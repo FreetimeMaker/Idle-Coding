@@ -1,323 +1,323 @@
 {
   "ores": {
-    "category_name": "Ores & Materials",
-    "description": "Raw materials for smithing and crafting",
+    "category_name": "@string/shop_cat_ores_and_materials",
+    "description": "@string/data_marketplace_description",
     "items": {
       "copper_ore": {
-        "display_name": "Copper Ore",
-        "description": "A common copper ore used for bronze bars.",
+        "display_name": "@string/item_copper_ore_name",
+        "description": "@string/data_marketplace_description_2",
         "price": 5,
         "stock": "unlimited"
       },
       "tin_ore": {
-        "display_name": "Tin Ore",
-        "description": "A common tin ore used for bronze bars.",
+        "display_name": "@string/item_tin_ore_name",
+        "description": "@string/data_marketplace_description_3",
         "price": 5,
         "stock": "unlimited"
       },
       "stone": {
-        "display_name": "Stone",
-        "description": "A block of stone. Used for construction.",
+        "display_name": "@string/item_stone_name",
+        "description": "@string/item_stone_desc",
         "price": 8,
         "stock": "unlimited"
       },
       "rune_essence": {
-        "display_name": "Rune Essence",
-        "description": "Raw magical essence used to craft runes.",
+        "display_name": "@string/item_rune_essence_name",
+        "description": "@string/data_marketplace_description_4",
         "price": 5,
         "stock": "unlimited"
       },
       "iron_ore": {
-        "display_name": "Iron Ore",
-        "description": "An iron ore used for iron and steel bars.",
+        "display_name": "@string/item_iron_ore_name",
+        "description": "@string/data_marketplace_description_5",
         "price": 15,
         "stock": "unlimited"
       },
       "coal": {
-        "display_name": "Coal",
-        "description": "Essential fuel for smelting higher-tier bars.",
+        "display_name": "@string/item_coal_name",
+        "description": "@string/data_marketplace_description_6",
         "price": 25,
         "stock": "unlimited"
       },
       "silver_ore": {
-        "display_name": "Silver Ore",
-        "description": "A shiny silver ore used for crafting jewellery.",
+        "display_name": "@string/item_silver_ore_name",
+        "description": "@string/data_marketplace_description_7",
         "price": 40,
         "stock": "unlimited"
       },
       "gold_ore": {
-        "display_name": "Gold Ore",
-        "description": "A valuable gold ore used for gold bars and jewellery.",
+        "display_name": "@string/item_gold_ore_name",
+        "description": "@string/data_marketplace_description_8",
         "price": 80,
         "stock": "unlimited"
       },
       "mithril_ore": {
-        "display_name": "Mithril Ore",
-        "description": "A rare blue ore used for mithril bars.",
+        "display_name": "@string/item_mithril_ore_name",
+        "description": "@string/data_marketplace_description_9",
         "price": 100,
         "stock": "unlimited"
       },
       "adamantite_ore": {
-        "display_name": "Adamantite Ore",
-        "description": "A valuable green ore used for adamantite bars.",
+        "display_name": "@string/item_adamantite_ore_name",
+        "description": "@string/data_marketplace_description_10",
         "price": 250,
         "stock": "unlimited"
       },
       "platinum_ore": {
-        "display_name": "Platinum Ore",
-        "description": "A rare platinum ore used for platinum bars.",
+        "display_name": "@string/item_platinum_ore_name",
+        "description": "@string/item_platinum_ore_desc",
         "price": 350,
         "stock": "unlimited"
       },
       "runite_ore": {
-        "display_name": "Runite Ore",
-        "description": "The rarest ore, used for runite bars.",
+        "display_name": "@string/item_runite_ore_name",
+        "description": "@string/data_marketplace_description_11",
         "price": 500,
         "stock": "unlimited"
       }
     }
   },
   "logs": {
-    "category_name": "Logs & Wood",
-    "description": "Logs for fletching and crafting",
+    "category_name": "@string/shop_cat_logs_and_wood",
+    "description": "@string/data_marketplace_description_12",
     "items": {
       "log": {
-        "display_name": "Log",
-        "description": "Basic logs from normal trees. Used for fletching.",
+        "display_name": "@string/data_logs_display_name",
+        "description": "@string/data_marketplace_description_13",
         "price": 10,
         "stock": "unlimited"
       },
       "oak_log": {
-        "display_name": "Oak Log",
-        "description": "Sturdy oak logs. Used for fletching.",
+        "display_name": "@string/data_logs_display_name_2",
+        "description": "@string/data_marketplace_description_14",
         "price": 20,
         "stock": "unlimited"
       },
       "willow_log": {
-        "display_name": "Willow Log",
-        "description": "Flexible willow logs. Used for fletching.",
+        "display_name": "@string/data_logs_display_name_3",
+        "description": "@string/data_marketplace_description_15",
         "price": 40,
         "stock": "unlimited"
       },
       "maple_log": {
-        "display_name": "Maple Log",
-        "description": "Strong maple logs. Used for fletching.",
+        "display_name": "@string/data_logs_display_name_4",
+        "description": "@string/data_marketplace_description_16",
         "price": 75,
         "stock": "unlimited"
       },
       "yew_log": {
-        "display_name": "Yew Log",
-        "description": "High-quality yew logs. Used for fletching.",
+        "display_name": "@string/data_logs_display_name_5",
+        "description": "@string/data_marketplace_description_17",
         "price": 150,
         "stock": "unlimited"
       },
       "magic_log": {
-        "display_name": "Magic Log",
-        "description": "Rare magical logs. Used for fletching.",
+        "display_name": "@string/data_logs_display_name_6",
+        "description": "@string/data_marketplace_description_18",
         "price": 300,
         "stock": "unlimited"
       },
       "redwood_log": {
-        "display_name": "Redwood Log",
-        "description": "Ancient redwood logs. Used for fletching.",
+        "display_name": "@string/data_logs_display_name_7",
+        "description": "@string/data_marketplace_description_19",
         "price": 500,
         "stock": "unlimited"
       }
     }
   },
   "seeds": {
-    "category_name": "Seeds & Farming",
-    "description": "Seeds for growing crops on your farm",
+    "category_name": "@string/shop_cat_seeds_and_farming",
+    "description": "@string/data_marketplace_description_20",
     "items": {
       "potato_seed": {
-        "display_name": "Potato Seed",
-        "description": "Plant to grow potatoes. Grows in 2h.\nRequires farming level 1.",
+        "display_name": "@string/item_potato_seed_name",
+        "description": "@string/data_marketplace_description_21",
         "price": 20,
         "stock": "unlimited"
       },
       "onion_seed": {
-        "display_name": "Onion Seed",
-        "description": "Plant to grow onions. Grows in 3h.\nRequires farming level 5.",
+        "display_name": "@string/item_onion_seed_name",
+        "description": "@string/data_marketplace_description_22",
         "price": 25,
         "stock": "unlimited"
       },
       "cabbage_seed": {
-        "display_name": "Cabbage Seed",
-        "description": "Plant to grow cabbage. Grows in 4h.\nRequires farming level 10.",
+        "display_name": "@string/item_cabbage_seed_name",
+        "description": "@string/data_marketplace_description_23",
         "price": 30,
         "stock": "unlimited"
       },
       "carrot_seed": {
-        "display_name": "Carrot Seed",
-        "description": "Plant to grow carrots. Grows in 5h.\nRequires farming level 15.",
+        "display_name": "@string/item_carrot_seed_name",
+        "description": "@string/data_marketplace_description_24",
         "price": 50,
         "stock": "unlimited"
       },
       "tomato_seed": {
-        "display_name": "Tomato Seed",
-        "description": "Plant to grow tomatoes. Grows in 6h.\nRequires farming level 20.",
+        "display_name": "@string/item_tomato_seed_name",
+        "description": "@string/data_marketplace_description_25",
         "price": 60,
         "stock": "unlimited"
       },
       "corn_seed": {
-        "display_name": "Corn Seed",
-        "description": "Plant to grow corn. Grows in 7h.\nRequires farming level 25.",
+        "display_name": "@string/item_corn_seed_name",
+        "description": "@string/data_marketplace_description_26",
         "price": 75,
         "stock": "unlimited"
       },
       "pumpkin_seed": {
-        "display_name": "Pumpkin Seed",
-        "description": "Plant to grow pumpkins. Grows in 9h.\nRequires farming level 30.",
+        "display_name": "@string/item_pumpkin_seed_name",
+        "description": "@string/data_marketplace_description_27",
         "price": 100,
         "stock": "unlimited"
       },
       "watermelon_seed": {
-        "display_name": "Watermelon Seed",
-        "description": "Plant to grow watermelons. Grows in 10h.\nRequires farming level 35.",
+        "display_name": "@string/item_watermelon_seed_name",
+        "description": "@string/data_marketplace_description_28",
         "price": 125,
         "stock": "unlimited"
       },
       "strawberry_seed": {
-        "display_name": "Strawberry Seed",
-        "description": "Plant to grow strawberries. Grows in 11h.\nRequires farming level 40.",
+        "display_name": "@string/item_strawberry_seed_name",
+        "description": "@string/data_marketplace_description_29",
         "price": 200,
         "stock": "unlimited"
       },
       "magic_herb_seed": {
-        "display_name": "Magic Herb Seed",
-        "description": "Plant to grow magic herbs. Grows in 13h.\nRequires farming level 50.",
+        "display_name": "@string/item_magic_herb_seed_name",
+        "description": "@string/data_marketplace_description_30",
         "price": 300,
         "stock": "unlimited"
       },
       "dragon_fruit_seed": {
-        "display_name": "Dragon Fruit Seed",
-        "description": "Plant to grow dragon fruit. Grows in 14h.\nRequires farming level 55.",
+        "display_name": "@string/item_dragon_fruit_seed_name",
+        "description": "@string/data_marketplace_description_31",
         "price": 500,
         "stock": "unlimited"
       },
       "golden_wheat_seed": {
-        "display_name": "Golden Wheat Seed",
-        "description": "Plant to grow golden wheat. Grows in 16h.\nRequires farming level 65.",
+        "display_name": "@string/item_golden_wheat_seed_name",
+        "description": "@string/data_marketplace_description_32",
         "price": 700,
         "stock": "unlimited"
       },
       "spirit_seed": {
-        "display_name": "Spirit Seed",
-        "description": "Plant to grow spirit herbs. Grows in 19h.\nRequires farming level 75.",
+        "display_name": "@string/item_spirit_seed_name",
+        "description": "@string/data_marketplace_description_33",
         "price": 1000,
         "stock": "unlimited"
       },
       "celestial_bloom_seed": {
-        "display_name": "Celestial Bloom Seed",
-        "description": "Plant to grow celestial blooms. Grows in 21h.\nRequires farming level 85.",
+        "display_name": "@string/item_celestial_bloom_seed_name",
+        "description": "@string/data_marketplace_description_34",
         "price": 1500,
         "stock": "unlimited"
       },
       "starfruit_seed": {
-        "display_name": "Starfruit Seed",
-        "description": "Plant to grow starfruit. Grows in 23h.\nRequires farming level 95.",
+        "display_name": "@string/item_starfruit_seed_name",
+        "description": "@string/data_marketplace_description_35",
         "price": 2500,
         "stock": "unlimited"
       },
       "void_lotus_seed": {
-        "display_name": "Void Lotus Seed",
-        "description": "Plant to grow void lotus. Grows in 24h.\nRequires farming level 99.",
+        "display_name": "@string/item_void_lotus_seed_name",
+        "description": "@string/data_marketplace_description_36",
         "price": 4000,
         "stock": "unlimited"
       }
     }
   },
   "merchants_guild": {
-    "category_name": "Merchant's Guild",
-    "description": "Exclusive items unlocked by levelling your Mercantile skill.",
+    "category_name": "@string/shop_cat_merchants_guild",
+    "description": "@string/data_marketplace_description_37",
     "items": {
       "spirit_herb": {
-        "display_name": "Spirit Herb",
-        "description": "A rare herb used in high-level herblore. Requires Mercantile level 20 to purchase.",
+        "display_name": "@string/item_spirit_herb_name",
+        "description": "@string/item_spirit_herb_desc",
         "price": 5000,
         "stock": "unlimited",
         "mercantile_level_required": 20
       },
       "celestial_bloom": {
-        "display_name": "Celestial Bloom",
-        "description": "An ethereal flower used in master potions. Requires Mercantile level 40 to purchase.",
+        "display_name": "@string/item_celestial_bloom_name",
+        "description": "@string/item_celestial_bloom_desc",
         "price": 12000,
         "stock": "unlimited",
         "mercantile_level_required": 40
       },
       "void_lotus": {
-        "display_name": "Void Lotus",
-        "description": "A mysterious lotus used in the rarest concoctions. Requires Mercantile level 60 to purchase.",
+        "display_name": "@string/item_void_lotus_name",
+        "description": "@string/item_void_lotus_desc",
         "price": 30000,
         "stock": "unlimited",
         "mercantile_level_required": 60
       },
       "ring_of_wealth": {
-        "display_name": "Ring of Wealth",
-        "description": "Increases coin drops slightly. Requires Mercantile level 40 to purchase.",
+        "display_name": "@string/data_equipment_display_name_8",
+        "description": "@string/item_ring_of_wealth_desc",
         "price": 50000,
         "stock": "unlimited",
         "mercantile_level_required": 40
       },
       "ring_of_recoil": {
-        "display_name": "Ring of Recoil",
-        "description": "Returns a portion of damage taken to attackers. Requires Mercantile level 20 to purchase.",
+        "display_name": "@string/data_equipment_display_name_7",
+        "description": "@string/item_ring_of_recoil_desc",
         "price": 25000,
         "stock": "unlimited",
         "mercantile_level_required": 20
       },
       "ring_of_suffering": {
-        "display_name": "Ring of Suffering",
-        "description": "A powerful ring that grants significant defense. Requires Mercantile level 80 to purchase.",
+        "display_name": "@string/data_equipment_display_name_12",
+        "description": "@string/item_ring_of_suffering_desc",
         "price": 500000,
         "stock": "unlimited",
         "mercantile_level_required": 80
       },
       "berserker_ring": {
-        "display_name": "Berserker Ring",
-        "description": "Increases melee strength. Requires Mercantile level 60 to purchase.",
+        "display_name": "@string/item_berserker_ring_name",
+        "description": "@string/item_berserker_ring_desc",
         "price": 200000,
         "stock": "unlimited",
         "mercantile_level_required": 60
       },
       "archers_ring": {
-        "display_name": "Archer's Ring",
-        "description": "Increases ranged accuracy. Requires Mercantile level 60 to purchase.",
+        "display_name": "@string/data_equipment_display_name_9",
+        "description": "@string/item_archers_ring_desc",
         "price": 200000,
         "stock": "unlimited",
         "mercantile_level_required": 60
       },
       "seers_ring": {
-        "display_name": "Seers' Ring",
-        "description": "Increases magic accuracy. Requires Mercantile level 60 to purchase.",
+        "display_name": "@string/data_equipment_display_name_10",
+        "description": "@string/item_seers_ring_desc",
         "price": 200000,
         "stock": "unlimited",
         "mercantile_level_required": 60
       },
       "amulet_of_strength": {
-        "display_name": "Amulet of Strength",
-        "description": "Increases melee strength bonus. Requires Mercantile level 20 to purchase.",
+        "display_name": "@string/data_equipment_display_name_3",
+        "description": "@string/item_amulet_of_strength_desc",
         "price": 15000,
         "stock": "unlimited",
         "mercantile_level_required": 20
       },
       "amulet_of_fury": {
-        "display_name": "Amulet of Fury",
-        "description": "A powerful amulet granting bonuses to all combat styles. Requires Mercantile level 80 to purchase.",
+        "display_name": "@string/data_equipment_display_name_4",
+        "description": "@string/item_amulet_of_fury_desc",
         "price": 800000,
         "stock": "unlimited",
         "mercantile_level_required": 80
       },
       "necklace_of_anguish": {
-        "display_name": "Necklace of Anguish",
-        "description": "Provides exceptional ranged attack bonuses. Requires Mercantile level 99 to purchase.",
+        "display_name": "@string/data_equipment_display_name_5",
+        "description": "@string/item_necklace_of_anguish_desc",
         "price": 3000000,
         "stock": "unlimited",
         "mercantile_level_required": 99
       },
       "tormented_necklace": {
-        "display_name": "Tormented Necklace",
-        "description": "Provides exceptional magic bonuses. Requires Mercantile level 99 to purchase.",
+        "display_name": "@string/item_tormented_necklace_name",
+        "description": "@string/item_tormented_necklace_desc",
         "price": 3000000,
         "stock": "unlimited",
         "mercantile_level_required": 99
@@ -325,12 +325,12 @@
     }
   },
   "equipment": {
-    "category_name": "Equipment",
-    "description": "Weapons and gear for adventurers",
+    "category_name": "@string/crafting_cat_equipment",
+    "description": "@string/data_marketplace_description_38",
     "items": {
       "basic_staff": {
-        "display_name": "Basic Staff",
-        "description": "A simple wooden staff. Good for training magic.",
+        "display_name": "@string/item_basic_staff_name",
+        "description": "@string/data_equipment_description_35",
         "price": 500,
         "stock": "unlimited"
       }

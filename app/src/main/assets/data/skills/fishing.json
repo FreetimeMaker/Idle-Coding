@@ -1,7 +1,7 @@
 {
   "name": "fishing",
-  "display_name": "Fishing",
-  "description": "Catch fish and aquatic treasures from the waters",
+  "display_name": "@string/skill_fishing_name",
+  "description": "@string/skill_fishing_desc",
   "max_level": 99,
   "xp_ranges": {
     "1": {"min": 4, "max": 8},

@@ -1,7 +1,7 @@
 {
   "id": "merchants_quarter",
-  "display_name": "Merchant's Quarter",
-  "description": "Trade rare commodities in the prestigious merchant district. Only experienced traders are welcome.",
+  "display_name": "@string/trade_route_merchants_quarter_name",
+  "description": "@string/data_trade_routes_merchants_quarter_description",
   "level_required": 80,
   "coin_cost": 500000,
   "xp_ranges": {

@@ -1,7 +1,7 @@
 {
   "name": "ancient_forge",
-  "display_name": "Ancient Forge",
-  "description": "A vast dwarven forge that has burned for centuries without tending. Iron golems and forge demons guard its secrets, and dwarven guardians stand ready to repel any intruder.",
+  "display_name": "@string/dungeon_ancient_forge_name",
+  "description": "@string/data_dungeons_ancient_forge_description",
   "recommended_level": 55,
   "encounter_rate": 0.32,
   "lore_unlock_only": true,

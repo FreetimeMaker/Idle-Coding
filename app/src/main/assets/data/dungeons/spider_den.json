@@ -1,7 +1,7 @@
 {
   "name": "spider_den",
-  "display_name": "Spider Den",
-  "description": "A web-filled cavern crawling with venomous spiders. Bring antivenom!",
+  "display_name": "@string/dungeon_spider_den_name",
+  "description": "@string/dungeon_spider_den_desc",
   "recommended_level": 6,
   "encounter_rate": 0.24,
   "enemy_spawns": [

@@ -1,7 +1,7 @@
 {
   "name": "whispering_grove",
-  "display_name": "Whispering Grove",
-  "description": "A primeval forest where the trees have grown for thousands of years. The wood whispers in a language older than words, and stone ruins hide beneath the roots.",
+  "display_name": "@string/skilling_dungeon_whispering_grove_name",
+  "description": "@string/data_skilling_dungeons_whispering_grove_description",
   "skill": "woodcutting",
   "level_required": 1,
   "xp_ranges": {
@@ -68,5 +68,5 @@
     "A gap in the canopy reveals ruins at the grove's heart. The Ancient Forest Ruins call to be explored."
   ],
   "unlock_dungeon": "ancient_forest_ruins",
-  "unlock_message": "The Ancient Forest Ruins are revealed — enter and face the spirits within."
+  "unlock_message": "@string/data_skilling_dungeons_whispering_grove_unlock_message"
 }

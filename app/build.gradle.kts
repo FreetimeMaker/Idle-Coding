@@ -1,6 +1,5 @@
 plugins {
     alias(libs.plugins.android.application)
-    alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
     alias(libs.plugins.kotlin.serialization)
     alias(libs.plugins.hilt)
@@ -8,29 +7,15 @@ plugins {
 }
 
 android {
-    namespace = "com.idlecoding"
-    compileSdk = 35
+    namespace = "com.freetime.idlecoding"
+    compileSdk = 37
 
     defaultConfig {
-        applicationId = "com.tristinbaker.idlefantasy"
+        applicationId = "com.freetime.idlecoding"
         minSdk = 26
-        targetSdk = 35
-        versionCode = 149002
-        versionName = "1.14.11"
-
-        // Nightly channel (-PnightlyBuild=N): publishes as <stable>.N with
-        // versionCode <stableCode>+N. Requires the thousands versionCode
-        // scheme (stable releases at multiples of 1000, first used for 1.14.2
-        // = 141000) so every stable release outranks its preceding nightlies.
-        (project.findProperty("nightlyBuild") as String?)?.let { raw ->
-            val n = raw.toIntOrNull()
-            require(n != null && n in 1..999) { "nightlyBuild must be 1..999, got '$raw'" }
-            require(versionCode!! % 1000 == 0) {
-                "Nightly builds require the thousands versionCode scheme; found $versionCode"
-            }
-            versionCode = versionCode!! + n
-            versionName = "$versionName.$n"
-        }
+        targetSdk = 37
+        versionCode = 1
+        versionName = "1.0.0"
     }
 
     dependenciesInfo {
@@ -38,19 +23,10 @@ android {
         includeInBundle = false
     }
 
-    signingConfigs {
-        create("release") {
-            storeFile     = file("${System.getProperty("user.home")}/.android/defide-release.jks")
-            storePassword = System.getenv("DEFIDE_STORE_PASSWORD") ?: ""
-            keyAlias      = "defide"
-            keyPassword   = System.getenv("DEFIDE_KEY_PASSWORD") ?: ""
-        }
-    }
-
     buildTypes {
         release {
             isMinifyEnabled = true
-            signingConfig   = signingConfigs.getByName("release")
+            isShrinkResources = true
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro",
@@ -63,24 +39,9 @@ android {
         targetCompatibility = JavaVersion.VERSION_17
     }
 
-    kotlinOptions {
-        jvmTarget = "17"
-    }
-
     buildFeatures {
         compose = true
         buildConfig = true
-    }
-
-    applicationVariants.all {
-        val vName = versionName
-        outputs.all {
-            if (this is com.android.build.gradle.internal.api.BaseVariantOutputImpl &&
-                buildType.name == "release"
-            ) {
-                outputFileName = "IdleFantasy-v$vName.apk"
-            }
-        }
     }
 
     lint {

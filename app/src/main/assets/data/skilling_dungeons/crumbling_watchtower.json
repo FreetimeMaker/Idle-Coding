@@ -1,7 +1,7 @@
 {
   "name": "crumbling_watchtower",
-  "display_name": "Crumbling Watchtower",
-  "description": "A decrepit stone tower perched at the edge of the foothills. The stairways are treacherous, the floors unstable. Agile explorers have found more than crumbling masonry within its walls.",
+  "display_name": "@string/skilling_dungeon_crumbling_watchtower_name",
+  "description": "@string/data_skilling_dungeons_crumbling_watchtower_description",
   "skill": "agility",
   "level_required": 1,
   "xp_ranges": {
@@ -60,5 +60,5 @@
     "The trapdoor opens onto a carved stairway going deep into the earth. The Shadow Den waits below."
   ],
   "unlock_dungeon": "shadow_den",
-  "unlock_message": "The Shadow Den is revealed beneath the tower — enter and face the rogues within."
+  "unlock_message": "@string/data_skilling_dungeons_crumbling_watchtower_unlock_message"
 }

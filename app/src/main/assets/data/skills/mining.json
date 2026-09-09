@@ -1,7 +1,7 @@
 {
   "name": "mining",
-  "display_name": "Mining",
-  "description": "Extract valuable ores and gems from the earth",
+  "display_name": "@string/skill_mining_name",
+  "description": "@string/skill_mining_desc",
   "max_level": 99,
   "xp_ranges": {
     "1": {"min": 5, "max": 10},

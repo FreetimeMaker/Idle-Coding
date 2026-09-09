@@ -1,7 +1,7 @@
 {
   "name": "rogue_sanctum",
-  "display_name": "Rogue Sanctum",
-  "description": "The guild's inner refuge — a fortified hideout accessible only to proven members. Trespassers are dealt with swiftly and without mercy.",
+  "display_name": "@string/dungeon_rogue_sanctum_name",
+  "description": "@string/data_dungeons_rogue_sanctum_description",
   "recommended_level": 25,
   "encounter_rate": 0.32,
   "lore_unlock_only": true,

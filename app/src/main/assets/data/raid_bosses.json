@@ -1,9 +1,9 @@
 {
   "king_black_dragon": {
     "id": "king_black_dragon",
-    "display_name": "King Black Dragon",
+    "display_name": "@string/item_king_black_dragon_name",
     "emoji": "🐉",
-    "description": "The legendary three-headed dragon, feared across the realm.",
+    "description": "@string/boss_king_black_dragon_desc",
     "combat_level_required": 50,
     "duration_minutes": 45,
     "hp": 1500,
@@ -79,7 +79,7 @@
     ],
     "pet": {
       "id": "dragon_whelp",
-      "display_name": "Dragon Whelp",
+      "display_name": "@string/item_dragon_whelp_name",
       "emoji": "🐉",
       "chance": 0.01,
       "comment": "1/100 per kill"
@@ -90,9 +90,9 @@
   },
   "demon_lord": {
     "id": "demon_lord",
-    "display_name": "Demon Lord",
+    "display_name": "@string/item_demon_lord_name",
     "emoji": "😈",
-    "description": "An ancient demon from the abyss, master of dark magic.",
+    "description": "@string/boss_demon_lord_desc",
     "combat_level_required": 70,
     "duration_minutes": 60,
     "hp": 2200,
@@ -173,7 +173,7 @@
     ],
     "pet": {
       "id": "imp_pet",
-      "display_name": "Imp Pet",
+      "display_name": "@string/item_imp_pet_name",
       "emoji": "😈",
       "chance": 0.01,
       "comment": "1/100 per kill"
@@ -184,9 +184,9 @@
   },
   "kraken": {
     "id": "kraken",
-    "display_name": "Kraken",
+    "display_name": "@string/item_kraken_name",
     "emoji": "🦑",
-    "description": "The terror of the deep seas, a colossal sea monster.",
+    "description": "@string/boss_kraken_desc",
     "combat_level_required": 90,
     "duration_minutes": 90,
     "hp": 2200,
@@ -270,7 +270,7 @@
     ],
     "pet": {
       "id": "baby_kraken",
-      "display_name": "Baby Kraken",
+      "display_name": "@string/item_baby_kraken_name",
       "emoji": "🦑",
       "chance": 0.01,
       "comment": "1/100 per kill"
@@ -278,12 +278,12 @@
   },
   "balrog": {
     "id": "balrog",
-    "display_name": "Gothic Ember, Ancient Flame of the Deep",
+    "display_name": "@string/item_balrog_name",
     "emoji": "🔥",
     "tags": [
       "demon"
     ],
-    "description": "An ancient demon of flame and shadow, awakened from its slumber deep beneath the earth.",
+    "description": "@string/boss_balrog_desc",
     "combat_level_required": 100,
     "duration_minutes": 120,
     "hp": 2800,
@@ -368,7 +368,7 @@
     ],
     "pet": {
       "id": "baby_balrog",
-      "display_name": "Gothic Emberling",
+      "display_name": "@string/pet_baby_balrog_name",
       "emoji": "🔥",
       "chance": 0.005,
       "comment": "1/200 per kill"
@@ -376,9 +376,9 @@
   },
   "void_sovereign": {
     "id": "void_sovereign",
-    "display_name": "The Void Sovereign",
+    "display_name": "@string/boss_void_sovereign_name",
     "emoji": "🌑",
-    "description": "The primordial entity behind the void rifts. Ancient beyond reckoning, it regards mortal challengers with contempt.",
+    "description": "@string/boss_void_sovereign_desc",
     "combat_level_required": 110,
     "duration_minutes": 150,
     "hp": 4000,
@@ -458,7 +458,7 @@
     ],
     "pet": {
       "id": "void_wisp",
-      "display_name": "Void Wisp",
+      "display_name": "@string/pet_void_wisp_name",
       "emoji": "💫",
       "chance": 0.003,
       "comment": "1/333 per kill"
@@ -466,9 +466,9 @@
   },
   "sol_invictus": {
     "id": "sol_invictus",
-    "display_name": "Sol Invictus, the Sundered Flame",
+    "display_name": "@string/boss_sol_invictus_name",
     "emoji": "☀️",
-    "description": "A shard of the sun itself, torn loose from the Sunspire ruin. Only the boldest warriors dare approach.",
+    "description": "@string/boss_sol_invictus_desc",
     "combat_level_required": 65,
     "duration_minutes": 50,
     "hp": 2200,
@@ -520,7 +520,7 @@
     ],
     "pet": {
       "id": "solstice_sprite",
-      "display_name": "Solstice Sprite",
+      "display_name": "@string/pet_solstice_sprite_name",
       "emoji": "🔥",
       "chance": 0.01,
       "comment": "1/100 per kill"
@@ -529,9 +529,9 @@
   },
   "the_hollow_king": {
     "id": "the_hollow_king",
-    "display_name": "The Hollow King",
+    "display_name": "@string/boss_the_hollow_king_name",
     "emoji": "🎃",
-    "description": "The headless sovereign of the Gloomharvest, riding out from the Blightwood to reap what the living have sown.",
+    "description": "@string/boss_the_hollow_king_desc",
     "combat_level_required": 70,
     "duration_minutes": 55,
     "hp": 2600,
@@ -583,7 +583,7 @@
     ],
     "pet": {
       "id": "lantern_wisp",
-      "display_name": "Lantern Wisp",
+      "display_name": "@string/pet_lantern_wisp_name",
       "emoji": "🎃",
       "chance": 0.01,
       "comment": "1/100 per kill"
@@ -592,9 +592,9 @@
   },
   "the_vault_guardian": {
     "id": "the_vault_guardian",
-    "display_name": "The Vault Guardian",
+    "display_name": "@string/boss_the_vault_guardian_name",
     "emoji": "🏆",
-    "description": "A colossus of living gold, woken by the lighting of the Eternal Flame. Only patrons of the Grand Monument may face it.",
+    "description": "@string/boss_the_vault_guardian_desc",
     "combat_level_required": 100,
     "duration_minutes": 90,
     "hp": 3000,
@@ -664,9 +664,9 @@
   },
   "obsidian_colossus": {
     "id": "obsidian_colossus",
-    "display_name": "Obsidian Colossus",
+    "display_name": "@string/boss_obsidian_colossus_name",
     "emoji": "🗿",
-    "description": "A mountain given wrath. No lone hero has ever chipped more than a scar into it. Bring a party.",
+    "description": "@string/boss_obsidian_colossus_desc",
     "combat_level_required": 130,
     "duration_minutes": 60,
     "hp": 52000,
@@ -745,9 +745,9 @@
   },
   "brood_empress": {
     "id": "brood_empress",
-    "display_name": "Brood Empress",
+    "display_name": "@string/boss_brood_empress_name",
     "emoji": "👁️",
-    "description": "Mother of the swarm between the stars. Her brood has ended armies; yours had better be paid well.",
+    "description": "@string/boss_brood_empress_desc",
     "combat_level_required": 140,
     "duration_minutes": 60,
     "hp": 56000,
@@ -831,9 +831,9 @@
   },
   "the_world_ender": {
     "id": "the_world_ender",
-    "display_name": "The World Ender",
+    "display_name": "@string/boss_the_world_ender_name",
     "emoji": "🌋",
-    "description": "When it stirs, kingdoms write their wills. Four names on the contract or none return.",
+    "description": "@string/boss_the_world_ender_desc",
     "combat_level_required": 150,
     "duration_minutes": 60,
     "hp": 62000,

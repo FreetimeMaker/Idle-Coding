@@ -1,7 +1,7 @@
 {
   "name": "sunken_grotto",
-  "display_name": "Sunken Grotto",
-  "description": "A sea cave carved by centuries of tides. Strange stone pillars rise from the water — older than any known civilization — and something ancient lurks in the depths.",
+  "display_name": "@string/skilling_dungeon_sunken_grotto_name",
+  "description": "@string/data_skilling_dungeons_sunken_grotto_description",
   "skill": "fishing",
   "level_required": 1,
   "xp_ranges": {
@@ -68,5 +68,5 @@
     "The archway is clear. The Drowned Temple lies beyond — something old watches from within."
   ],
   "unlock_dungeon": "drowned_temple",
-  "unlock_message": "The Drowned Temple surfaces — venture in and face what has waited beneath."
+  "unlock_message": "@string/data_skilling_dungeons_sunken_grotto_unlock_message"
 }

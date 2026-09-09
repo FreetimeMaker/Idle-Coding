@@ -1,7 +1,7 @@
 {
   "name": "frozen_citadel",
-  "display_name": "Frozen Citadel",
-  "description": "A fortress entombed beneath a glacier for a thousand years. Its halls are preserved in perfect silence, and the ancient defenders still patrol their posts.",
+  "display_name": "@string/dungeon_frozen_citadel_name",
+  "description": "@string/data_dungeons_frozen_citadel_description",
   "recommended_level": 82,
   "encounter_rate": 0.52,
   "enemy_spawns": [

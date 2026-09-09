@@ -1,7 +1,7 @@
 {
   "giant_rat": {
     "name": "giant_rat",
-    "display_name": "Giant Rat",
+    "display_name": "@string/enemy_giant_rat_name",
     "hp": 10,
     "combat_stats": {
       "attack_level": 1,
@@ -36,7 +36,7 @@
   },
   "goblin": {
     "name": "goblin",
-    "display_name": "Goblin",
+    "display_name": "@string/enemy_goblin_name",
     "hp": 20,
     "combat_stats": {
       "attack_level": 2,
@@ -89,7 +89,7 @@
   },
   "skeleton": {
     "name": "skeleton",
-    "display_name": "Skeleton",
+    "display_name": "@string/enemy_skeleton_name",
     "hp": 30,
     "combat_stats": {
       "attack_level": 4,
@@ -142,7 +142,7 @@
   },
   "zombie": {
     "name": "zombie",
-    "display_name": "Zombie",
+    "display_name": "@string/enemy_zombie_name",
     "hp": 35,
     "combat_stats": {
       "attack_level": 5,
@@ -201,7 +201,7 @@
   },
   "bandit": {
     "name": "bandit",
-    "display_name": "Bandit",
+    "display_name": "@string/enemy_bandit_name",
     "hp": 45,
     "combat_stats": {
       "attack_level": 7,
@@ -254,7 +254,7 @@
   },
   "guard": {
     "name": "guard",
-    "display_name": "Guard",
+    "display_name": "@string/enemy_guard_name",
     "hp": 55,
     "combat_stats": {
       "attack_level": 9,
@@ -313,7 +313,7 @@
   },
   "dark_wizard": {
     "name": "dark_wizard",
-    "display_name": "Dark Wizard",
+    "display_name": "@string/enemy_dark_wizard_name",
     "hp": 40,
     "combat_stats": {
       "attack_level": 8,
@@ -366,7 +366,7 @@
   },
   "orc_warrior": {
     "name": "orc_warrior",
-    "display_name": "Orc Warrior",
+    "display_name": "@string/enemy_orc_warrior_name",
     "hp": 65,
     "combat_stats": {
       "attack_level": 12,
@@ -425,7 +425,7 @@
   },
   "spider": {
     "name": "spider",
-    "display_name": "Giant Spider",
+    "display_name": "@string/enemy_spider_name",
     "hp": 25,
     "combat_stats": {
       "attack_level": 3,
@@ -472,7 +472,7 @@
   },
   "wild_monkey": {
     "name": "wild_monkey",
-    "display_name": "Wild Monkey",
+    "display_name": "@string/enemy_wild_monkey_name",
     "hp": 18,
     "combat_stats": {
       "attack_level": 3,
@@ -513,7 +513,7 @@
   },
   "rogue": {
     "name": "rogue",
-    "display_name": "Rogue",
+    "display_name": "@string/enemy_rogue_name",
     "hp": 38,
     "combat_stats": {
       "attack_level": 6,
@@ -572,7 +572,7 @@
   },
   "knight": {
     "name": "knight",
-    "display_name": "Knight",
+    "display_name": "@string/enemy_knight_name",
     "hp": 70,
     "combat_stats": {
       "attack_level": 15,
@@ -631,7 +631,7 @@
   },
   "hellhound": {
     "name": "hellhound",
-    "display_name": "Hellhound",
+    "display_name": "@string/enemy_hellhound_name",
     "hp": 80,
     "combat_stats": {
       "attack_level": 18,
@@ -696,7 +696,7 @@
   },
   "troll": {
     "name": "troll",
-    "display_name": "Mountain Troll",
+    "display_name": "@string/enemy_troll_name",
     "hp": 95,
     "combat_stats": {
       "attack_level": 16,
@@ -755,7 +755,7 @@
   },
   "demon": {
     "name": "demon",
-    "display_name": "Lesser Demon",
+    "display_name": "@string/enemy_demon_name",
     "hp": 110,
     "combat_stats": {
       "attack_level": 22,
@@ -820,7 +820,7 @@
   },
   "dragon": {
     "name": "dragon",
-    "display_name": "Green Dragon",
+    "display_name": "@string/enemy_dragon_name",
     "tags": [
       "green_dragon"
     ],
@@ -894,7 +894,7 @@
   },
   "imp": {
     "name": "imp",
-    "display_name": "Imp",
+    "display_name": "@string/enemy_imp_name",
     "hp": 12,
     "combat_stats": {
       "attack_level": 2,
@@ -947,7 +947,7 @@
   },
   "chicken": {
     "name": "chicken",
-    "display_name": "Chicken",
+    "display_name": "@string/enemy_chicken_name",
     "hp": 5,
     "combat_stats": {
       "attack_level": 0,
@@ -988,7 +988,7 @@
   },
   "sheep": {
     "name": "sheep",
-    "display_name": "Sheep",
+    "display_name": "@string/enemy_sheep_name",
     "hp": 8,
     "combat_stats": {
       "attack_level": 0,
@@ -1029,7 +1029,7 @@
   },
   "cow": {
     "name": "cow",
-    "display_name": "Cow",
+    "display_name": "@string/enemy_cow_name",
     "hp": 15,
     "combat_stats": {
       "attack_level": 0,
@@ -1070,7 +1070,7 @@
   },
   "fire_giant": {
     "name": "fire_giant",
-    "display_name": "Fire Giant",
+    "display_name": "@string/enemy_fire_giant_name",
     "hp": 160,
     "combat_stats": {
       "attack_level": 25,
@@ -1135,7 +1135,7 @@
   },
   "ancient_guardian": {
     "name": "ancient_guardian",
-    "display_name": "Ancient Guardian",
+    "display_name": "@string/enemy_ancient_guardian_name",
     "hp": 200,
     "combat_stats": {
       "attack_level": 30,
@@ -1194,7 +1194,7 @@
   },
   "lich": {
     "name": "lich",
-    "display_name": "Lich",
+    "display_name": "@string/quest_mages_guild_8_name",
     "hp": 140,
     "combat_stats": {
       "attack_level": 28,
@@ -1247,7 +1247,7 @@
   },
   "cave_troll": {
     "name": "cave_troll",
-    "display_name": "Cave Troll",
+    "display_name": "@string/enemy_cave_troll_name",
     "hp": 55,
     "combat_stats": {
       "attack_level": 8,
@@ -1294,7 +1294,7 @@
   },
   "mine_spider": {
     "name": "mine_spider",
-    "display_name": "Mine Spider",
+    "display_name": "@string/enemy_mine_spider_name",
     "hp": 35,
     "combat_stats": {
       "attack_level": 10,
@@ -1336,7 +1336,7 @@
   },
   "rock_golem": {
     "name": "rock_golem",
-    "display_name": "Rock Golem",
+    "display_name": "@string/item_rock_golem_name",
     "hp": 80,
     "combat_stats": {
       "attack_level": 12,
@@ -1390,7 +1390,7 @@
   },
   "iron_golem": {
     "name": "iron_golem",
-    "display_name": "Iron Golem",
+    "display_name": "@string/enemy_iron_golem_name",
     "hp": 120,
     "combat_stats": {
       "attack_level": 22,
@@ -1450,7 +1450,7 @@
   },
   "forge_demon": {
     "name": "forge_demon",
-    "display_name": "Forge Demon",
+    "display_name": "@string/enemy_forge_demon_name",
     "hp": 105,
     "combat_stats": {
       "attack_level": 25,
@@ -1507,7 +1507,7 @@
   },
   "dwarven_guardian": {
     "name": "dwarven_guardian",
-    "display_name": "Dwarven Guardian",
+    "display_name": "@string/enemy_dwarven_guardian_name",
     "hp": 95,
     "combat_stats": {
       "attack_level": 20,
@@ -1566,7 +1566,7 @@
   },
   "drowned_cultist": {
     "name": "drowned_cultist",
-    "display_name": "Drowned Cultist",
+    "display_name": "@string/enemy_drowned_cultist_name",
     "hp": 50,
     "combat_stats": {
       "attack_level": 9,
@@ -1613,7 +1613,7 @@
   },
   "sea_spirit": {
     "name": "sea_spirit",
-    "display_name": "Sea Spirit",
+    "display_name": "@string/enemy_sea_spirit_name",
     "hp": 45,
     "combat_stats": {
       "attack_level": 11,
@@ -1655,7 +1655,7 @@
   },
   "cursed_fisherman": {
     "name": "cursed_fisherman",
-    "display_name": "Cursed Fisherman",
+    "display_name": "@string/enemy_cursed_fisherman_name",
     "hp": 60,
     "combat_stats": {
       "attack_level": 10,
@@ -1702,7 +1702,7 @@
   },
   "abyssal_leech": {
     "name": "abyssal_leech",
-    "display_name": "Abyssal Leech",
+    "display_name": "@string/enemy_abyssal_leech_name",
     "hp": 90,
     "combat_stats": {
       "attack_level": 20,
@@ -1744,7 +1744,7 @@
   },
   "deep_horror": {
     "name": "deep_horror",
-    "display_name": "Deep Horror",
+    "display_name": "@string/enemy_deep_horror_name",
     "hp": 130,
     "combat_stats": {
       "attack_level": 26,
@@ -1798,7 +1798,7 @@
   },
   "void_guardian": {
     "name": "void_guardian",
-    "display_name": "Void Guardian",
+    "display_name": "@string/enemy_void_guardian_name",
     "hp": 110,
     "combat_stats": {
       "attack_level": 24,
@@ -1852,7 +1852,7 @@
   },
   "corrupted_druid": {
     "name": "corrupted_druid",
-    "display_name": "Corrupted Druid",
+    "display_name": "@string/enemy_corrupted_druid_name",
     "hp": 55,
     "combat_stats": {
       "attack_level": 10,
@@ -1899,7 +1899,7 @@
   },
   "vine_beast": {
     "name": "vine_beast",
-    "display_name": "Vine Beast",
+    "display_name": "@string/enemy_vine_beast_name",
     "hp": 70,
     "combat_stats": {
       "attack_level": 13,
@@ -1941,7 +1941,7 @@
   },
   "forest_spirit": {
     "name": "forest_spirit",
-    "display_name": "Forest Spirit",
+    "display_name": "@string/enemy_forest_spirit_name",
     "hp": 60,
     "combat_stats": {
       "attack_level": 12,
@@ -1983,7 +1983,7 @@
   },
   "shadow_beast": {
     "name": "shadow_beast",
-    "display_name": "Shadow Beast",
+    "display_name": "@string/enemy_shadow_beast_name",
     "hp": 115,
     "combat_stats": {
       "attack_level": 24,
@@ -2025,7 +2025,7 @@
   },
   "twisted_treant": {
     "name": "twisted_treant",
-    "display_name": "Twisted Treant",
+    "display_name": "@string/enemy_twisted_treant_name",
     "hp": 135,
     "combat_stats": {
       "attack_level": 25,
@@ -2073,7 +2073,7 @@
   },
   "corrupted_mage": {
     "name": "corrupted_mage",
-    "display_name": "Corrupted Mage",
+    "display_name": "@string/enemy_corrupted_mage_name",
     "hp": 95,
     "combat_stats": {
       "attack_level": 22,
@@ -2126,7 +2126,7 @@
   },
   "cutpurse": {
     "name": "cutpurse",
-    "display_name": "Cutpurse",
+    "display_name": "@string/enemy_cutpurse_name",
     "hp": 48,
     "combat_stats": {
       "attack_level": 9,
@@ -2179,7 +2179,7 @@
   },
   "arcane_construct": {
     "name": "arcane_construct",
-    "display_name": "Arcane Construct",
+    "display_name": "@string/enemy_arcane_construct_name",
     "hp": 115,
     "combat_stats": {
       "attack_level": 25,
@@ -2221,7 +2221,7 @@
   },
   "void_stalker": {
     "name": "void_stalker",
-    "display_name": "Void Stalker",
+    "display_name": "@string/enemy_void_stalker_name",
     "hp": 200,
     "combat_stats": {
       "attack_level": 30,
@@ -2268,7 +2268,7 @@
   },
   "rift_guardian": {
     "name": "rift_guardian",
-    "display_name": "Rift Guardian",
+    "display_name": "@string/enemy_rift_guardian_name",
     "hp": 260,
     "combat_stats": {
       "attack_level": 30,
@@ -2315,7 +2315,7 @@
   },
   "chaos_elemental": {
     "name": "chaos_elemental",
-    "display_name": "Chaos Elemental",
+    "display_name": "@string/enemy_chaos_elemental_name",
     "hp": 240,
     "combat_stats": {
       "attack_level": 35,
@@ -2368,7 +2368,7 @@
   },
   "frost_giant": {
     "name": "frost_giant",
-    "display_name": "Frost Giant",
+    "display_name": "@string/enemy_frost_giant_name",
     "hp": 300,
     "combat_stats": {
       "attack_level": 35,
@@ -2415,7 +2415,7 @@
   },
   "ice_golem": {
     "name": "ice_golem",
-    "display_name": "Ice Golem",
+    "display_name": "@string/enemy_ice_golem_name",
     "hp": 350,
     "combat_stats": {
       "attack_level": 32,
@@ -2462,7 +2462,7 @@
   },
   "glacial_mage": {
     "name": "glacial_mage",
-    "display_name": "Glacial Mage",
+    "display_name": "@string/enemy_glacial_mage_name",
     "hp": 260,
     "combat_stats": {
       "attack_level": 40,
@@ -2521,7 +2521,7 @@
   },
   "abyssal_lord": {
     "name": "abyssal_lord",
-    "display_name": "Abyssal Lord",
+    "display_name": "@string/enemy_abyssal_lord_name",
     "hp": 350,
     "combat_stats": {
       "attack_level": 42,
@@ -2574,7 +2574,7 @@
   },
   "eternal_sentinel": {
     "name": "eternal_sentinel",
-    "display_name": "Eternal Sentinel",
+    "display_name": "@string/enemy_eternal_sentinel_name",
     "hp": 400,
     "combat_stats": {
       "attack_level": 38,
@@ -2627,7 +2627,7 @@
   },
   "void_archon": {
     "name": "void_archon",
-    "display_name": "Void Archon",
+    "display_name": "@string/enemy_void_archon_name",
     "hp": 320,
     "combat_stats": {
       "attack_level": 45,
@@ -2686,7 +2686,7 @@
   },
   "assassin": {
     "name": "assassin",
-    "display_name": "Assassin",
+    "display_name": "@string/enemy_assassin_name",
     "hp": 75,
     "combat_stats": {
       "attack_level": 16,
@@ -2739,7 +2739,7 @@
   },
   "shadow_assassin": {
     "name": "shadow_assassin",
-    "display_name": "Shadow Assassin",
+    "display_name": "@string/enemy_shadow_assassin_name",
     "hp": 160,
     "combat_stats": {
       "attack_level": 24,
@@ -2786,7 +2786,7 @@
   },
   "vault_guardian": {
     "name": "vault_guardian",
-    "display_name": "Vault Guardian",
+    "display_name": "@string/enemy_vault_guardian_name",
     "hp": 195,
     "combat_stats": {
       "attack_level": 22,
@@ -2827,7 +2827,7 @@
   },
   "guild_master": {
     "name": "guild_master",
-    "display_name": "Guild Master",
+    "display_name": "@string/enemy_guild_master_name",
     "hp": 175,
     "combat_stats": {
       "attack_level": 26,
@@ -2880,7 +2880,7 @@
   },
   "storm_imp": {
     "name": "storm_imp",
-    "display_name": "Storm Imp",
+    "display_name": "@string/enemy_storm_imp_name",
     "hp": 72,
     "combat_stats": {
       "attack_level": 20,
@@ -2927,7 +2927,7 @@
   },
   "sky_serpent": {
     "name": "sky_serpent",
-    "display_name": "Sky Serpent",
+    "display_name": "@string/enemy_sky_serpent_name",
     "hp": 95,
     "combat_stats": {
       "attack_level": 24,
@@ -2980,7 +2980,7 @@
   },
   "cloud_giant": {
     "name": "cloud_giant",
-    "display_name": "Cloud Giant",
+    "display_name": "@string/enemy_cloud_giant_name",
     "hp": 190,
     "combat_stats": {
       "attack_level": 30,
@@ -3039,7 +3039,7 @@
   },
   "frost_wyvern": {
     "name": "frost_wyvern",
-    "display_name": "Frost Wyvern",
+    "display_name": "@string/enemy_frost_wyvern_name",
     "hp": 280,
     "combat_stats": {
       "attack_level": 40,
@@ -3092,7 +3092,7 @@
   },
   "abyssal_guardian": {
     "name": "abyssal_guardian",
-    "display_name": "Abyssal Guardian",
+    "display_name": "@string/enemy_abyssal_guardian_name",
     "hp": 300,
     "combat_stats": {
       "attack_level": 40,
@@ -3145,7 +3145,7 @@
   },
   "shadow_thief": {
     "name": "shadow_thief",
-    "display_name": "Shadow Thief",
+    "display_name": "@string/enemy_shadow_thief_name",
     "hp": 260,
     "combat_stats": {
       "attack_level": 44,
@@ -3198,7 +3198,7 @@
   },
   "elder_lich": {
     "name": "elder_lich",
-    "display_name": "Elder Lich",
+    "display_name": "@string/enemy_elder_lich_name",
     "hp": 380,
     "combat_stats": {
       "attack_level": 48,
@@ -3251,7 +3251,7 @@
   },
   "sun_wisp": {
     "name": "sun_wisp",
-    "display_name": "Sun Wisp",
+    "display_name": "@string/enemy_sun_wisp_name",
     "hp": 55,
     "combat_stats": {
       "attack_level": 20,
@@ -3292,7 +3292,7 @@
   },
   "ember_hound": {
     "name": "ember_hound",
-    "display_name": "Ember Hound",
+    "display_name": "@string/enemy_ember_hound_name",
     "hp": 90,
     "combat_stats": {
       "attack_level": 26,
@@ -3333,7 +3333,7 @@
   },
   "cinder_colossus": {
     "name": "cinder_colossus",
-    "display_name": "Cinder Colossus",
+    "display_name": "@string/enemy_cinder_colossus_name",
     "hp": 300,
     "combat_stats": {
       "attack_level": 45,
@@ -3386,7 +3386,7 @@
   },
   "will_o_wisp": {
     "name": "will_o_wisp",
-    "display_name": "Will-o'-Wisp",
+    "display_name": "@string/enemy_will_o_wisp_name",
     "hp": 65,
     "combat_stats": {
       "attack_level": 23,
@@ -3427,7 +3427,7 @@
   },
   "grave_ghoul": {
     "name": "grave_ghoul",
-    "display_name": "Grave Ghoul",
+    "display_name": "@string/enemy_grave_ghoul_name",
     "hp": 105,
     "combat_stats": {
       "attack_level": 29,
@@ -3468,7 +3468,7 @@
   },
   "husk_horror": {
     "name": "husk_horror",
-    "display_name": "Husk Horror",
+    "display_name": "@string/enemy_husk_horror_name",
     "hp": 150,
     "combat_stats": {
       "attack_level": 33,
@@ -3515,7 +3515,7 @@
   },
   "barrow_wight": {
     "name": "barrow_wight",
-    "display_name": "Barrow Wight",
+    "display_name": "@string/enemy_barrow_wight_name",
     "hp": 340,
     "combat_stats": {
       "attack_level": 48,
@@ -3574,7 +3574,7 @@
   },
   "shade_stalker": {
     "name": "shade_stalker",
-    "display_name": "Shade Stalker",
+    "display_name": "@string/enemy_shade_stalker_name",
     "hp": 170,
     "combat_stats": {
       "attack_level": 42,
@@ -3615,7 +3615,7 @@
   },
   "bone_colossus": {
     "name": "bone_colossus",
-    "display_name": "Bone Colossus",
+    "display_name": "@string/enemy_bone_colossus_name",
     "hp": 280,
     "combat_stats": {
       "attack_level": 50,
@@ -3668,7 +3668,7 @@
   },
   "dread_dullahan": {
     "name": "dread_dullahan",
-    "display_name": "Dread Dullahan",
+    "display_name": "@string/enemy_dread_dullahan_name",
     "hp": 500,
     "combat_stats": {
       "attack_level": 60,

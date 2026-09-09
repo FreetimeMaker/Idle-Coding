@@ -1,7 +1,7 @@
 {
   "name": "farm",
-  "display_name": "Farm",
-  "description": "A peaceful farm with livestock. Great for beginners looking to gather food!",
+  "display_name": "@string/dungeon_farm_name",
+  "description": "@string/dungeon_farm_desc",
   "recommended_level": 1,
   "encounter_rate": 0.75,
   "safe_zone": true,

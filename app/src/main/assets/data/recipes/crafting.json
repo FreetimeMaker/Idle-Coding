@@ -1,7 +1,7 @@
 {
   "silver_ring": {
     "type": "jewelry",
-    "display_name": "Silver Ring",
+    "display_name": "@string/item_silver_ring_name",
     "level_required": 1,
     "materials": {
       "silver_bar": 1
@@ -12,7 +12,7 @@
   },
   "silver_necklace": {
     "type": "jewelry",
-    "display_name": "Silver Necklace",
+    "display_name": "@string/item_silver_necklace_name",
     "level_required": 5,
     "materials": {
       "silver_bar": 2
@@ -23,7 +23,7 @@
   },
   "gold_ring": {
     "type": "jewelry",
-    "display_name": "Gold Ring",
+    "display_name": "@string/item_gold_ring_name",
     "level_required": 10,
     "materials": {
       "gold_bar": 1
@@ -34,7 +34,7 @@
   },
   "gold_necklace": {
     "type": "jewelry",
-    "display_name": "Gold Necklace",
+    "display_name": "@string/item_gold_necklace_name",
     "level_required": 15,
     "materials": {
       "gold_bar": 2
@@ -45,7 +45,7 @@
   },
   "platinum_ring": {
     "type": "jewelry",
-    "display_name": "Platinum Ring",
+    "display_name": "@string/item_platinum_ring_name",
     "level_required": 20,
     "materials": {
       "platinum_bar": 1
@@ -56,7 +56,7 @@
   },
   "platinum_necklace": {
     "type": "jewelry",
-    "display_name": "Platinum Necklace",
+    "display_name": "@string/item_platinum_necklace_name",
     "level_required": 25,
     "materials": {
       "platinum_bar": 2
@@ -67,7 +67,7 @@
   },
   "silver_sapphire_ring": {
     "type": "jewelry",
-    "display_name": "Silver Sapphire Ring",
+    "display_name": "@string/item_silver_sapphire_ring_name",
     "level_required": 30,
     "materials": {
       "silver_bar": 1,
@@ -79,7 +79,7 @@
   },
   "silver_sapphire_necklace": {
     "type": "jewelry",
-    "display_name": "Silver Sapphire Necklace",
+    "display_name": "@string/item_silver_sapphire_necklace_name",
     "level_required": 35,
     "materials": {
       "silver_bar": 2,
@@ -91,7 +91,7 @@
   },
   "gold_sapphire_ring": {
     "type": "jewelry",
-    "display_name": "Gold Sapphire Ring",
+    "display_name": "@string/item_gold_sapphire_ring_name",
     "level_required": 40,
     "materials": {
       "gold_bar": 1,
@@ -103,7 +103,7 @@
   },
   "gold_sapphire_necklace": {
     "type": "jewelry",
-    "display_name": "Gold Sapphire Necklace",
+    "display_name": "@string/item_gold_sapphire_necklace_name",
     "level_required": 45,
     "materials": {
       "gold_bar": 2,
@@ -115,7 +115,7 @@
   },
   "platinum_sapphire_ring": {
     "type": "jewelry",
-    "display_name": "Platinum Sapphire Ring",
+    "display_name": "@string/item_platinum_sapphire_ring_name",
     "level_required": 50,
     "materials": {
       "platinum_bar": 1,
@@ -127,7 +127,7 @@
   },
   "platinum_sapphire_necklace": {
     "type": "jewelry",
-    "display_name": "Platinum Sapphire Necklace",
+    "display_name": "@string/item_platinum_sapphire_necklace_name",
     "level_required": 55,
     "materials": {
       "platinum_bar": 2,
@@ -139,7 +139,7 @@
   },
   "silver_emerald_ring": {
     "type": "jewelry",
-    "display_name": "Silver Emerald Ring",
+    "display_name": "@string/item_silver_emerald_ring_name",
     "level_required": 32,
     "materials": {
       "silver_bar": 1,
@@ -151,7 +151,7 @@
   },
   "silver_emerald_necklace": {
     "type": "jewelry",
-    "display_name": "Silver Emerald Necklace",
+    "display_name": "@string/item_silver_emerald_necklace_name",
     "level_required": 37,
     "materials": {
       "silver_bar": 2,
@@ -163,7 +163,7 @@
   },
   "gold_emerald_ring": {
     "type": "jewelry",
-    "display_name": "Gold Emerald Ring",
+    "display_name": "@string/item_gold_emerald_ring_name",
     "level_required": 42,
     "materials": {
       "gold_bar": 1,
@@ -175,7 +175,7 @@
   },
   "gold_emerald_necklace": {
     "type": "jewelry",
-    "display_name": "Gold Emerald Necklace",
+    "display_name": "@string/item_gold_emerald_necklace_name",
     "level_required": 47,
     "materials": {
       "gold_bar": 2,
@@ -187,7 +187,7 @@
   },
   "platinum_emerald_ring": {
     "type": "jewelry",
-    "display_name": "Platinum Emerald Ring",
+    "display_name": "@string/item_platinum_emerald_ring_name",
     "level_required": 52,
     "materials": {
       "platinum_bar": 1,
@@ -199,7 +199,7 @@
   },
   "platinum_emerald_necklace": {
     "type": "jewelry",
-    "display_name": "Platinum Emerald Necklace",
+    "display_name": "@string/item_platinum_emerald_necklace_name",
     "level_required": 57,
     "materials": {
       "platinum_bar": 2,
@@ -211,7 +211,7 @@
   },
   "silver_ruby_ring": {
     "type": "jewelry",
-    "display_name": "Silver Ruby Ring",
+    "display_name": "@string/item_silver_ruby_ring_name",
     "level_required": 44,
     "materials": {
       "silver_bar": 1,
@@ -223,7 +223,7 @@
   },
   "silver_ruby_necklace": {
     "type": "jewelry",
-    "display_name": "Silver Ruby Necklace",
+    "display_name": "@string/item_silver_ruby_necklace_name",
     "level_required": 49,
     "materials": {
       "silver_bar": 2,
@@ -235,7 +235,7 @@
   },
   "silver_diamond_ring": {
     "type": "jewelry",
-    "display_name": "Silver Diamond Ring",
+    "display_name": "@string/item_silver_diamond_ring_name",
     "level_required": 56,
     "materials": {
       "silver_bar": 1,
@@ -247,7 +247,7 @@
   },
   "silver_diamond_necklace": {
     "type": "jewelry",
-    "display_name": "Silver Diamond Necklace",
+    "display_name": "@string/item_silver_diamond_necklace_name",
     "level_required": 61,
     "materials": {
       "silver_bar": 2,
@@ -259,7 +259,7 @@
   },
   "gold_ruby_ring": {
     "type": "jewelry",
-    "display_name": "Gold Ruby Ring",
+    "display_name": "@string/item_gold_ruby_ring_name",
     "level_required": 54,
     "materials": {
       "gold_bar": 1,
@@ -271,7 +271,7 @@
   },
   "gold_ruby_necklace": {
     "type": "jewelry",
-    "display_name": "Gold Ruby Necklace",
+    "display_name": "@string/item_gold_ruby_necklace_name",
     "level_required": 59,
     "materials": {
       "gold_bar": 2,
@@ -283,7 +283,7 @@
   },
   "platinum_ruby_ring": {
     "type": "jewelry",
-    "display_name": "Platinum Ruby Ring",
+    "display_name": "@string/item_platinum_ruby_ring_name",
     "level_required": 64,
     "materials": {
       "platinum_bar": 1,
@@ -295,7 +295,7 @@
   },
   "platinum_ruby_necklace": {
     "type": "jewelry",
-    "display_name": "Platinum Ruby Necklace",
+    "display_name": "@string/item_platinum_ruby_necklace_name",
     "level_required": 69,
     "materials": {
       "platinum_bar": 2,
@@ -307,7 +307,7 @@
   },
   "gold_diamond_ring": {
     "type": "jewelry",
-    "display_name": "Gold Diamond Ring",
+    "display_name": "@string/item_gold_diamond_ring_name",
     "level_required": 66,
     "materials": {
       "gold_bar": 1,
@@ -319,7 +319,7 @@
   },
   "gold_diamond_necklace": {
     "type": "jewelry",
-    "display_name": "Gold Diamond Necklace",
+    "display_name": "@string/item_gold_diamond_necklace_name",
     "level_required": 71,
     "materials": {
       "gold_bar": 2,
@@ -331,7 +331,7 @@
   },
   "platinum_diamond_ring": {
     "type": "jewelry",
-    "display_name": "Platinum Diamond Ring",
+    "display_name": "@string/item_platinum_diamond_ring_name",
     "level_required": 76,
     "materials": {
       "platinum_bar": 1,
@@ -343,7 +343,7 @@
   },
   "platinum_diamond_necklace": {
     "type": "jewelry",
-    "display_name": "Platinum Diamond Necklace",
+    "display_name": "@string/item_platinum_diamond_necklace_name",
     "level_required": 81,
     "materials": {
       "platinum_bar": 2,

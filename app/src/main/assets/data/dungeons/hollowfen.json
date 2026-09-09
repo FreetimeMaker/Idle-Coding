@@ -1,7 +1,7 @@
 {
   "name": "hollowfen",
-  "display_name": "The Hollowfen",
-  "description": "A mist-drowned marsh of sunken barrows where the harvest dead walk. Part of the Gloomharvest event.",
+  "display_name": "@string/dungeon_hollowfen_name",
+  "description": "@string/dungeon_hollowfen_desc",
   "recommended_level": 45,
   "encounter_rate": 0.38,
   "enemy_spawns": [

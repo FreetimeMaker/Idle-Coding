@@ -1,7 +1,7 @@
 {
   "name": "imp_cavern",
-  "display_name": "Imp Cavern",
-  "description": "A shallow cave filled with mischievous imps. Perfect for absolute beginners!",
+  "display_name": "@string/dungeon_imp_cavern_name",
+  "description": "@string/dungeon_imp_cavern_desc",
   "recommended_level": 1,
   "encounter_rate": 0.2,
   "enemy_spawns": [

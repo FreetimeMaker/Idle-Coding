@@ -31,14 +31,13 @@ class GuildQuestStringCoverageTest {
         }
 
         val resourced = Regex("name=\"quest_([A-Za-z0-9_]+)_name\"")
-            .findAll(mainFile("res/values/strings_guild_quests.xml").readText())
+            .findAll(mainFile("res/values/strings.xml").readText())
             .map { it.groupValues[1] }
             .toSet()
 
         val missing = ids - resourced
         assertTrue(
-            "Guild quests without a quest_<id>_name entry in strings_guild_quests.xml " +
-                "(add the English name to values/ and run scripts/sync_locale_strings.py): $missing",
+            "Guild quests without a quest_<id>_name entry in strings.xml: $missing",
             missing.isEmpty(),
         )
     }

@@ -1,7 +1,7 @@
 {
   "name": "orc_stronghold",
-  "display_name": "Orc Stronghold",
-  "description": "A fortified orc settlement deep in the mountains. Only the brave dare enter.",
+  "display_name": "@string/dungeon_orc_stronghold_name",
+  "description": "@string/dungeon_orc_stronghold_desc",
   "recommended_level": 22,
   "encounter_rate": 0.32,
   "enemy_spawns": [

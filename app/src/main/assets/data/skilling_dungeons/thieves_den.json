@@ -1,7 +1,7 @@
 {
   "name": "thieves_den",
-  "display_name": "Thieves' Den",
-  "description": "A labyrinth of tunnels and hideouts beneath the city streets, used by an organised ring of thieves. Someone has left a trail of notes — and they lead somewhere far more dangerous.",
+  "display_name": "@string/skilling_dungeon_thieves_den_name",
+  "description": "@string/data_skilling_dungeons_thieves_den_description",
   "skill": "thieving",
   "level_required": 1,
   "xp_ranges": {
@@ -63,5 +63,5 @@
     "The last passage opens into a vaulted chamber. At the far end, a reinforced door bears the same seal. The Rogue Sanctum lies beyond."
   ],
   "unlock_dungeon": "rogue_sanctum",
-  "unlock_message": "You have uncovered the Rogue Sanctum — the guild's inner refuge."
+  "unlock_message": "@string/data_skilling_dungeons_thieves_den_unlock_message"
 }

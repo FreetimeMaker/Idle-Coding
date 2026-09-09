@@ -1,7 +1,7 @@
 {
   "id": "grand_exchange",
-  "display_name": "Grand Exchange",
-  "description": "Trade at the legendary Grand Exchange where fortunes are made and lost. Only the most skilled merchants dare attempt this.",
+  "display_name": "@string/trade_route_grand_exchange_name",
+  "description": "@string/data_trade_routes_grand_exchange_description",
   "level_required": 99,
   "coin_cost": 2000000,
   "xp_ranges": {

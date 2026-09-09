@@ -1,7 +1,7 @@
 {
   "id": "river_trading_post",
-  "display_name": "River Trading Post",
-  "description": "Move goods along the river trade route. Profits are unpredictable but often worthwhile.",
+  "display_name": "@string/trade_route_river_trading_post_name",
+  "description": "@string/trade_route_river_trading_post_desc",
   "level_required": 20,
   "coin_cost": 10000,
   "xp_ranges": {

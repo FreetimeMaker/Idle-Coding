@@ -1,7 +1,7 @@
 [
   {
     "key": "peasant",
-    "display_name": "Peasant",
+    "display_name": "@string/thieving_npc_peasant_name",
     "level_required": 1,
     "base_xp": 8,
     "coins_min": 5,
@@ -18,7 +18,7 @@
   },
   {
     "key": "merchant",
-    "display_name": "Merchant",
+    "display_name": "@string/thieving_npc_merchant_name",
     "level_required": 15,
     "base_xp": 20,
     "coins_min": 20,
@@ -33,7 +33,7 @@
   },
   {
     "key": "guardsman",
-    "display_name": "Guardsman",
+    "display_name": "@string/thieving_npc_guardsman_name",
     "level_required": 30,
     "base_xp": 40,
     "coins_min": 30,
@@ -49,7 +49,7 @@
   },
   {
     "key": "artisan",
-    "display_name": "Artisan",
+    "display_name": "@string/thieving_npc_artisan_name",
     "level_required": 45,
     "base_xp": 70,
     "coins_min": 50,
@@ -66,7 +66,7 @@
   },
   {
     "key": "noble",
-    "display_name": "Noble",
+    "display_name": "@string/thieving_npc_noble_name",
     "level_required": 60,
     "base_xp": 110,
     "coins_min": 100,
@@ -83,7 +83,7 @@
   },
   {
     "key": "city_guard",
-    "display_name": "City Guard",
+    "display_name": "@string/thieving_npc_city_guard_name",
     "level_required": 70,
     "base_xp": 155,
     "coins_min": 150,
@@ -97,7 +97,7 @@
   },
   {
     "key": "royal_guard",
-    "display_name": "Royal Guard",
+    "display_name": "@string/thieving_npc_royal_guard_name",
     "level_required": 75,
     "base_xp": 182,
     "coins_min": 175,
@@ -113,7 +113,7 @@
   },
   {
     "key": "knight",
-    "display_name": "Knight",
+    "display_name": "@string/enemy_knight_name",
     "level_required": 80,
     "base_xp": 210,
     "coins_min": 200,
@@ -128,7 +128,7 @@
   },
   {
     "key": "bishop",
-    "display_name": "Bishop",
+    "display_name": "@string/thieving_npc_bishop_name",
     "level_required": 85,
     "base_xp": 245,
     "coins_min": 250,
@@ -144,7 +144,7 @@
   },
   {
     "key": "high_priest",
-    "display_name": "High Priest",
+    "display_name": "@string/quest_prayer_guild_10_name",
     "level_required": 90,
     "base_xp": 280,
     "coins_min": 300,

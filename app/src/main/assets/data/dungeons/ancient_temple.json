@@ -1,7 +1,7 @@
 {
   "name": "ancient_temple",
-  "display_name": "Ancient Temple",
-  "description": "An ancient temple guarded by the most powerful creatures in the realm. Only the strongest warriors dare enter.",
+  "display_name": "@string/dungeon_ancient_temple_name",
+  "description": "@string/dungeon_ancient_temple_desc",
   "recommended_level": 65,
   "encounter_rate": 0.48,
   "enemy_spawns": [

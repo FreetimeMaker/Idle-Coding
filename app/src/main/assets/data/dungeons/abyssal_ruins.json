@@ -1,7 +1,7 @@
 {
   "name": "abyssal_ruins",
-  "display_name": "Abyssal Ruins",
-  "description": "Ancient ruins that exist simultaneously above and below the water's surface. Abyssal leeches, deep horrors, and void guardians protect whatever the ruins were built to contain.",
+  "display_name": "@string/dungeon_abyssal_ruins_name",
+  "description": "@string/data_dungeons_abyssal_ruins_description",
   "recommended_level": 55,
   "encounter_rate": 0.30,
   "lore_unlock_only": true,

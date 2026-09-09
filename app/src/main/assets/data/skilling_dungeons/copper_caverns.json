@@ -1,7 +1,7 @@
 {
   "name": "copper_caverns",
-  "display_name": "Copper Caverns",
-  "description": "A long-abandoned mine beneath the foothills. Its copper veins were all but exhausted before the miners departed, though iron, coal, and stranger ores were left behind in the deeper shafts.",
+  "display_name": "@string/skilling_dungeon_copper_caverns_name",
+  "description": "@string/data_skilling_dungeons_copper_caverns_description",
   "skill": "mining",
   "level_required": 1,
   "xp_ranges": {
@@ -62,5 +62,5 @@
     "The sealed shaft gives way. A vast cavern opens beneath — the Collapsed Mine lies ahead."
   ],
   "unlock_dungeon": "collapsed_mine",
-  "unlock_message": "You have uncovered the Collapsed Mine — face what lurks in the deep."
+  "unlock_message": "@string/data_skilling_dungeons_copper_caverns_unlock_message"
 }

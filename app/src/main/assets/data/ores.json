@@ -1,72 +1,72 @@
 {
   "rune_essence": {
-    "display_name": "Rune Essence",
+    "display_name": "@string/item_rune_essence_name",
     "level_required": 1,
     "xp_per_ore": 15,
     "time_per_ore": 1
   },
   "copper_ore": {
-    "display_name": "Copper Ore",
+    "display_name": "@string/item_copper_ore_name",
     "level_required": 1,
     "xp_per_ore": 18,
     "time_per_ore": 1
   },
   "tin_ore": {
-    "display_name": "Tin Ore",
+    "display_name": "@string/item_tin_ore_name",
     "level_required": 1,
     "xp_per_ore": 18,
     "time_per_ore": 1
   },
   "iron_ore": {
-    "display_name": "Iron Ore",
+    "display_name": "@string/item_iron_ore_name",
     "level_required": 15,
     "xp_per_ore": 35,
     "time_per_ore": 1
   },
   "silver_ore": {
-    "display_name": "Silver Ore",
+    "display_name": "@string/item_silver_ore_name",
     "level_required": 20,
     "xp_per_ore": 40,
     "time_per_ore": 1
   },
   "coal": {
-    "display_name": "Coal",
+    "display_name": "@string/item_coal_name",
     "level_required": 30,
     "xp_per_ore": 50,
     "time_per_ore": 1
   },
   "gold_ore": {
-    "display_name": "Gold Ore",
+    "display_name": "@string/item_gold_ore_name",
     "level_required": 40,
     "xp_per_ore": 65,
     "time_per_ore": 1
   },
   "mithril_ore": {
-    "display_name": "Mithril Ore",
+    "display_name": "@string/item_mithril_ore_name",
     "level_required": 55,
     "xp_per_ore": 80,
     "time_per_ore": 1
   },
   "adamantite_ore": {
-    "display_name": "Adamantite Ore",
+    "display_name": "@string/item_adamantite_ore_name",
     "level_required": 70,
     "xp_per_ore": 95,
     "time_per_ore": 1
   },
   "runite_ore": {
-    "display_name": "Runite Ore",
+    "display_name": "@string/item_runite_ore_name",
     "level_required": 85,
     "xp_per_ore": 125,
     "time_per_ore": 1
   },
   "platinum_ore": {
-    "display_name": "Platinum Ore",
+    "display_name": "@string/item_platinum_ore_name",
     "level_required": 80,
     "xp_per_ore": 100,
     "time_per_ore": 1
   },
   "stone": {
-    "display_name": "Stone",
+    "display_name": "@string/item_stone_name",
     "level_required": 10,
     "xp_per_ore": 12,
     "time_per_ore": 1

@@ -1,7 +1,7 @@
 {
   "name": "farming",
-  "display_name": "Farming",
-  "description": "Plant and harvest crops, gathering seeds and produce",
+  "display_name": "@string/skill_farming_name",
+  "description": "@string/skill_farming_desc",
   "max_level": 99,
   "xp_ranges": {
     "1": {"min": 6, "max": 11},

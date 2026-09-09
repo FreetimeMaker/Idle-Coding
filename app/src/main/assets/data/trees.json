@@ -1,56 +1,56 @@
 {
   "tree": {
-    "display_name": "Tree",
+    "display_name": "@string/tree_tree_name",
     "log_name": "log",
-    "log_display_name": "Log",
+    "log_display_name": "@string/data_logs_display_name",
     "level_required": 1,
     "xp_per_log": 25,
     "time_per_log": 1
   },
   "oak_tree": {
-    "display_name": "Oak Tree",
+    "display_name": "@string/tree_oak_tree_name",
     "log_name": "oak_log",
-    "log_display_name": "Oak Log",
+    "log_display_name": "@string/data_logs_display_name_2",
     "level_required": 15,
     "xp_per_log": 38,
     "time_per_log": 1
   },
   "willow_tree": {
-    "display_name": "Willow Tree",
+    "display_name": "@string/tree_willow_tree_name",
     "log_name": "willow_log",
-    "log_display_name": "Willow Log",
+    "log_display_name": "@string/data_logs_display_name_3",
     "level_required": 30,
     "xp_per_log": 68,
     "time_per_log": 1
   },
   "maple_tree": {
-    "display_name": "Maple Tree",
+    "display_name": "@string/tree_maple_tree_name",
     "log_name": "maple_log",
-    "log_display_name": "Maple Log",
+    "log_display_name": "@string/data_logs_display_name_4",
     "level_required": 45,
     "xp_per_log": 100,
     "time_per_log": 1
   },
   "yew_tree": {
-    "display_name": "Yew Tree",
+    "display_name": "@string/tree_yew_tree_name",
     "log_name": "yew_log",
-    "log_display_name": "Yew Log",
+    "log_display_name": "@string/data_logs_display_name_5",
     "level_required": 60,
     "xp_per_log": 175,
     "time_per_log": 1
   },
   "magic_tree": {
-    "display_name": "Magic Tree",
+    "display_name": "@string/tree_magic_tree_name",
     "log_name": "magic_log",
-    "log_display_name": "Magic Log",
+    "log_display_name": "@string/data_logs_display_name_6",
     "level_required": 75,
     "xp_per_log": 250,
     "time_per_log": 1
   },
   "redwood_tree": {
-    "display_name": "Redwood Tree",
+    "display_name": "@string/tree_redwood_tree_name",
     "log_name": "redwood_log",
-    "log_display_name": "Redwood Log",
+    "log_display_name": "@string/data_logs_display_name_7",
     "level_required": 90,
     "xp_per_log": 380,
     "time_per_log": 1
