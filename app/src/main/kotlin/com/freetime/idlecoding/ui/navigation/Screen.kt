@@ -78,7 +78,6 @@ sealed class Screen(
     ) {
         const val homeScreenRoute = "settings/home_screen"
         const val saveSlotsRoute = "settings/save_slots"
-        const val artCreditsRoute = "settings/art_credits"
         const val themeSettingsRoute = "settings/theme"
         const val themeEditorRoute = "settings/theme_editor?source={source}&blank={blank}"
         fun themeEditorRouteWithSource(source: String, blankName: Boolean) =
