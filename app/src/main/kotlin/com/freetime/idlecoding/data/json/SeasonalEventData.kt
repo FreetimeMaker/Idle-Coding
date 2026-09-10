@@ -26,7 +26,7 @@ data class SeasonalEventData(
     /** Coin-priced offers shown in the event's Night Market section; empty = no market. */
     @SerialName("night_market") val nightMarket: List<NightMarketOfferData> = emptyList(),
     @SerialName("banner_text") val bannerText: String,
-    /** Drawable resource name (e.g. "banner_summer") shown for this event on the Home card and Profile Banners tab. */
+    /** Display symbol/emoji for the event banner. Kept under the legacy JSON key for save compatibility. */
     @SerialName("banner_icon") val bannerIcon: String? = null,
 ) {
     fun isActiveAt(nowMs: Long): Boolean = nowMs in startMs..endMs
