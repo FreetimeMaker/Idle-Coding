@@ -7,11 +7,11 @@ import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
 import androidx.core.app.ActivityCompat
+import androidx.core.app.NotificationChannelCompat
 import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
-import androidx.core.app.NotificationChannelCompat
-import com.freetime.idlecoding.R
 import com.freetime.idlecoding.MainActivity
+import com.freetime.idlecoding.R
 import com.freetime.idlecoding.util.withAppLocale
 import dagger.hilt.android.qualifiers.ApplicationContext
 import javax.inject.Inject
@@ -23,28 +23,24 @@ class SessionNotificationManager @Inject constructor(
 ) {
     companion object {
         const val CHANNEL_ID_SESSIONS = "fantasy_idler_sessions"
-        const val CHANNEL_ID_FARMING  = "fantasy_idler_farming"
-        const val CHANNEL_ID_BUFFS    = "fantasy_idler_buffs"
+        const val CHANNEL_ID_FARMING = "fantasy_idler_farming"
+        const val CHANNEL_ID_BUFFS = "fantasy_idler_buffs"
 
-        const val EXTRA_NAVIGATE_TO   = "navigate_to"
-        const val EXTRA_SAVE_SLOT     = "save_slot"
-        const val NAVIGATE_FARMING    = "farming"
+        const val EXTRA_NAVIGATE_TO = "navigate_to"
+        const val EXTRA_SAVE_SLOT = "save_slot"
+        const val NAVIGATE_FARMING = "farming"
         const val NAVIGATE_SAVE_SLOTS = "save_slots"
 
         private const val NOTIF_ID_SESSION_COMPLETE = 1001
-        private const val NOTIF_ID_FARMING_READY    = 2001
+        private const val NOTIF_ID_FARMING_READY = 2001
         private const val NOTIF_ID_XP_BOOST_EXPIRED = 3001
         private const val NOTIF_ID_BLESSING_EXPIRED  = 3002
-
-        // Android requires a small icon for notifications. Use a framework icon so the
-        // project does not need to ship or reference a custom drawable image.
         private const val NOTIFICATION_ICON = android.R.drawable.stat_notify_more
     }
 
     @Volatile
     private var appInForeground = false
 
-    /** Call from the activity's onStart/onStop to track foreground state. */
     fun setAppInForeground(inForeground: Boolean) {
         appInForeground = inForeground
         if (inForeground) cancelAll()
@@ -56,7 +52,6 @@ class SessionNotificationManager @Inject constructor(
 
     fun localizedContext(): Context = context.withAppLocale()
 
-    /** Call once on app startup to register notification channels (idempotent). */
     fun createChannels() {
         val mgr = NotificationManagerCompat.from(context)
         mgr.createNotificationChannel(
@@ -87,7 +82,9 @@ class SessionNotificationManager @Inject constructor(
             flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
         }
         return PendingIntent.getActivity(
-            context, 0, intent,
+            context,
+            0,
+            intent,
             PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE,
         )
     }
@@ -99,7 +96,9 @@ class SessionNotificationManager @Inject constructor(
             putExtra(EXTRA_SAVE_SLOT, slot)
         }
         return PendingIntent.getActivity(
-            context, 10 + slot, intent,
+            context,
+            10 + slot,
+            intent,
             PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE,
         )
     }
@@ -142,6 +141,7 @@ class SessionNotificationManager @Inject constructor(
             .setContentIntent(launchIntent())
             .setAutoCancel(true)
             .build()
+
         postIfPermitted(NOTIF_ID_XP_BOOST_EXPIRED, notification)
     }
 
@@ -155,13 +155,15 @@ class SessionNotificationManager @Inject constructor(
             .setContentIntent(launchIntent())
             .setAutoCancel(true)
             .build()
+
         postIfPermitted(NOTIF_ID_BLESSING_EXPIRED, notification)
     }
 
     private fun postIfPermitted(id: Int, notification: Notification) {
         if (appInForeground) return
-        if (ActivityCompat.checkSelfPermission(context, Manifest.permission.POST_NOTIFICATIONS)
-            == PackageManager.PERMISSION_GRANTED
+        if (
+            ActivityCompat.checkSelfPermission(context, Manifest.permission.POST_NOTIFICATIONS) ==
+            PackageManager.PERMISSION_GRANTED
         ) {
             NotificationManagerCompat.from(context).notify(id, notification)
         }
