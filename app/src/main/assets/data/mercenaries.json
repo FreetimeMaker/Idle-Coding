@@ -2,7 +2,7 @@
   {
     "id": "bran_the_sellsword",
     "display_name": "@string/merc_bran_the_sellsword_name",
-    "emoji": "⚔️",
+    "emoji": "🧰",
     "tier": "cheap",
     "combat_style": "melee",
     "attack_level": 40,
@@ -16,7 +16,7 @@
   {
     "id": "wren_the_stray",
     "display_name": "@string/merc_wren_the_stray_name",
-    "emoji": "🏹",
+    "emoji": "🌐",
     "tier": "cheap",
     "combat_style": "ranged",
     "attack_level": 42,
@@ -30,7 +30,7 @@
   {
     "id": "tam_the_grey",
     "display_name": "@string/merc_tam_the_grey_name",
-    "emoji": "🔮",
+    "emoji": "💻",
     "tier": "cheap",
     "combat_style": "magic",
     "attack_level": 45,
@@ -44,7 +44,7 @@
   {
     "id": "nix_the_cutpurse",
     "display_name": "@string/merc_nix_the_cutpurse_name",
-    "emoji": "🗡️",
+    "emoji": "⌨️",
     "tier": "cheap",
     "combat_style": "melee",
     "attack_level": 38,
@@ -58,7 +58,7 @@
   {
     "id": "sera_ironsong",
     "display_name": "@string/merc_sera_ironsong_name",
-    "emoji": "⚔️",
+    "emoji": "⚙️",
     "tier": "seasoned",
     "combat_style": "melee",
     "attack_level": 72,
@@ -72,7 +72,7 @@
   {
     "id": "kael_emberhand",
     "display_name": "@string/merc_kael_emberhand_name",
-    "emoji": "🔥",
+    "emoji": "🧠",
     "tier": "seasoned",
     "combat_style": "magic",
     "attack_level": 74,
@@ -100,7 +100,7 @@
   {
     "id": "fenna_swiftarrow",
     "display_name": "@string/merc_fenna_swiftarrow_name",
-    "emoji": "🏹",
+    "emoji": "📡",
     "tier": "seasoned",
     "combat_style": "ranged",
     "attack_level": 75,
@@ -114,7 +114,7 @@
   {
     "id": "grimjaw_the_colossus",
     "display_name": "@string/merc_grimjaw_the_colossus_name",
-    "emoji": "👹",
+    "emoji": "🖥️",
     "tier": "elite",
     "combat_style": "melee",
     "attack_level": 95,
@@ -142,7 +142,7 @@
   {
     "id": "vex_the_undying",
     "display_name": "@string/merc_vex_the_undying_name",
-    "emoji": "💀",
+    "emoji": "🤖",
     "tier": "elite",
     "combat_style": "magic",
     "attack_level": 99,
@@ -156,7 +156,7 @@
   {
     "id": "thane_dawnbringer",
     "display_name": "@string/merc_thane_dawnbringer_name",
-    "emoji": "🌟",
+    "emoji": "🚀",
     "tier": "elite",
     "combat_style": "melee",
     "attack_level": 97,
