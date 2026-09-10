@@ -35,6 +35,10 @@ class SessionNotificationManager @Inject constructor(
         private const val NOTIF_ID_FARMING_READY    = 2001
         private const val NOTIF_ID_XP_BOOST_EXPIRED = 3001
         private const val NOTIF_ID_BLESSING_EXPIRED  = 3002
+
+        // Android requires a small icon for notifications. Use a framework icon so the
+        // project does not need to ship or reference a custom drawable image.
+        private const val NOTIFICATION_ICON = android.R.drawable.stat_notify_more
     }
 
     @Volatile
@@ -88,8 +92,6 @@ class SessionNotificationManager @Inject constructor(
         )
     }
 
-    // Per-slot request codes: FLAG_UPDATE_CURRENT would otherwise rewrite the slot extra on a
-    // PendingIntent an earlier character's notification still holds.
     private fun farmingLaunchIntent(slot: Int): PendingIntent {
         val intent = Intent(context, MainActivity::class.java).apply {
             flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
@@ -102,11 +104,10 @@ class SessionNotificationManager @Inject constructor(
         )
     }
 
-    /** Show "Your [skillName] session has finished" notification. */
     fun showSessionComplete(skillDisplayName: String) {
         val lc = localizedContext()
         val notification = NotificationCompat.Builder(context, CHANNEL_ID_SESSIONS)
-            .setSmallIcon(R.drawable.ic_notification)
+            .setSmallIcon(NOTIFICATION_ICON)
             .setContentTitle(lc.getString(R.string.notif_session_complete_title))
             .setContentText(lc.getString(R.string.notif_session_complete_body, skillDisplayName))
             .setPriority(NotificationCompat.PRIORITY_DEFAULT)
@@ -117,11 +118,10 @@ class SessionNotificationManager @Inject constructor(
         postIfPermitted(NOTIF_ID_SESSION_COMPLETE, notification)
     }
 
-    /** Show "Your [cropName] is ready to harvest" notification. */
     fun showFarmingReady(cropDisplayName: String, saveSlot: Int = 0) {
         val lc = localizedContext()
         val notification = NotificationCompat.Builder(context, CHANNEL_ID_FARMING)
-            .setSmallIcon(R.drawable.ic_notification)
+            .setSmallIcon(NOTIFICATION_ICON)
             .setContentTitle(lc.getString(R.string.notif_farming_ready_title))
             .setContentText(lc.getString(R.string.notif_farming_ready_body, cropDisplayName))
             .setPriority(NotificationCompat.PRIORITY_DEFAULT)
@@ -132,11 +132,10 @@ class SessionNotificationManager @Inject constructor(
         postIfPermitted(NOTIF_ID_FARMING_READY, notification)
     }
 
-    /** Show "Your 2x XP boost has run out" notification. */
     fun showXpBoostExpired() {
         val lc = localizedContext()
         val notification = NotificationCompat.Builder(context, CHANNEL_ID_BUFFS)
-            .setSmallIcon(R.drawable.ic_notification)
+            .setSmallIcon(NOTIFICATION_ICON)
             .setContentTitle(lc.getString(R.string.notif_xp_boost_expired_title))
             .setContentText(lc.getString(R.string.notif_xp_boost_expired_body))
             .setPriority(NotificationCompat.PRIORITY_DEFAULT)
@@ -146,11 +145,10 @@ class SessionNotificationManager @Inject constructor(
         postIfPermitted(NOTIF_ID_XP_BOOST_EXPIRED, notification)
     }
 
-    /** Show "Your church blessing has faded" notification. */
     fun showBlessingExpired() {
         val lc = localizedContext()
         val notification = NotificationCompat.Builder(context, CHANNEL_ID_BUFFS)
-            .setSmallIcon(R.drawable.ic_notification)
+            .setSmallIcon(NOTIFICATION_ICON)
             .setContentTitle(lc.getString(R.string.notif_blessing_expired_title))
             .setContentText(lc.getString(R.string.notif_blessing_expired_body))
             .setPriority(NotificationCompat.PRIORITY_DEFAULT)
