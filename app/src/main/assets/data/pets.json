@@ -2,7 +2,7 @@
   "dragon_whelp": {
     "id": "dragon_whelp",
     "display_name": "@string/item_dragon_whelp_name",
-    "emoji": "🐛",
+    "emoji": "\ud83d\udc09",
     "description": "@string/pet_dragon_whelp_desc",
     "source": "@string/data_pets_source",
     "effect_type": "xp_boost",
@@ -12,7 +12,7 @@
   "imp_pet": {
     "id": "imp_pet",
     "display_name": "@string/item_imp_pet_name",
-    "emoji": "🔐",
+    "emoji": "\ud83d\ude08",
     "description": "@string/pet_imp_pet_desc",
     "source": "@string/data_pets_source_2",
     "effect_type": "xp_boost",
@@ -22,7 +22,7 @@
   "baby_kraken": {
     "id": "baby_kraken",
     "display_name": "@string/item_baby_kraken_name",
-    "emoji": "📦",
+    "emoji": "\ud83e\udd91",
     "description": "@string/pet_baby_kraken_desc",
     "source": "@string/data_pets_source_3",
     "effect_type": "xp_boost",
@@ -32,7 +32,7 @@
   "rock_golem": {
     "id": "rock_golem",
     "display_name": "@string/item_rock_golem_name",
-    "emoji": "🐍",
+    "emoji": "\ud83d\uddff",
     "description": "@string/pet_rock_golem_desc",
     "source": "@string/data_pets_source_4",
     "effect_type": "xp_boost",
@@ -42,7 +42,7 @@
   "ent": {
     "id": "ent",
     "display_name": "@string/item_ent_name",
-    "emoji": "💻",
+    "emoji": "\ud83c\udf33",
     "description": "@string/pet_ent_desc",
     "source": "@string/data_pets_source_5",
     "effect_type": "xp_boost",
@@ -52,7 +52,7 @@
   "tiny_templar": {
     "id": "tiny_templar",
     "display_name": "@string/item_tiny_templar_name",
-    "emoji": "🌐",
+    "emoji": "\ud83d\udc1f",
     "description": "@string/pet_tiny_templar_desc",
     "source": "@string/data_pets_source_6",
     "effect_type": "xp_boost",
@@ -62,7 +62,7 @@
   "tangleroot": {
     "id": "tangleroot",
     "display_name": "@string/item_tangleroot_name",
-    "emoji": "🗃️",
+    "emoji": "\ud83c\udf3f",
     "description": "@string/pet_tangleroot_desc",
     "source": "@string/data_pets_source_7",
     "effect_type": "xp_boost",
@@ -72,7 +72,7 @@
   "baby_balrog": {
     "id": "baby_balrog",
     "display_name": "@string/pet_baby_balrog_name",
-    "emoji": "💻",
+    "emoji": "\ud83d\udd25",
     "description": "@string/pet_baby_balrog_desc",
     "source": "@string/data_pets_source_8",
     "effect_type": "xp_boost",
@@ -82,7 +82,7 @@
   "void_wisp": {
     "id": "void_wisp",
     "display_name": "@string/pet_void_wisp_name",
-    "emoji": "🐛",
+    "emoji": "\ud83d\udcab",
     "description": "@string/pet_void_wisp_desc",
     "source": "@string/data_pets_source_9",
     "effect_type": "xp_boost",
@@ -92,7 +92,7 @@
   "graceling_sprite": {
     "id": "graceling_sprite",
     "display_name": "@string/pet_graceling_sprite_name",
-    "emoji": "⚡",
+    "emoji": "\ud83e\uddda",
     "description": "@string/pet_graceling_sprite_desc",
     "source": "@string/data_pets_source_10",
     "effect_type": "xp_boost",
@@ -102,7 +102,7 @@
   "shadow_fox": {
     "id": "shadow_fox",
     "display_name": "@string/pet_shadow_fox_name",
-    "emoji": "⌨️",
+    "emoji": "\ud83e\udd8a",
     "description": "@string/pet_shadow_fox_desc",
     "source": "@string/data_pets_source_11",
     "effect_type": "xp_boost",
@@ -112,7 +112,7 @@
   "ember_moth": {
     "id": "ember_moth",
     "display_name": "@string/pet_ember_moth_name",
-    "emoji": "⚙️",
+    "emoji": "\ud83e\udd8b",
     "description": "@string/pet_ember_moth_desc",
     "source": "@string/data_pets_source_12",
     "effect_type": "xp_boost",
@@ -122,7 +122,7 @@
   "herb_wisp": {
     "id": "herb_wisp",
     "display_name": "@string/pet_herb_wisp_name",
-    "emoji": "🧪",
+    "emoji": "\ud83c\udf3f",
     "description": "@string/pet_herb_wisp_desc",
     "source": "@string/data_pets_source_13",
     "effect_type": "xp_boost",
@@ -132,7 +132,7 @@
   "rune_sprite": {
     "id": "rune_sprite",
     "display_name": "@string/pet_rune_sprite_name",
-    "emoji": "🔣",
+    "emoji": "\ud83d\udd2e",
     "description": "@string/pet_rune_sprite_desc",
     "source": "@string/data_pets_source_14",
     "effect_type": "xp_boost",
@@ -142,7 +142,7 @@
   "gem_golem": {
     "id": "gem_golem",
     "display_name": "@string/pet_gem_golem_name",
-    "emoji": "💻",
+    "emoji": "\ud83d\udc8e",
     "description": "@string/pet_gem_golem_desc",
     "source": "@string/data_pets_source_15",
     "effect_type": "xp_boost",
@@ -152,7 +152,7 @@
   "feather_drake": {
     "id": "feather_drake",
     "display_name": "@string/pet_feather_drake_name",
-    "emoji": "🌐",
+    "emoji": "\ud83e\udeb6",
     "description": "@string/pet_feather_drake_desc",
     "source": "@string/data_pets_source_16",
     "effect_type": "xp_boost",
@@ -162,7 +162,7 @@
   "forge_imp": {
     "id": "forge_imp",
     "display_name": "@string/pet_forge_imp_name",
-    "emoji": "⚙️",
+    "emoji": "\u2692\ufe0f",
     "description": "@string/pet_forge_imp_desc",
     "source": "@string/data_pets_source_17",
     "effect_type": "xp_boost",
@@ -172,7 +172,7 @@
   "coin_drake": {
     "id": "coin_drake",
     "display_name": "@string/pet_coin_drake_name",
-    "emoji": "💳",
+    "emoji": "\ud83e\ude99",
     "description": "@string/pet_coin_drake_desc",
     "source": "@string/data_pets_source_18",
     "effect_type": "xp_boost",
@@ -182,7 +182,7 @@
   "timber_sprite": {
     "id": "timber_sprite",
     "display_name": "@string/pet_timber_sprite_name",
-    "emoji": "🧱",
+    "emoji": "\ud83e\udeb5",
     "description": "@string/pet_timber_sprite_desc",
     "source": "@string/data_pets_source_19",
     "effect_type": "xp_boost",
@@ -192,7 +192,7 @@
   "juggling_imp": {
     "id": "juggling_imp",
     "display_name": "@string/pet_juggling_imp_name",
-    "emoji": "💻",
+    "emoji": "\ud83e\udd39",
     "description": "@string/pet_juggling_imp_desc",
     "source": "@string/data_pets_source_20",
     "effect_type": "xp_boost",
@@ -202,7 +202,7 @@
   "tower_pet": {
     "id": "tower_pet",
     "display_name": "@string/pet_tower_pet_name",
-    "emoji": "🐛",
+    "emoji": "\ud83d\uddff",
     "description": "@string/pet_tower_pet_desc",
     "source": "@string/data_pets_source_21",
     "effect_type": "xp_boost",
@@ -212,7 +212,7 @@
   "solstice_sprite": {
     "id": "solstice_sprite",
     "display_name": "@string/pet_solstice_sprite_name",
-    "emoji": "☀️",
+    "emoji": "🔥",
     "description": "@string/pet_solstice_sprite_desc",
     "source": "@string/data_pets_source_22",
     "effect_type": "xp_boost",
@@ -232,7 +232,7 @@
   "grave_sprout": {
     "id": "grave_sprout",
     "display_name": "@string/pet_grave_sprout_name",
-    "emoji": "🗃️",
+    "emoji": "🌱",
     "description": "@string/pet_grave_sprout_desc",
     "source": "@string/data_pets_source_24",
     "effect_type": "xp_boost",
@@ -242,7 +242,7 @@
   "golden_goose": {
     "id": "golden_goose",
     "display_name": "@string/pet_golden_goose_name",
-    "emoji": "💳",
+    "emoji": "🪿",
     "description": "@string/pet_golden_goose_desc",
     "source": "@string/data_pets_source_25",
     "effect_type": "coin_boost",
