@@ -34,10 +34,7 @@ class SessionNotificationManager @Inject constructor(
         private const val NOTIF_ID_SESSION_COMPLETE = 1001
         private const val NOTIF_ID_FARMING_READY = 2001
         private const val NOTIF_ID_XP_BOOST_EXPIRED = 3001
-        private const val NOTIF_ID_BLESSING_EXPIRED = 3002
-
-        // Android requires every notification to have a small icon. Use a framework
-        // resource so this class has no dependency on a project image/drawable.
+        private const val NOTIF_ID_BLESSING_EXPIRED  = 3002
         private const val NOTIFICATION_ICON = android.R.drawable.stat_notify_more
     }
 
