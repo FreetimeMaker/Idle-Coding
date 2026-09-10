@@ -95,7 +95,7 @@ fun CharacterSprite(
         "elf" -> "⌘"
         "orc" -> "#"
         "gnome" -> "{}"
-        "dwarf" -> "$_"
+        "dwarf" -> "\$"
         "halfling" -> "<>"
         else -> "</>"
     }
