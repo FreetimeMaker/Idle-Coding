@@ -78,20 +78,19 @@ fun SettingsScreen(
     onNavigateToHomeScreenSettings: () -> Unit = {},
     onNavigateToThemeSettings: () -> Unit = {},
     onNavigateToSaveSlots: () -> Unit = {},
-    onNavigateToArtCredits: () -> Unit = {},
     viewModel: SettingsViewModel = hiltViewModel(),
 ) {
     val context = LocalContext.current
 
-    val fontScale              by viewModel.fontScale.collectAsState()
-    val profileLayout          by viewModel.profileLayout.collectAsState()
-    val backupFolderUri  by viewModel.backupFolderUri.collectAsState()
-    val backupFrequency  by viewModel.backupFrequency.collectAsState()
-    val backupStatus     by viewModel.backupStatus.collectAsState()
+    val fontScale by viewModel.fontScale.collectAsState()
+    val profileLayout by viewModel.profileLayout.collectAsState()
+    val backupFolderUri by viewModel.backupFolderUri.collectAsState()
+    val backupFrequency by viewModel.backupFrequency.collectAsState()
+    val backupStatus by viewModel.backupStatus.collectAsState()
     var notificationsEnabled by remember { mutableStateOf(false) }
-    var showResetConfirm1    by remember { mutableStateOf(false) }
-    var showResetConfirm2    by remember { mutableStateOf(false) }
-    var showChangelogDialog  by remember { mutableStateOf(false) }
+    var showResetConfirm1 by remember { mutableStateOf(false) }
+    var showResetConfirm2 by remember { mutableStateOf(false) }
+    var showChangelogDialog by remember { mutableStateOf(false) }
 
     val folderLauncher = rememberLauncherForActivityResult(
         ActivityResultContracts.OpenDocumentTree()
@@ -122,9 +121,9 @@ fun SettingsScreen(
         viewModel.importSave(jsonString) { success, ironmanDemoted ->
             AppBannerCenter.enqueue(
                 when {
-                    !success       -> context.getString(R.string.settings_imported_fail)
+                    !success -> context.getString(R.string.settings_imported_fail)
                     ironmanDemoted -> context.getString(R.string.settings_imported_demoted)
-                    else           -> context.getString(R.string.settings_imported_ok)
+                    else -> context.getString(R.string.settings_imported_ok)
                 }
             )
         }
@@ -186,12 +185,12 @@ fun SettingsScreen(
     if (showResetConfirm1) {
         AlertDialog(
             onDismissRequest = { showResetConfirm1 = false },
-            title   = { Text(stringResource(R.string.reset_confirm1_title)) },
-            text    = { Text(stringResource(R.string.reset_confirm1_body)) },
+            title = { Text(stringResource(R.string.reset_confirm1_title)) },
+            text = { Text(stringResource(R.string.reset_confirm1_body)) },
             confirmButton = {
                 Button(
                     onClick = { showResetConfirm1 = false; showResetConfirm2 = true },
-                    colors  = ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.error),
+                    colors = ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.error),
                 ) {
                     Text(stringResource(R.string.settings_reset_btn))
                 }
@@ -207,8 +206,8 @@ fun SettingsScreen(
     if (showResetConfirm2) {
         AlertDialog(
             onDismissRequest = { showResetConfirm2 = false },
-            title   = { Text(stringResource(R.string.reset_confirm2_title)) },
-            text    = { Text(stringResource(R.string.reset_confirm2_body)) },
+            title = { Text(stringResource(R.string.reset_confirm2_title)) },
+            text = { Text(stringResource(R.string.reset_confirm2_body)) },
             confirmButton = {
                 Button(
                     onClick = {
@@ -236,10 +235,7 @@ fun SettingsScreen(
                 title = { Text(stringResource(R.string.settings_title)) },
                 navigationIcon = {
                     IconButton(onClick = onBack) {
-                        Icon(
-                            imageVector = Icons.AutoMirrored.Filled.ArrowBack,
-                            contentDescription = null
-                        )
+                        Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = null)
                     }
                 }
             )
@@ -253,25 +249,23 @@ fun SettingsScreen(
                 .padding(16.dp),
             verticalArrangement = Arrangement.spacedBy(8.dp)
         ) {
-            // Appearance section
             SectionHeader(title = stringResource(R.string.settings_appearance))
 
             SettingsRow(
-                title    = stringResource(R.string.settings_theme),
+                title = stringResource(R.string.settings_theme),
                 subtitle = stringResource(R.string.settings_theme_desc),
-                onClick  = onNavigateToThemeSettings,
+                onClick = onNavigateToThemeSettings,
             )
 
             SettingsRow(
-                title    = stringResource(R.string.settings_font_size),
-                subtitle = null,
+                title = stringResource(R.string.settings_font_size),
                 trailing = {
                     val fontOptions = listOf(
-                        0.7f  to stringResource(R.string.settings_font_tiny),
+                        0.7f to stringResource(R.string.settings_font_tiny),
                         0.85f to stringResource(R.string.settings_font_small),
-                        1.0f  to stringResource(R.string.settings_font_normal),
+                        1.0f to stringResource(R.string.settings_font_normal),
                         1.25f to stringResource(R.string.settings_font_large),
-                        1.5f  to stringResource(R.string.settings_font_huge),
+                        1.5f to stringResource(R.string.settings_font_huge),
                     )
                     val fontLabel = fontOptions.firstOrNull { it.first == fontScale }?.second
                         ?: stringResource(R.string.settings_font_normal)
@@ -285,9 +279,7 @@ fun SettingsScreen(
                             onValueChange = {},
                             readOnly = true,
                             trailingIcon = { ExposedDropdownMenuDefaults.TrailingIcon(expanded = fontExpanded) },
-                            modifier = Modifier
-                                .menuAnchor()
-                                .width(130.dp),
+                            modifier = Modifier.menuAnchor().width(130.dp),
                             textStyle = MaterialTheme.typography.bodySmall,
                             singleLine = true,
                         )
@@ -310,41 +302,31 @@ fun SettingsScreen(
             )
 
             SettingsRow(
-                title    = stringResource(R.string.settings_home_screen),
+                title = stringResource(R.string.settings_home_screen),
                 subtitle = stringResource(R.string.settings_home_screen_desc),
-                onClick  = onNavigateToHomeScreenSettings,
+                onClick = onNavigateToHomeScreenSettings,
             )
             val showQuestDots by viewModel.showQuestDots.collectAsState()
             SettingsRow(
-                title    = stringResource(R.string.settings_quest_dots),
+                title = stringResource(R.string.settings_quest_dots),
                 subtitle = stringResource(R.string.settings_quest_dots_desc),
-                trailing = {
-                    Switch(
-                        checked         = showQuestDots,
-                        onCheckedChange = { viewModel.setShowQuestDots(it) },
-                    )
-                }
+                trailing = { Switch(showQuestDots, { viewModel.setShowQuestDots(it) }) }
             )
             val showPrestigeNotifications by viewModel.showPrestigeNotifications.collectAsState()
             SettingsRow(
-                title    = stringResource(R.string.settings_prestige_notifications),
+                title = stringResource(R.string.settings_prestige_notifications),
                 subtitle = stringResource(R.string.settings_prestige_notifications_desc),
-                trailing = {
-                    Switch(
-                        checked         = showPrestigeNotifications,
-                        onCheckedChange = { viewModel.setShowPrestigeNotifications(it) },
-                    )
-                }
+                trailing = { Switch(showPrestigeNotifications, { viewModel.setShowPrestigeNotifications(it) }) }
             )
             val dailyResetHour by viewModel.dailyResetHour.collectAsState()
             var showResetHourDialog by remember { mutableStateOf(false) }
             SettingsRow(
-                title    = stringResource(R.string.settings_daily_reset_time),
+                title = stringResource(R.string.settings_daily_reset_time),
                 subtitle = stringResource(R.string.settings_daily_reset_time_desc),
-                onClick  = { showResetHourDialog = true },
+                onClick = { showResetHourDialog = true },
                 trailing = {
                     Text(
-                        text  = dailyResetClockTime(context, dailyResetHour),
+                        dailyResetClockTime(context, dailyResetHour),
                         style = MaterialTheme.typography.labelLarge,
                         color = MaterialTheme.colorScheme.primary,
                     )
@@ -354,58 +336,47 @@ fun SettingsScreen(
                 AlertDialog(
                     onDismissRequest = { showResetHourDialog = false },
                     title = { Text(stringResource(R.string.settings_daily_reset_time)) },
-                    text  = {
+                    text = {
                         Column(Modifier.verticalScroll(rememberScrollState())) {
                             (0..23).forEach { hour ->
                                 Text(
-                                    text       = dailyResetClockTime(context, hour),
-                                    style      = MaterialTheme.typography.bodyLarge,
+                                    text = dailyResetClockTime(context, hour),
+                                    style = MaterialTheme.typography.bodyLarge,
                                     fontWeight = if (hour == dailyResetHour) FontWeight.Bold else FontWeight.Normal,
-                                    color      = if (hour == dailyResetHour) MaterialTheme.colorScheme.primary
-                                                 else MaterialTheme.colorScheme.onSurface,
-                                    modifier   = Modifier
-                                        .fillMaxWidth()
-                                        .clickable {
-                                            viewModel.setDailyResetHour(hour)
-                                            showResetHourDialog = false
-                                        }
-                                        .padding(vertical = 10.dp),
+                                    color = if (hour == dailyResetHour) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.onSurface,
+                                    modifier = Modifier.fillMaxWidth().clickable {
+                                        viewModel.setDailyResetHour(hour)
+                                        showResetHourDialog = false
+                                    }.padding(vertical = 10.dp),
                                 )
                             }
                         }
                     },
                     confirmButton = {
-                        TextButton(onClick = { showResetHourDialog = false }) {
-                            Text(stringResource(R.string.btn_cancel))
-                        }
+                        TextButton(onClick = { showResetHourDialog = false }) { Text(stringResource(R.string.btn_cancel)) }
                     },
                 )
             }
             val compactNumbers by viewModel.compactNumbers.collectAsState()
             SettingsRow(
-                title    = stringResource(R.string.settings_compact_numbers),
+                title = stringResource(R.string.settings_compact_numbers),
                 subtitle = stringResource(R.string.settings_compact_numbers_desc),
-                trailing = {
-                    Switch(
-                        checked         = compactNumbers,
-                        onCheckedChange = { viewModel.setCompactNumbers(it) },
-                    )
-                }
+                trailing = { Switch(compactNumbers, { viewModel.setCompactNumbers(it) }) }
             )
             SettingsRow(
-                title    = stringResource(R.string.settings_profile_layout),
+                title = stringResource(R.string.settings_profile_layout),
                 subtitle = stringResource(R.string.settings_profile_layout_desc),
                 trailing = {
                     Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                         FilterChip(
                             selected = profileLayout == "rail",
-                            onClick  = { viewModel.setProfileLayout("rail") },
-                            label    = { Text(stringResource(R.string.settings_profile_layout_rail)) },
+                            onClick = { viewModel.setProfileLayout("rail") },
+                            label = { Text(stringResource(R.string.settings_profile_layout_rail)) },
                         )
                         FilterChip(
                             selected = profileLayout == "tabs",
-                            onClick  = { viewModel.setProfileLayout("tabs") },
-                            label    = { Text(stringResource(R.string.settings_profile_layout_tabs)) },
+                            onClick = { viewModel.setProfileLayout("tabs") },
+                            label = { Text(stringResource(R.string.settings_profile_layout_tabs)) },
                         )
                     }
                 }
@@ -414,10 +385,8 @@ fun SettingsScreen(
             HorizontalDivider()
             LanguageSection()
 
-            // Notifications section
             HorizontalDivider()
             SectionHeader(title = stringResource(R.string.settings_notifications_header))
-
             SettingsRow(
                 title = stringResource(R.string.settings_notifications),
                 subtitle = stringResource(R.string.settings_notifications_desc),
@@ -435,13 +404,10 @@ fun SettingsScreen(
                 }
             )
 
-            // General section
             HorizontalDivider()
-
             SectionHeader(title = stringResource(R.string.settings_general_header))
-
             SettingsRow(
-                title    = stringResource(R.string.settings_tutorial_title),
+                title = stringResource(R.string.settings_tutorial_title),
                 subtitle = stringResource(R.string.settings_tutorial_desc),
                 trailing = {
                     OutlinedButton(onClick = { onReopenTutorial(); onBack() }) {
@@ -449,9 +415,8 @@ fun SettingsScreen(
                     }
                 }
             )
-
             SettingsRow(
-                title    = stringResource(R.string.settings_changelog_title),
+                title = stringResource(R.string.settings_changelog_title),
                 subtitle = stringResource(R.string.settings_changelog_desc),
                 trailing = {
                     OutlinedButton(onClick = { showChangelogDialog = true }) {
@@ -459,39 +424,27 @@ fun SettingsScreen(
                     }
                 }
             )
-
             SettingsRow(
-                title    = stringResource(R.string.settings_reset_title),
+                title = stringResource(R.string.settings_reset_title),
                 subtitle = stringResource(R.string.settings_reset_desc),
                 trailing = {
                     OutlinedButton(
                         onClick = { showResetConfirm1 = true },
-                        colors  = ButtonDefaults.outlinedButtonColors(
-                            contentColor = MaterialTheme.colorScheme.error,
-                        ),
-                        border  = BorderStroke(
-                            1.dp,
-                            MaterialTheme.colorScheme.error,
-                        ),
-                    ) {
-                        Text(stringResource(R.string.settings_reset_btn))
-                    }
+                        colors = ButtonDefaults.outlinedButtonColors(contentColor = MaterialTheme.colorScheme.error),
+                        border = BorderStroke(1.dp, MaterialTheme.colorScheme.error),
+                    ) { Text(stringResource(R.string.settings_reset_btn)) }
                 }
             )
 
-            // Save data section
             HorizontalDivider()
-
             SectionHeader(title = stringResource(R.string.settings_save_data))
-
             SettingsRow(
-                title    = stringResource(R.string.settings_characters),
+                title = stringResource(R.string.settings_characters),
                 subtitle = stringResource(R.string.settings_characters_desc),
-                onClick  = onNavigateToSaveSlots,
+                onClick = onNavigateToSaveSlots,
             )
-
             SettingsRow(
-                title    = stringResource(R.string.settings_export),
+                title = stringResource(R.string.settings_export),
                 subtitle = stringResource(R.string.settings_export_desc),
                 trailing = {
                     OutlinedButton(onClick = { viewModel.exportSuggestedName { exportLauncher.launch(it) } }) {
@@ -499,9 +452,8 @@ fun SettingsScreen(
                     }
                 }
             )
-
             SettingsRow(
-                title    = stringResource(R.string.settings_import),
+                title = stringResource(R.string.settings_import),
                 subtitle = stringResource(R.string.settings_import_desc),
                 trailing = {
                     OutlinedButton(onClick = { importLauncher.launch("*/*") }) {
@@ -510,11 +462,8 @@ fun SettingsScreen(
                 }
             )
 
-            // Automatic Backup section
             HorizontalDivider()
-
             SectionHeader(title = stringResource(R.string.settings_backup_title))
-
             val noFolderStr = stringResource(R.string.settings_backup_no_folder)
             val folderLabel = if (backupFolderUri.isEmpty()) {
                 noFolderStr
@@ -526,9 +475,8 @@ fun SettingsScreen(
                     noFolderStr
                 }
             }
-
             SettingsRow(
-                title    = stringResource(R.string.settings_backup_folder),
+                title = stringResource(R.string.settings_backup_folder),
                 subtitle = folderLabel,
                 trailing = {
                     OutlinedButton(onClick = { folderLauncher.launch(null) }) {
@@ -536,23 +484,19 @@ fun SettingsScreen(
                     }
                 }
             )
-
-            val freqSubtitle = if (backupFrequency == "daily" || backupFrequency == "weekly")
-                "${stringResource(R.string.settings_backup_at_5am)}" else ""
+            val freqSubtitle = if (backupFrequency == "daily" || backupFrequency == "weekly") stringResource(R.string.settings_backup_at_5am) else ""
             SettingsRow(
-                title    = stringResource(R.string.settings_backup_frequency),
+                title = stringResource(R.string.settings_backup_frequency),
                 subtitle = freqSubtitle,
                 trailing = {
                     val freqOptions = listOf(
-                        ""       to stringResource(R.string.settings_backup_off),
+                        "" to stringResource(R.string.settings_backup_off),
                         "hourly" to stringResource(R.string.settings_backup_hourly),
-                        "daily"  to stringResource(R.string.settings_backup_daily),
+                        "daily" to stringResource(R.string.settings_backup_daily),
                         "weekly" to stringResource(R.string.settings_backup_weekly),
                     )
-                    val freqLabel = freqOptions.firstOrNull { it.first == backupFrequency }?.second
-                        ?: stringResource(R.string.settings_backup_off)
+                    val freqLabel = freqOptions.firstOrNull { it.first == backupFrequency }?.second ?: stringResource(R.string.settings_backup_off)
                     var freqExpanded by remember { mutableStateOf(false) }
-
                     ExposedDropdownMenuBox(
                         expanded = freqExpanded,
                         onExpandedChange = { freqExpanded = it }
@@ -561,17 +505,12 @@ fun SettingsScreen(
                             value = freqLabel,
                             onValueChange = {},
                             readOnly = true,
-                            trailingIcon =  { ExposedDropdownMenuDefaults.TrailingIcon(expanded = freqExpanded) },
-                            modifier = Modifier
-                                .menuAnchor()
-                                .width(150.dp),
+                            trailingIcon = { ExposedDropdownMenuDefaults.TrailingIcon(expanded = freqExpanded) },
+                            modifier = Modifier.menuAnchor().width(150.dp),
                             textStyle = MaterialTheme.typography.bodySmall,
                             singleLine = true,
                         )
-                        ExposedDropdownMenu(
-                            expanded = freqExpanded,
-                            onDismissRequest = { freqExpanded = false },
-                        ) {
+                        ExposedDropdownMenu(expanded = freqExpanded, onDismissRequest = { freqExpanded = false }) {
                             freqOptions.forEach { (freq, label) ->
                                 DropdownMenuItem(
                                     text = { Text(label) },
@@ -585,19 +524,17 @@ fun SettingsScreen(
                     }
                 }
             )
-
             val statusSubtitle = if (backupStatus.lastBackupAt == 0L) {
                 stringResource(R.string.settings_backup_never)
             } else {
                 DateFormat.getDateTimeInstance().format(Date(backupStatus.lastBackupAt))
             }
             SettingsRow(
-                title    = stringResource(R.string.settings_backup_status),
-                subtitle = if (!backupStatus.lastBackupOk && backupStatus.lastBackupError.isNotEmpty())
+                title = stringResource(R.string.settings_backup_status),
+                subtitle = if (!backupStatus.lastBackupOk && backupStatus.lastBackupError.isNotEmpty()) {
                     "${statusSubtitle}\n${stringResource(R.string.settings_backup_failed_with, backupStatus.lastBackupError)}"
-                else statusSubtitle
+                } else statusSubtitle
             )
-
             OutlinedButton(
                 onClick = {
                     viewModel.backupNow { success ->
@@ -607,84 +544,34 @@ fun SettingsScreen(
                         )
                     }
                 },
-                enabled  = backupFolderUri.isNotEmpty(),
+                enabled = backupFolderUri.isNotEmpty(),
                 modifier = Modifier.fillMaxWidth(),
-            ) {
-                Text(stringResource(R.string.settings_backup_now))
-            }
+            ) { Text(stringResource(R.string.settings_backup_now)) }
 
-            // About section
             HorizontalDivider()
-
             SectionHeader(title = stringResource(R.string.settings_about))
-
             SettingsRow(
                 title = stringResource(R.string.app_name),
                 subtitle = stringResource(R.string.format_version, BuildConfig.VERSION_NAME)
             )
-
             SettingsRow(
-                title    = stringResource(R.string.settings_source_code),
+                title = stringResource(R.string.settings_source_code),
                 subtitle = stringResource(R.string.settings_source_url),
                 trailing = {
                     OutlinedButton(
                         onClick = {
                             context.startActivity(
-                                Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/tristinbaker/IdleFantasy"))
+                                Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/FreetimeMaker/Idle-Coding"))
                             )
                         }
-                    ) {
-                        Text(stringResource(R.string.settings_source_open))
-                    }
+                    ) { Text(stringResource(R.string.settings_source_open)) }
                 }
             )
-
-            SettingsRow(
-                title    = stringResource(R.string.settings_wiki),
-                subtitle = stringResource(R.string.settings_wiki_url),
-                trailing = {
-                    OutlinedButton(
-                        onClick = {
-                            context.startActivity(
-                                Intent(Intent.ACTION_VIEW, Uri.parse("https://idlefantasy.tristinbaker.xyz"))
-                            )
-                        }
-                    ) {
-                        Text(stringResource(R.string.settings_source_open))
-                    }
-                }
-            )
-
-            SettingsRow(
-                title    = stringResource(R.string.settings_discord),
-                subtitle = stringResource(R.string.settings_discord_url),
-                trailing = {
-                    OutlinedButton(
-                        onClick = {
-                            context.startActivity(
-                                Intent(Intent.ACTION_VIEW, Uri.parse("https://discord.gg/vRxtXsBwQU"))
-                            )
-                        }
-                    ) {
-                        Text(stringResource(R.string.settings_source_open))
-                    }
-                }
-            )
-
             Text(
                 text = stringResource(R.string.settings_foss_desc),
                 style = MaterialTheme.typography.bodySmall,
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
                 modifier = Modifier.padding(horizontal = 4.dp)
-            )
-
-            // Art credits section
-            HorizontalDivider()
-
-            SettingsRow(
-                title    = stringResource(R.string.settings_art_credits),
-                subtitle = stringResource(R.string.settings_art_credits_desc),
-                onClick  = onNavigateToArtCredits,
             )
         }
     }
@@ -695,74 +582,58 @@ fun SettingsScreen(
 private fun LanguageSection() {
     val currentTag = remember {
         val locales = AppCompatDelegate.getApplicationLocales()
-
-        if (locales.isEmpty) {
-            "system"
-        } else {
-            locales[0]?.toLanguageTag() ?: "system"
-        }
+        if (locales.isEmpty) "system" else locales[0]?.toLanguageTag() ?: "system"
     }
-
     val options = listOf(
-        "en"     to stringResource(R.string.settings_lang_english),
-        "de"     to stringResource(R.string.settings_lang_deutsch),
-        "fr"     to stringResource(R.string.settings_lang_français),
-        "es"     to stringResource(R.string.settings_lang_español),
-        "es-ES"  to stringResource(R.string.settings_lang_español_españa),
-        "nl"     to stringResource(R.string.settings_lang_dutch),
-        "tr"     to stringResource(R.string.settings_lang_turkish),
-        "it"     to stringResource(R.string.settings_lang_italiano),
-        "ru"     to stringResource(R.string.settings_lang_russian),
-        "id"     to stringResource(R.string.settings_lang_indonesian),
-        "pt-BR"  to stringResource(R.string.settings_lang_portugues_brasil),
-        "ja"     to stringResource(R.string.settings_lang_japanese),
-        "ga"     to stringResource(R.string.settings_lang_irish),
-        "cs"     to stringResource(R.string.settings_lang_czech),
-        "pl"     to stringResource(R.string.settings_lang_polish),
-        "lt"     to stringResource(R.string.settings_lang_lithuanian),
-        "zh-CN"  to stringResource(R.string.settings_lang_chinese_simplified),
-        "he"     to stringResource(R.string.settings_lang_hebrew),
-        "ar"     to stringResource(R.string.settings_lang_arabic),
-        "ca"     to stringResource(R.string.settings_lang_catalan),
+        "en" to stringResource(R.string.settings_lang_english),
+        "de" to stringResource(R.string.settings_lang_deutsch),
+        "fr" to stringResource(R.string.settings_lang_français),
+        "es" to stringResource(R.string.settings_lang_español),
+        "es-ES" to stringResource(R.string.settings_lang_español_españa),
+        "nl" to stringResource(R.string.settings_lang_dutch),
+        "tr" to stringResource(R.string.settings_lang_turkish),
+        "it" to stringResource(R.string.settings_lang_italiano),
+        "ru" to stringResource(R.string.settings_lang_russian),
+        "id" to stringResource(R.string.settings_lang_indonesian),
+        "pt-BR" to stringResource(R.string.settings_lang_portugues_brasil),
+        "ja" to stringResource(R.string.settings_lang_japanese),
+        "ga" to stringResource(R.string.settings_lang_irish),
+        "cs" to stringResource(R.string.settings_lang_czech),
+        "pl" to stringResource(R.string.settings_lang_polish),
+        "lt" to stringResource(R.string.settings_lang_lithuanian),
+        "zh-CN" to stringResource(R.string.settings_lang_chinese_simplified),
+        "he" to stringResource(R.string.settings_lang_hebrew),
+        "ar" to stringResource(R.string.settings_lang_arabic),
+        "ca" to stringResource(R.string.settings_lang_catalan),
         "system" to stringResource(R.string.settings_lang_system),
     )
-    val selectedLabel =
-        options.find { it.first == currentTag }?.second
-            ?: options.find { currentTag.startsWith("${it.first}-") }?.second
-            ?: options.last().second
+    val selectedLabel = options.find { it.first == currentTag }?.second
+        ?: options.find { currentTag.startsWith("${it.first}-") }?.second
+        ?: options.last().second
     var expanded by remember { mutableStateOf(false) }
 
     SectionHeader(title = stringResource(R.string.settings_language))
     SettingsRow(
-        title    = stringResource(R.string.settings_language),
+        title = stringResource(R.string.settings_language),
         subtitle = stringResource(R.string.settings_language_desc),
         trailing = {
-            ExposedDropdownMenuBox(
-                expanded         = expanded,
-                onExpandedChange = { expanded = it },
-            ) {
+            ExposedDropdownMenuBox(expanded = expanded, onExpandedChange = { expanded = it }) {
                 OutlinedTextField(
-                    value         = selectedLabel,
+                    value = selectedLabel,
                     onValueChange = {},
-                    readOnly      = true,
-                    trailingIcon  = { ExposedDropdownMenuDefaults.TrailingIcon(expanded = expanded) },
-                    colors        = ExposedDropdownMenuDefaults.outlinedTextFieldColors(),
-                    singleLine    = true,
-                    modifier      = Modifier
-                        .menuAnchor()
-                        .width(140.dp),
-                    textStyle     = MaterialTheme.typography.bodySmall,
+                    readOnly = true,
+                    trailingIcon = { ExposedDropdownMenuDefaults.TrailingIcon(expanded = expanded) },
+                    colors = ExposedDropdownMenuDefaults.outlinedTextFieldColors(),
+                    singleLine = true,
+                    modifier = Modifier.menuAnchor().width(140.dp),
+                    textStyle = MaterialTheme.typography.bodySmall,
                 )
-                ExposedDropdownMenu(
-                    expanded         = expanded,
-                    onDismissRequest = { expanded = false },
-                ) {
+                ExposedDropdownMenu(expanded = expanded, onDismissRequest = { expanded = false }) {
                     options.forEach { (key, label) ->
                         DropdownMenuItem(
-                            text    = { Text(label) },
+                            text = { Text(label) },
                             onClick = {
-                                val localeList = if (key == "system") LocaleListCompat.getEmptyLocaleList()
-                                                 else LocaleListCompat.forLanguageTags(key)
+                                val localeList = if (key == "system") LocaleListCompat.getEmptyLocaleList() else LocaleListCompat.forLanguageTags(key)
                                 AppCompatDelegate.setApplicationLocales(localeList)
                                 expanded = false
                             },
@@ -792,37 +663,25 @@ internal fun SettingsRow(
     trailing: @Composable (() -> Unit)? = null
 ) {
     Row(
-        modifier = Modifier
-            .fillMaxWidth()
-            .let { if (onClick != null) it.clickable(onClick = onClick) else it },
+        modifier = Modifier.fillMaxWidth().let { if (onClick != null) it.clickable(onClick = onClick) else it },
         verticalAlignment = Alignment.CenterVertically,
         horizontalArrangement = Arrangement.SpaceBetween
     ) {
         Column(
-            modifier = Modifier
-                .weight(1f)
-                .padding(end = if (trailing != null) 16.dp else 0.dp)
+            modifier = Modifier.weight(1f).padding(end = if (trailing != null) 16.dp else 0.dp)
         ) {
-            Text(
-                text = title,
-                style = MaterialTheme.typography.bodyMedium,
-                fontWeight = FontWeight.Bold
-            )
+            Text(title, style = MaterialTheme.typography.bodyMedium, fontWeight = FontWeight.Bold)
             if (subtitle != null) {
-                Text(
-                    text = subtitle,
-                    style = MaterialTheme.typography.bodySmall,
-                    color = MaterialTheme.colorScheme.onSurfaceVariant
-                )
+                Text(subtitle, style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
             }
         }
         if (trailing != null) {
             trailing()
         } else if (onClick != null) {
             Icon(
-                imageVector        = Icons.AutoMirrored.Filled.KeyboardArrowRight,
+                imageVector = Icons.AutoMirrored.Filled.KeyboardArrowRight,
                 contentDescription = null,
-                tint               = MaterialTheme.colorScheme.onSurfaceVariant,
+                tint = MaterialTheme.colorScheme.onSurfaceVariant,
             )
         }
     }
