@@ -68,7 +68,6 @@ import com.freetime.idlecoding.ui.screen.ProfileScreen
 import com.freetime.idlecoding.ui.screen.QuestsScreen
 import com.freetime.idlecoding.ui.screen.SeasonalEventScreen
 import com.freetime.idlecoding.ui.screen.HomeScreenSettingsScreen
-import com.freetime.idlecoding.ui.screen.ArtCreditsScreen
 import com.freetime.idlecoding.ui.screen.CombatTabName
 import com.freetime.idlecoding.ui.screen.SaveSlotsScreen
 import com.freetime.idlecoding.ui.screen.SettingsScreen
@@ -96,8 +95,6 @@ fun AppNavigation(
     val settingsVm: SettingsViewModel = hiltViewModel()
     val showPrestigeNotifications by settingsVm.showPrestigeNotifications.collectAsState()
 
-    // Show onboarding as a full-screen overlay until complete.
-    // null = still loading from DB; don't flash the overlay.
     if (showOnboarding == true) {
         OnboardingScreen(onComplete = onboardingVm::complete)
         return
@@ -132,7 +129,7 @@ fun AppNavigation(
     val currentDestination = backStackEntry?.destination
 
     val tabSubScreens: Map<String, Set<String>> = mapOf(
-        "home"   to setOf("shop", "settings", "inn", Screen.WorkerSkills.route, "guild_hall", "guild_detail/{guild}", "church", "slayer", "carnival", Screen.SeasonalEvent.route),
+        "home" to setOf("shop", "settings", "inn", Screen.WorkerSkills.route, "guild_hall", "guild_detail/{guild}", "church", "slayer", "carnival", Screen.SeasonalEvent.route),
         "skills" to setOf("farming", "mercantile", Screen.Slayer.route, Screen.BoneAltar.route, Screen.PrestigeDetail.route),
         "combat" to setOf(Screen.Tower.route),
         "profile" to setOf(Screen.Combat.startWithTab(CombatTabName.GEAR), Screen.PrestigeDetail.route),
@@ -141,55 +138,41 @@ fun AppNavigation(
     Scaffold(
         contentWindowInsets = WindowInsets(0),
         bottomBar = {
-            NavigationBar(
-                windowInsets = WindowInsets.safeDrawing.only(WindowInsetsSides.Bottom)
-            ) {
+            NavigationBar(windowInsets = WindowInsets.safeDrawing.only(WindowInsetsSides.Bottom)) {
                 Screen.bottomNavItems.forEach { screen ->
-                    val selected = currentDestination
-                        ?.hierarchy
-                        ?.any { it.route == screen.route } == true
-
+                    val selected = currentDestination?.hierarchy?.any { it.route == screen.route } == true
                     val isHome = screen is Screen.Home
-
                     NavigationBarItem(
                         selected = selected,
                         onClick = {
                             val currentRoute = currentDestination?.route
                             val isInSubScreen = tabSubScreens[screen.route]?.contains(currentRoute) == true
                             if (isInSubScreen && navController.popBackStack(screen.route, inclusive = false)) {
-                                // popped back to the tab root
+                                // popped back to tab root
                             } else {
                                 navController.navigate(screen.route) {
-                                    popUpTo(navController.graph.findStartDestination().id) {
-                                        saveState = true
-                                    }
+                                    popUpTo(navController.graph.findStartDestination().id) { saveState = true }
                                     launchSingleTop = true
                                     restoreState = !isHome
                                 }
                                 if (screen is Screen.Profile) {
-                                    // restoreState can bring back another tab's screen on top of
-                                    // profile (e.g. combat gear, issue #1511); drop it so the
-                                    // Profile button always lands on the profile view itself.
                                     navController.popBackStack(screen.route, inclusive = false)
                                 }
                             }
                         },
                         icon = {
                             if (isHome) {
-                                // Larger filled circle for the centre Home button
                                 Surface(
-                                    shape  = CircleShape,
-                                    color  = if (selected) MaterialTheme.colorScheme.primary
-                                             else MaterialTheme.colorScheme.surfaceVariant,
+                                    shape = CircleShape,
+                                    color = if (selected) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.surfaceVariant,
                                     modifier = Modifier.size(48.dp),
                                 ) {
                                     Box(contentAlignment = Alignment.Center, modifier = Modifier.fillMaxSize()) {
                                         Icon(
-                                            imageVector        = if (selected) screen.selectedIcon else screen.icon,
+                                            imageVector = if (selected) screen.selectedIcon else screen.icon,
                                             contentDescription = stringResource(screen.labelRes),
-                                            tint               = if (selected) MaterialTheme.colorScheme.onPrimary
-                                                                 else MaterialTheme.colorScheme.onSurfaceVariant,
-                                            modifier           = Modifier.size(24.dp),
+                                            tint = if (selected) MaterialTheme.colorScheme.onPrimary else MaterialTheme.colorScheme.onSurfaceVariant,
+                                            modifier = Modifier.size(24.dp),
                                         )
                                     }
                                 }
@@ -200,13 +183,13 @@ fun AppNavigation(
                                 if (showQuestBadge || showCombatBadge || showSkillBadge) {
                                     BadgedBox(badge = { Badge() }) {
                                         Icon(
-                                            imageVector        = if (selected) screen.selectedIcon else screen.icon,
+                                            imageVector = if (selected) screen.selectedIcon else screen.icon,
                                             contentDescription = stringResource(screen.labelRes),
                                         )
                                     }
                                 } else {
                                     Icon(
-                                        imageVector        = if (selected) screen.selectedIcon else screen.icon,
+                                        imageVector = if (selected) screen.selectedIcon else screen.icon,
                                         contentDescription = stringResource(screen.labelRes),
                                     )
                                 }
@@ -219,112 +202,84 @@ fun AppNavigation(
         }
     ) { innerPadding ->
         NavHost(
-            navController    = navController,
+            navController = navController,
             startDestination = Screen.Home.route,
-            modifier         = Modifier.padding(innerPadding),
+            modifier = Modifier.padding(innerPadding),
         ) {
-            paneComposable(Screen.Skills.route)   {
-                BoundSkillsScreen(navController)
-            }
+            paneComposable(Screen.Skills.route) { BoundSkillsScreen(navController) }
             paneComposable(
-                route     = Screen.Skills.openSkillRoute,
+                route = Screen.Skills.openSkillRoute,
                 arguments = listOf(navArgument("openSkill") { type = NavType.StringType }),
             ) { entry ->
-                BoundSkillsScreen(
-                    navController = navController,
-                    openSkill     = entry.arguments?.getString("openSkill"),
-                )
+                BoundSkillsScreen(navController, entry.arguments?.getString("openSkill"))
             }
             paneComposable(Screen.Farming.route) { entry ->
                 FarmingScreen(onBack = { if (navController.currentBackStackEntry == entry) navController.popBackStack() })
             }
-            paneComposable(Screen.Home.route)     {
+            paneComposable(Screen.Home.route) {
                 HomeScreen(
-                    onNavigateToSettings     = { navController.navigate(Screen.Settings.route) },
-                    onNavigateToSaveSlots    = { navController.navigate(Screen.Settings.saveSlotsRoute) },
-                    onNavigateToShop         = { navController.navigate(Screen.Shop.route) },
-                    onNavigateToInn          = { navController.navigate(Screen.Inn.route) },
+                    onNavigateToSettings = { navController.navigate(Screen.Settings.route) },
+                    onNavigateToSaveSlots = { navController.navigate(Screen.Settings.saveSlotsRoute) },
+                    onNavigateToShop = { navController.navigate(Screen.Shop.route) },
+                    onNavigateToInn = { navController.navigate(Screen.Inn.route) },
                     onNavigateToWorkerSkills = { slot -> navController.navigate(Screen.WorkerSkills.routeWithSlot(slot)) },
-                    onNavigateToGuildHall    = { navController.navigate(Screen.GuildHall.route) },
-                    onNavigateToChurch       = { navController.navigate(Screen.Church.route) },
-                    onNavigateToMonument     = { navController.navigate(Screen.Monument.route) },
-                    onNavigateToSlayer       = { navController.navigate(Screen.Slayer.route) },
-                    onNavigateToBuilder      = { navController.navigate(Screen.Builder.route) },
-                    onNavigateToHouse        = { navController.navigate(Screen.House.route) },
-                    onNavigateToCarnival     = { navController.navigate(Screen.Carnival.route) },
+                    onNavigateToGuildHall = { navController.navigate(Screen.GuildHall.route) },
+                    onNavigateToChurch = { navController.navigate(Screen.Church.route) },
+                    onNavigateToMonument = { navController.navigate(Screen.Monument.route) },
+                    onNavigateToSlayer = { navController.navigate(Screen.Slayer.route) },
+                    onNavigateToBuilder = { navController.navigate(Screen.Builder.route) },
+                    onNavigateToHouse = { navController.navigate(Screen.House.route) },
+                    onNavigateToCarnival = { navController.navigate(Screen.Carnival.route) },
                     onNavigateToSeasonalEvent = { navController.navigate(Screen.SeasonalEvent.route) },
                 )
             }
-            paneComposable(Screen.Quests.route)   { QuestsScreen() }
-            paneComposable(Screen.Profile.route)  {
+            paneComposable(Screen.Quests.route) { QuestsScreen() }
+            paneComposable(Screen.Profile.route) {
                 ProfileScreen(
-                    onNavigateToCombat   = { navController.navigate(Screen.Combat.startWithTab(CombatTabName.GEAR)) },
+                    onNavigateToCombat = { navController.navigate(Screen.Combat.startWithTab(CombatTabName.GEAR)) },
                     onNavigateToPrestige = { skill -> navController.navigate(Screen.PrestigeDetail.createRoute(skill)) },
                 )
             }
-            paneComposable(Screen.Combat.route)   {
-                BoundCombatScreen(navController)
-            }
+            paneComposable(Screen.Combat.route) { BoundCombatScreen(navController) }
             paneComposable(
-                route     = Screen.Combat.openTabRoute,
+                route = Screen.Combat.openTabRoute,
                 arguments = listOf(navArgument("tab") { type = NavType.EnumType(CombatTabName::class.java) }),
             ) { entry ->
-                BoundCombatScreen(
-                    navController = navController,
-                    startingPage  = entry.arguments?.getString("tab")?.let { CombatTabName.valueOf(it) }
-                )
+                BoundCombatScreen(navController, entry.arguments?.getString("tab")?.let { CombatTabName.valueOf(it) })
             }
             paneComposable(
-                route     = Screen.Combat.presetDungeonRoute,
+                route = Screen.Combat.presetDungeonRoute,
                 arguments = listOf(navArgument("dungeonKey") { type = NavType.StringType }),
             ) { entry ->
-                BoundCombatScreen(
-                    navController     = navController,
-                    initialDungeonKey = entry.arguments?.getString("dungeonKey"),
-                )
+                BoundCombatScreen(navController, initialDungeonKey = entry.arguments?.getString("dungeonKey"))
             }
             paneComposable(
-                route     = Screen.Combat.presetBossRoute,
+                route = Screen.Combat.presetBossRoute,
                 arguments = listOf(navArgument("bossKey") { type = NavType.StringType }),
             ) { entry ->
-                BoundCombatScreen(
-                    navController     = navController,
-                    initialBossKey = entry.arguments?.getString("bossKey"),
-                )
+                BoundCombatScreen(navController, initialBossKey = entry.arguments?.getString("bossKey"))
             }
             paneComposable(Screen.Settings.route) { entry ->
                 SettingsScreen(
-                    onBack                         = { if (navController.currentBackStackEntry == entry) navController.popBackStack() },
-                    onReopenTutorial               = { onboardingVm.reopen() },
+                    onBack = { if (navController.currentBackStackEntry == entry) navController.popBackStack() },
+                    onReopenTutorial = { onboardingVm.reopen() },
                     onNavigateToHomeScreenSettings = { navController.navigate(Screen.Settings.homeScreenRoute) },
-                    onNavigateToThemeSettings      = { navController.navigate(Screen.Settings.themeSettingsRoute) },
-                    onNavigateToSaveSlots          = { navController.navigate(Screen.Settings.saveSlotsRoute) },
-                    onNavigateToArtCredits         = { navController.navigate(Screen.Settings.artCreditsRoute) },
+                    onNavigateToThemeSettings = { navController.navigate(Screen.Settings.themeSettingsRoute) },
+                    onNavigateToSaveSlots = { navController.navigate(Screen.Settings.saveSlotsRoute) },
                 )
             }
             paneComposable(Screen.Settings.homeScreenRoute) { entry ->
-                HomeScreenSettingsScreen(
-                    onBack = { if (navController.currentBackStackEntry == entry) navController.popBackStack() },
-                )
+                HomeScreenSettingsScreen(onBack = { if (navController.currentBackStackEntry == entry) navController.popBackStack() })
             }
             paneComposable(Screen.Settings.saveSlotsRoute) { entry ->
                 SaveSlotsScreen(
-                    onBack     = { if (navController.currentBackStackEntry == entry) navController.popBackStack() },
+                    onBack = { if (navController.currentBackStackEntry == entry) navController.popBackStack() },
                     onSwitched = {
-                        // Rebuild the whole back stack on the new character. Also drop every
-                        // tab's saved sub-screen stack (and its ViewModels): without this the
-                        // Skills tab restores the previous character's remembered screen, e.g.
-                        // the bone altar with their session tallies (issue #1550).
                         Screen.bottomNavItems.forEach { navController.clearBackStack(it.route) }
                         navController.navigate(Screen.Home.route) {
                             popUpTo(navController.graph.findStartDestination().id) { inclusive = true }
                         }
                     },
-                )
-            }
-            paneComposable(Screen.Settings.artCreditsRoute) { entry ->
-                ArtCreditsScreen(
-                    onBack = { if (navController.currentBackStackEntry == entry) navController.popBackStack() },
                 )
             }
             paneComposable(Screen.Settings.themeSettingsRoute) { entry ->
@@ -334,21 +289,19 @@ fun AppNavigation(
                 )
             }
             paneComposable(
-                route     = Screen.Settings.themeEditorRoute,
+                route = Screen.Settings.themeEditorRoute,
                 arguments = listOf(
                     navArgument("source") { type = NavType.StringType; defaultValue = "dark" },
-                    navArgument("blank")  { type = NavType.BoolType; defaultValue = false },
+                    navArgument("blank") { type = NavType.BoolType; defaultValue = false },
                 ),
             ) { entry ->
                 ThemeEditorScreen(
-                    source    = entry.arguments?.getString("source") ?: "dark",
+                    source = entry.arguments?.getString("source") ?: "dark",
                     blankName = entry.arguments?.getBoolean("blank") ?: false,
-                    onBack    = { if (navController.currentBackStackEntry == entry) navController.popBackStack() },
+                    onBack = { if (navController.currentBackStackEntry == entry) navController.popBackStack() },
                 )
             }
-            paneComposable(Screen.Shop.route) { entry ->
-                ShopScreen(onBack = { if (navController.currentBackStackEntry == entry) navController.popBackStack() })
-            }
+            paneComposable(Screen.Shop.route) { entry -> ShopScreen(onBack = { if (navController.currentBackStackEntry == entry) navController.popBackStack() }) }
             paneComposable(Screen.Inn.route) { entry ->
                 InnScreen(
                     onBack = { if (navController.currentBackStackEntry == entry) navController.popBackStack() },
@@ -359,30 +312,20 @@ fun AppNavigation(
                 )
             }
             paneComposable(
-                route     = Screen.WorkerSkills.route,
+                route = Screen.WorkerSkills.route,
                 arguments = listOf(navArgument("initialSlot") { type = NavType.IntType; defaultValue = 1 }),
             ) { entry ->
-                val initialSlot = entry.arguments?.getInt("initialSlot") ?: 1
                 WorkerSkillsScreen(
-                    initialSlot = initialSlot,
-                    onBack      = { if (navController.currentBackStackEntry == entry) navController.popBackStack() },
-                )
-            }
-            paneComposable(Screen.PrestigeDetail.route) { entry ->
-                PrestigeDetailScreen(
+                    initialSlot = entry.arguments?.getInt("initialSlot") ?: 1,
                     onBack = { if (navController.currentBackStackEntry == entry) navController.popBackStack() },
                 )
             }
-            paneComposable(Screen.GuildHall.route) { entry ->
-                GuildHallScreen(
-                    onBack             = { if (navController.currentBackStackEntry == entry) navController.popBackStack() },
-                    onNavigateToGuild  = { guild -> navController.navigate(Screen.GuildDetail.createRoute(guild)) },
-                )
-            }
+            paneComposable(Screen.PrestigeDetail.route) { entry -> PrestigeDetailScreen(onBack = { if (navController.currentBackStackEntry == entry) navController.popBackStack() }) }
+            paneComposable(Screen.GuildHall.route) { entry -> GuildHallScreen(onBack = { if (navController.currentBackStackEntry == entry) navController.popBackStack() }, onNavigateToGuild = { guild -> navController.navigate(Screen.GuildDetail.createRoute(guild)) }) }
             paneComposable(Screen.GuildDetail.route) { entry ->
                 GuildDetailScreen(
-                    onBack             = { if (navController.currentBackStackEntry == entry) navController.popBackStack() },
-                    onNavigateToSkill  = { skill ->
+                    onBack = { if (navController.currentBackStackEntry == entry) navController.popBackStack() },
+                    onNavigateToSkill = { skill ->
                         when (skill) {
                             Skills.SLAYER -> navController.navigate(Screen.Slayer.route)
                             in CombatGuilds.ALL -> navController.navigate(Screen.Combat.startWithTab(CombatTabName.DUNGEONS))
@@ -391,52 +334,19 @@ fun AppNavigation(
                     },
                 )
             }
-            paneComposable(Screen.Church.route) { entry ->
-                ChurchScreen(
-                    onBack = { if (navController.currentBackStackEntry == entry) navController.popBackStack() },
-                )
-            }
-            paneComposable(Screen.Monument.route) { entry ->
-                MonumentScreen(
-                    onBack = { if (navController.currentBackStackEntry == entry) navController.popBackStack() },
-                )
-            }
-            paneComposable(Screen.Slayer.route) { entry ->
-                SlayerScreen(
-                    onBack = { if (navController.currentBackStackEntry == entry) navController.popBackStack() },
-                    onNavigateToPrestige = { skill -> navController.navigate(Screen.PrestigeDetail.createRoute(skill)) },
-                )
-            }
-            paneComposable(Screen.BoneAltar.route) { entry ->
-                BoneAltarScreen(
-                    onBack = { if (navController.currentBackStackEntry == entry) navController.popBackStack() },
-                )
-            }
-            paneComposable(Screen.Builder.route) { entry ->
-                BuilderScreen(
-                    onBack = { if (navController.currentBackStackEntry == entry) navController.popBackStack() },
-                )
-            }
-            paneComposable(Screen.House.route) { entry ->
-                HouseScreen(
-                    onBack = { if (navController.currentBackStackEntry == entry) navController.popBackStack() },
-                )
-            }
-            paneComposable(Screen.Carnival.route) { entry ->
-                CarnivalScreen(
-                    onBack = { if (navController.currentBackStackEntry == entry) navController.popBackStack() },
-                )
-            }
-            paneComposable(Screen.Tower.route) { entry ->
-                TowerScreen(
-                    onBack = { if (navController.currentBackStackEntry == entry) navController.popBackStack() },
-                )
-            }
+            paneComposable(Screen.Church.route) { entry -> ChurchScreen(onBack = { if (navController.currentBackStackEntry == entry) navController.popBackStack() }) }
+            paneComposable(Screen.Monument.route) { entry -> MonumentScreen(onBack = { if (navController.currentBackStackEntry == entry) navController.popBackStack() }) }
+            paneComposable(Screen.Slayer.route) { entry -> SlayerScreen(onBack = { if (navController.currentBackStackEntry == entry) navController.popBackStack() }, onNavigateToPrestige = { skill -> navController.navigate(Screen.PrestigeDetail.createRoute(skill)) }) }
+            paneComposable(Screen.BoneAltar.route) { entry -> BoneAltarScreen(onBack = { if (navController.currentBackStackEntry == entry) navController.popBackStack() }) }
+            paneComposable(Screen.Builder.route) { entry -> BuilderScreen(onBack = { if (navController.currentBackStackEntry == entry) navController.popBackStack() }) }
+            paneComposable(Screen.House.route) { entry -> HouseScreen(onBack = { if (navController.currentBackStackEntry == entry) navController.popBackStack() }) }
+            paneComposable(Screen.Carnival.route) { entry -> CarnivalScreen(onBack = { if (navController.currentBackStackEntry == entry) navController.popBackStack() }) }
+            paneComposable(Screen.Tower.route) { entry -> TowerScreen(onBack = { if (navController.currentBackStackEntry == entry) navController.popBackStack() }) }
             paneComposable(Screen.SeasonalEvent.route) { entry ->
                 SeasonalEventScreen(
-                    onBack               = { if (navController.currentBackStackEntry == entry) navController.popBackStack() },
+                    onBack = { if (navController.currentBackStackEntry == entry) navController.popBackStack() },
                     onNavigateToExpedition = { key -> navController.navigate(Screen.Combat.presetDungeonRoute(key)) },
-                    onNavigateToBoss       = { key -> navController.navigate(Screen.Combat.presetBossRoute(key)) },
+                    onNavigateToBoss = { key -> navController.navigate(Screen.Combat.presetBossRoute(key)) },
                 )
             }
         }
@@ -444,20 +354,13 @@ fun AppNavigation(
     AppBannerHost()
 }
 
-// ---------------------------------------------------------------------------
-// Bound screens — Used when multiple routes lead to the same screen to improve code reuse
-// ---------------------------------------------------------------------------
-
 @Composable
-private fun BoundSkillsScreen(
-    navController: NavController,
-    openSkill: String? = null,
-) {
+private fun BoundSkillsScreen(navController: NavController, openSkill: String? = null) {
     SkillsScreen(
-        openSkill             = openSkill,
-        onNavigateToSlayer    = { navController.navigate(Screen.Slayer.route) },
+        openSkill = openSkill,
+        onNavigateToSlayer = { navController.navigate(Screen.Slayer.route) },
         onNavigateToBoneAltar = { navController.navigate(Screen.BoneAltar.route) },
-        onNavigateToPrestige  = { skill -> navController.navigate(Screen.PrestigeDetail.createRoute(skill)) },
+        onNavigateToPrestige = { skill -> navController.navigate(Screen.PrestigeDetail.createRoute(skill)) },
     )
 }
 
@@ -466,21 +369,17 @@ private fun BoundCombatScreen(
     navController: NavController,
     startingPage: CombatTabName? = null,
     initialDungeonKey: String? = null,
-    initialBossKey: String? = null
+    initialBossKey: String? = null,
 ) {
     CombatScreen(
         startingPage = startingPage,
         initialDungeonKey = initialDungeonKey,
         initialBossKey = initialBossKey,
-        onNavigateToTower    = { navController.navigate(Screen.Tower.route) },
+        onNavigateToTower = { navController.navigate(Screen.Tower.route) },
         onNavigateToPrestige = { skill -> navController.navigate(Screen.PrestigeDetail.createRoute(skill)) },
     )
 }
 
-/**
- * Like [composable], but eats all touch input while the pane is animating out, so taps
- * during a navigation transition can't reach the outgoing screen's buttons (issue #1497).
- */
 private fun NavGraphBuilder.paneComposable(
     route: String,
     arguments: List<NamedNavArgument> = emptyList(),
