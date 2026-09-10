@@ -4986,9 +4986,7 @@ Requires SQL level 99.</string>
     <string name="session_note_boss_coin_cap">CHF output reduced (daily cap for this critical bug)</string>
     <string name="settings_about">About</string>
     <string name="settings_appearance">Appearance</string>
-    <string name="settings_art_credits">Art Credits</string>
-    <string name="settings_art_credits_desc">The artists behind the game\'s art</string>
-    <string name="settings_backup_at_5am">at 5:00 AM</string>
+<string name="settings_backup_at_5am">at 5:00 AM</string>
     <string name="settings_backup_choose">Choose</string>
     <string name="settings_backup_daily">Daily</string>
     <string name="settings_backup_failed">Backup failed.</string>
@@ -5016,22 +5014,10 @@ Requires SQL level 99.</string>
     <string name="settings_collapsible_town_grid_desc">Show the Tech campus section (Shop, Hiring hub, Developer team, etc.) as a card you can collapse on the home screen</string>
     <string name="settings_compact_numbers">Compact Numbers</string>
     <string name="settings_compact_numbers_desc">Abbreviate large item quantities (e.g. 2.46M instead of 2,461,940)</string>
-    <string name="settings_credit_banners_subtitle">Art by Wenrexa</string>
-    <string name="settings_credit_banners_title">Seasonal Banners</string>
-    <string name="settings_credit_bosses_subtitle">Art by Meg</string>
-    <string name="settings_credit_bosses_title">Critical bug Sprites</string>
-    <string name="settings_credit_characters_subtitle">Art by Pixylac</string>
-    <string name="settings_credit_characters_title">Character Sprites</string>
-    <string name="settings_credit_house_subtitle" translatable="false">Rogue Adventure Interior Tileset by Elv Games (modified)</string>
-    <string name="settings_credit_house_title">Office Interiors</string>
-    <string name="settings_credit_skill_icons_subtitle" translatable="false">Shikashi\'s Fantasy Icons Pack</string>
-    <string name="settings_credit_skill_icons_title">Skill Icons</string>
-    <string name="settings_daily_reset_time">Daily reset time</string>
+<string name="settings_daily_reset_time">Daily reset time</string>
     <string name="settings_daily_reset_time_desc">Local time when dailies, developer team dailies, and weeklies roll over. Changing it never grants an extra reset.</string>
     <string name="settings_delete_theme_btn">Delete theme</string>
-    <string name="settings_discord">Discord</string>
-    <string name="settings_discord_url" translatable="false">discord.gg/vRxtXsBwQU</string>
-    <string name="settings_export">Export Save</string>
+<string name="settings_export">Export Save</string>
     <string name="settings_export_btn">Export</string>
     <string name="settings_export_desc">Save your progress to a file</string>
     <string name="settings_exported_ok">Save exported</string>
@@ -5099,7 +5085,7 @@ Requires SQL level 99.</string>
     <string name="settings_session_end_time_desc">Show the predicted completion clock time next to session and queue countdowns</string>
     <string name="settings_source_code">Source Code</string>
     <string name="settings_source_open">Open</string>
-    <string name="settings_source_url" translatable="false">github.com/tristinbaker/IdleFantasy</string>
+    <string name="settings_source_url" translatable="false">github.com/FreetimeMaker/Idle-Coding</string>
     <string name="settings_stats_bar">Stats Library</string>
     <string name="settings_stats_bar_desc">Show Debugging Level, Total Level, and CHF on the home screen</string>
     <string name="settings_theme">Theme</string>
@@ -5114,9 +5100,7 @@ Requires SQL level 99.</string>
     <string name="settings_title">Settings</string>
     <string name="settings_tutorial_desc">Show the introduction again</string>
     <string name="settings_tutorial_title">Tutorial</string>
-    <string name="settings_wiki">Wiki</string>
-    <string name="settings_wiki_url" translatable="false">idlefantasy.tristinbaker.xyz</string>
-    <string name="shop_active">ACTIVE</string>
+<string name="shop_active">ACTIVE</string>
     <string name="shop_bought_item">Bought %1$d× %2$s</string>
     <string name="shop_bulk_sell_confirm">Sell All</string>
     <string name="shop_bulk_sell_total">Total</string>
