@@ -99,7 +99,8 @@
       "visible_ms": 500,
       "cooldown_ms": 3600000,
       "visible_ms_easy": 800,
-      "cooldown_ms_easy": 7200000
+      "cooldown_ms_easy": 7200000,
+      "emoji": "🔥"
     },
     "reward_tiers": [
       {
@@ -108,7 +109,7 @@
       }
     ],
     "banner_text": "@string/seasonal_event_sunspire_solstice_2026_banner",
-    "banner_icon": "banner_summer"
+    "banner_icon": "☀️"
   },
   "gloomharvest_2026": {
     "id": "gloomharvest_2026",
@@ -357,6 +358,6 @@
       }
     ],
     "banner_text": "@string/seasonal_event_gloomharvest_2026_banner",
-    "banner_icon": "banner_fall"
+    "banner_icon": "🎃"
   }
 }
